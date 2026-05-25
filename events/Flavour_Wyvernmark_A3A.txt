@@ -1,0 +1,230 @@
+namespace = wyvernmark
+
+country_event = {
+	id = wyvernmark.100
+	title = wyvernmark.100.t
+	desc = wyvernmark.100.d
+	picture = muslimgfx_SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = A3A }
+	}
+
+	option = {
+		name = wyvernmark.100.a
+		ai_chance = { factor = 1 }
+		define_consort = {
+			culture = stonewing_harpy
+			country_of_origin = F57
+			name = "Ishtara"
+			dynasty = "Mushthanu"
+			birth_date = 1407.4.6
+			adm = 2
+			dip = 6
+			mil = 3
+			female = yes
+		}		
+		set_consort_flag = Ishtara
+		hidden_effect = {
+			838 = {
+				add_harpy_minority_size_effect = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = wyvernmark.101
+	title = wyvernmark.101.t
+	desc = wyvernmark.101.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_or_was_tag = { tag = A3A }
+		consort_culture = stonewing_harpy
+	}
+	option = {
+		name = wyvernmark.101.a
+		ai_chance = { factor = 1 }
+		define_heir = {
+			female = yes
+			dynasty = ROOT
+			culture = stonewing_harpy
+			name = "Tia"
+			adm = 5
+			dip = 6
+			mil = 3
+			age = 13
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.102
+	title = wyvernmark.102.t
+	desc = wyvernmark.102.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = A3A }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = wyvernmark.102.a
+		ai_chance = { factor = 1 }
+		kill_ruler = yes
+		set_country_flag = harpies_take_over
+	}
+}
+
+country_event = {
+	id = wyvernmark.103
+	title = wyvernmark.103.t
+	desc = wyvernmark.103.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.103.a
+		ai_chance = { factor = 1 }
+		change_primary_culture = bronzewing_harpy
+		set_ruler_culture = bronzewing_harpy
+		add_accepted_culture_or_dip_power = {
+			culture = verneman
+			free = yes
+		}
+		add_government_reform = crypto_harpy_reform
+	}
+}
+country_event = {
+	id = wyvernmark.104
+	title = wyvernmark.104.t
+	desc = wyvernmark.104.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		A33 = {
+			remove_consort = yes
+			kill_heir = { allow_new_heir = no }
+			define_consort = {
+				culture = bronzewing_harpy
+				country_of_origin = A3A
+				female = yes
+			}
+			define_heir = {
+				culture = bronzewing_harpy
+				female = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.1
+	title = wyvernmark.1.t
+	desc = wyvernmark.1.d
+	picture = HARPY_TOWN_eventPicture.dds
+	
+	trigger = {
+		AND = {
+			primary_culture = bronzewing_harpy
+			has_country_modifier = monstrous_nation
+		}
+	}
+	
+	hidden = yes
+	
+	option = {
+		name = wyvernmark.1.a
+		ai_chance = { factor = 100 }
+		remove_country_modifier = monstrous_nation
+		hidden_effect = {
+			every_country = {
+				if = { 
+					limit = { 
+						has_opinion_modifier = { 
+							who = ROOT 
+							modifier = root_monstrous 
+						} 
+					}
+					remove_opinion = { 
+						who = ROOT 
+						modifier = root_monstrous 
+					}
+					reverse_remove_opinion = { 
+						who = ROOT 
+						modifier = root_monstrous 
+						}
+				}
+				else_if = { 
+					limit = { 
+						has_opinion_modifier = { 
+							who = ROOT 
+							modifier = semi_monstrous 
+						} 
+					}
+					remove_opinion = { 
+						who = ROOT 
+						modifier = semi_monstrous 
+					}
+					reverse_remove_opinion = { 
+						who = ROOT 
+						modifier = semi_monstrous 
+					}
+				}
+				else_if = {
+					limit = { 
+						has_opinion_modifier = { 
+							who = ROOT 
+							modifier = both_monstrous 
+						} 
+					}
+					remove_opinion = { who = ROOT modifier = both_monstrous }
+					reverse_remove_opinion = { who = ROOT modifier = both_monstrous }
+				}
+			}
+		remove_country_modifier = setup_monstrous_opinion
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.2
+	title = wyvernmark.2.t
+	desc = wyvernmark.2.d
+	picture = HARPY_TOWN_eventPicture.dds
+	
+	trigger = {
+		has_reform = crypto_harpy_reform
+	}
+	hidden = yes
+	option = {
+		every_country = {
+			if = { 
+				limit = {
+					AND = {
+						capital_scope = { continent = europe }
+						NOT = { has_country_modifier = monstrous_nation }
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = crypto_harpy_opinion
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+#Wyvernmark Ideas
+A3A_ideas = {
+	start = {
+		leader_land_shock = 1
+		production_efficiency = 0.15
+	}
+
+	bonus = {
+		diplomatic_reputation = 2
+	}
+
+	trigger = {
+		tag = A3A #Wyvernmark
+	}
+	free = yes		#will be added at load.
+
+	A33_legacy_of_the_wyvern_riders = {
+		monarch_military_power = 1
+		army_tradition_from_battle = 0.5
+	}
+	A33_pearlescent_rivals = {
+		embargo_efficiency = 0.25
+		capture_ship_chance = 0.1
+	}
+	A33_the_heartspier_scale = {
+		global_colonial_growth = 25
+		envoy_travel_time = -0.25
+	}
+	A33_the_red_brass_guns = {
+		artillery_fire = 0.25
+		heavy_ship_cost = -0.1
+	}
+	A33_the_birthplace_of_the_regatta = {
+		global_sailors_modifier = 0.2
+		prestige = 0.5
+	}
+	A33_the_first_corinite_emperors = {
+		land_morale = 0.15
+		yearly_karma_decay = 0.1
+	}
+	A33_the_homeland_of_great_adventurers = {	#its a song/shanty thing
+		mercenary_manpower = 0.5
+	}
+}

@@ -1,0 +1,149 @@
+A3A_first_slot = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = harpies_take_over
+	} 
+
+	A3A_Test_Mission = {
+		icon = continue_the_renaissance
+		position = 1
+		provinces_to_highlight = { }
+
+		trigger = {
+			treasury = 1
+		}
+
+		effect = {
+			add_treasury = 100
+		}
+	}
+}
+A3A_second_slot = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = A3A }	
+}
+A3A_second_slot_p2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A 
+		has_country_flag = harpies_take_over
+		}	
+}
+A3A_third_slot = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = A3A }
+	
+	A3A_Beautiful_Girl = {
+		icon = secure_the_succession
+		position = 1
+		provinces_to_highlight = { }
+		
+		trigger = {
+			has_heir = "Tia"
+		}
+		
+		effect = {
+			country_event = {
+				id = wyvernmark.102
+			}
+		}
+	}
+}
+A3A_third_slot_p2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A 
+		treasury = 1
+	}	
+	A3A_New_Dynasty = {
+		icon = mission_empire
+		position = 2
+		required_missions = {
+			A3A_Beautiful_Girl
+		}
+		trigger = {
+			has_regency = no
+			ruler_culture = stonewing_harpy
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.103
+			}
+		}
+	}
+	
+}
+
+A3A_fourth_slot = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = A3A }
+}
+A3A_fourth_slot_p2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A 
+		has_country_flag = harpies_take_over
+	}	
+	A3A_Giving_Tribute = {
+		icon = mission_harpy_diplomats
+		position = 2
+		required_missions = {
+			A3A_Beautiful_Girl
+		}
+		trigger = {
+			A33 = {
+				marriage_with = ROOT
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.104
+			}
+		}
+	}
+}
+A3A_fifth_slot = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = A3A }
+	
+}
+A3A_fifth_slot_p2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = harpies_take_over
+	}
+	
+}

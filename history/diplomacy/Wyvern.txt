@@ -1,0 +1,7 @@
+# Verne - Wyvernmark Vassal
+march = {
+	first = A33
+	second = A3A
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}

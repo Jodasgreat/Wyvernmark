@@ -1,0 +1,94 @@
+ruler_is_harpy = {
+	custom_trigger_tooltip = {
+		tooltip = ruler_is_harpy_tt
+		OR = {
+			has_ruler_flag = harpy_ruler
+			ruler_culture = firanyan_harpy
+			ruler_culture = siadunan_harpy
+			ruler_culture = stonewing_harpy
+			ruler_culture = pezarangi_harpy
+			ruler_culture = reishao_harpy
+			ruler_culture = naleni_harpy
+			ruler_culture = nzeri_harpy
+			ruler_culture = jarnklo_harpy
+			ruler_culture = kiohan_harpy
+			ruler_culture = nuzenapu_harpy
+			ruler_culture = semifire_harpy
+			ruler_culture = nuraryi_harpy
+			ruler_culture = bronzewing_harpy
+		}
+	}
+}
+
+consort_is_harpy = {
+	custom_trigger_tooltip = {
+		tooltip = consort_is_harpy_tt
+		OR = {
+			consort_culture = firanyan_harpy
+			consort_culture = siadunan_harpy
+			consort_culture = stonewing_harpy
+			consort_culture = pezarangi_harpy
+			consort_culture = reishao_harpy
+			consort_culture = naleni_harpy
+			consort_culture = nzeri_harpy
+			consort_culture = jarnklo_harpy
+			consort_culture = kiohan_harpy
+			consort_culture = nuzenapu_harpy
+			consort_culture = semifire_harpy
+			consort_culture = nuraryi_harpy
+			consort_culture = bronzewing_harpy
+		}
+	}
+}
+heir_is_harpy = {
+	custom_trigger_tooltip = {
+		tooltip = heir_is_harpy_tt
+		OR = {
+			heir_culture = firanyan_harpy
+			heir_culture = siadunan_harpy
+			heir_culture = stonewing_harpy
+			heir_culture = pezarangi_harpy
+			heir_culture = reishao_harpy
+			heir_culture = naleni_harpy
+			heir_culture = nzeri_harpy
+			heir_culture = jarnklo_harpy
+			heir_culture = kiohan_harpy
+			heir_culture = nuzenapu_harpy
+			heir_culture = semifire_harpy
+			heir_culture = nuraryi_harpy
+			heir_culture = bronzewing_harpy
+		}
+	}
+}
+monstrous_culture = {
+	OR = {
+		culture_group = kobold
+		culture_group = orcish
+		culture_group = gnollish
+		culture_group = goblin
+		culture_group = harpy
+		culture_group = giantkind
+		culture_group = hobgoblin
+		culture_group = centaur
+		culture_group = ogre
+		culture_group = degenerated_elf
+		culture_group = lizardfolk
+	}
+	NOT = {
+		culture = pezarangi_harpy
+		culture = jarnklo_harpy
+		culture = goldscale_kobold
+		culture = cyazizeta_lizardfolk
+		culture = nzeri_harpy
+		culture = skyfall_ogre
+		culture = seacrest_ogre
+		culture = yawasichya_kobold
+		culture = jatukyu_kobold
+		culture = unitsan_kobold
+		culture = sirimadsik_kobold
+		culture = semifire_harpy
+		culture = dovesworn_gnoll
+		culture = city_goblin
+		culture = bronzewing_harpy
+	}
+}

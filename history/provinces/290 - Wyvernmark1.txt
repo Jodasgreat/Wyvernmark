@@ -1,0 +1,28 @@
+
+#290 - Poltava
+
+remove_core = A33
+owner = A3A
+controller = A3A
+add_core = A3A
+culture = vernman
+religion = regent_court
+
+hre = yes
+
+base_tax = 2
+base_production = 3
+base_manpower = 3
+
+trade_goods = wool
+
+capital = ""
+
+is_city = yes
+
+
+
+
+
+
+

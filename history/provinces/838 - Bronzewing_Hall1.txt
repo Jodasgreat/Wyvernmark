@@ -1,0 +1,32 @@
+
+# No previous file for Mosquito
+remove_core = A33
+owner = A3A
+controller = A3A
+add_core = A3A
+culture = vernman
+religion = regent_court
+
+hre = yes
+
+base_tax = 3
+base_production = 4
+base_manpower = 2
+
+trade_goods = copper
+
+capital = ""
+
+is_city = yes 
+
+
+
+
+
+
+
+
+add_permanent_province_modifier = {
+	name = dwarven_minority_coexisting_small
+	duration = -1
+}
