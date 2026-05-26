@@ -69,7 +69,7 @@ A3A_third_slot_p2 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A 
-		treasury = 1
+		has_country_flag = harpies_take_over
 	}	
 	A3A_New_Dynasty = {
 		icon = mission_empire
@@ -127,14 +127,65 @@ A3A_fourth_slot_p2 = {
 			}
 		}
 	}
+	A3A_in_the_family = {
+		icon = fra_burg_succession
+		position = 3
+		required_missions = {
+			A3A_Giving_Tribute
+		}
+		trigger = {
+			A33 = {
+				OR = {
+					ruler_culture = stonewing_harpy
+					ruler_culture = bronzewing_harpy
+				}
+				has_opinion = {
+					who = A3A
+					value = 100
+				}
+			}
+		}
+		effect = {
+			A3A = { grant_independence = yes }
+			create_union = A33
+		}
+	}
 }
 A3A_fifth_slot = {
 	slot = 5
 	generic = no
-	ai = yes
+	ai = no
 	has_country_shield = yes
 	potential = { tag = A3A }
 	
+	A3A_challenging_gnolls = {
+		icon = mission_unite_home_region
+		position = 1
+		trigger = {
+			291 = {
+				num_of_units_in_province = {
+					who = A3A
+					amount = 6
+				}
+			}
+			NOT = { num_mothballed_forts = 1 }
+		}
+		effect = {
+			khenak_area = {
+				type = all
+				add_core = A3A
+			}
+			364 = {
+				add_core = A3A
+			}
+			A49 = {
+				declare_war_with_cb = {
+					who = A3A
+					casus_belli = cb_monster_vs_civ
+				}
+			}
+		}
+	}
 }
 A3A_fifth_slot_p2 = {
 	slot = 5
@@ -146,4 +197,46 @@ A3A_fifth_slot_p2 = {
 		has_country_flag = harpies_take_over
 	}
 	
+	A3A_Khenak_Roost = {
+		icon = mission_the_caucasus_rus
+		position = 2
+		required_missions = {
+			A3A_challenging_gnolls
+		}
+		trigger = {
+			A49 = { exists = no }
+			khenak_area = {
+				type = all
+				OR = {
+					owned_by = A3A
+					owned_by = A33
+					}
+				}
+			364 = {
+				OR = {
+					owned_by = A3A
+					owned_by = A33
+				}
+			}
+			reverse_has_opinion = {
+				who = A33
+				value = 100
+			}
+		}
+		effect = {
+			khenak_area = {
+				type = all
+				cede_province = A3A
+				add_core = A3A
+				change_culture = stonewing_harpy
+				change_religion = regent_court
+			}
+			364 = {
+				cede_province = A3A
+				add_core = A3A
+				change_culture = stonewing_harpy
+				change_religion = regent_court
+			}
+		}
+	}	
 }

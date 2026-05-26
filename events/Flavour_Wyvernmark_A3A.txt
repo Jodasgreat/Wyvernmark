@@ -84,6 +84,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		kill_ruler = yes
 		set_country_flag = harpies_take_over
+		swap_non_generic_missions = yes
 	}
 }
 
@@ -99,8 +100,7 @@ country_event = {
 	option = {
 		name = wyvernmark.103.a
 		ai_chance = { factor = 1 }
-		change_primary_culture = bronzewing_harpy
-		set_ruler_culture = bronzewing_harpy
+		change_primary_culture = stonewing_harpy
 		add_accepted_culture_or_dip_power = {
 			culture = verneman
 			free = yes
@@ -122,12 +122,12 @@ country_event = {
 			remove_consort = yes
 			kill_heir = { allow_new_heir = no }
 			define_consort = {
-				culture = bronzewing_harpy
+				culture = stonewing_harpy
 				country_of_origin = A3A
 				female = yes
 			}
 			define_heir = {
-				culture = bronzewing_harpy
+				culture = stonewing_harpy
 				female = yes
 			}
 		}
@@ -209,6 +209,7 @@ country_event = {
 	
 	trigger = {
 		has_reform = crypto_harpy_reform
+		has_country_modifier = monstrous_nation
 	}
 	hidden = yes
 	option = {

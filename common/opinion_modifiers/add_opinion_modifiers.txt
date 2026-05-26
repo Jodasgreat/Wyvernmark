@@ -1,4 +1,4 @@
 crypto_harpy_opinion = {
-	opinion = 25
-	max = 25
+	opinion = 100
+	max = 100
 }
