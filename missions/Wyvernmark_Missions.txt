@@ -89,7 +89,7 @@ A3A_first_slot_p2 = {
 	}
 	A3A_those_who_fly = {
 		icon = continue_the_renaissance
-		position = 5
+		position = 6
 		required_missions = {
 			A3A_persuade_adventurers
 		}
@@ -112,7 +112,7 @@ A3A_first_slot_p2 = {
 	}
 	A3A_wives_on_wyverns = {
 		icon = continue_the_renaissance
-		position = 6
+		position = 7
 		required_missions = {
 			A3A_those_who_fly
 		}
@@ -169,6 +169,98 @@ A3A_second_slot_p2 = {
 				}
 			}
 		}	
+	}
+	A3A_harpy_adv = {
+		icon = continue_the_renaissance
+		position = 4
+		required_missions = {
+			A3A_deal_with_adv
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 1
+				has_province modifier = adventurers_wanted
+			}
+		}
+		effect = {
+			define_advisor = {
+				culture = stonewing_harpy
+				skill = 2
+				discount = yes
+			}
+		}
+	}
+	A3A_anti_monster = {
+		icon = continue_the_renaissance
+		position = 6
+		required_missions = {
+			A3A_persuade_adventurers
+		}
+		trigger = {
+			owns_all_provinces = {
+				area = isle_of_tef_area
+			}
+			1296 = {
+				trade_share = {
+					country = ROOT
+					share = 30
+				}
+			}
+		}
+		effect = {
+			akasik_region = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	A3A_stone_wings = {
+		icon = continue_the_renaissance
+		position = 7
+		required_missions = {
+			A3A_anti_monster
+		}
+		trigger = {
+			owns_all_provinces = {
+				region = akasik_region
+			}
+			has_country_modifier = racial_pop_gnollish_purge
+		}
+		effect = {
+			akasik_region = {
+				OR = {
+					terrain = highlands
+					terrain = mountains
+					terrain = hills
+				}
+				change_culture = stonewing_harpy
+				change_religion = ROOT
+			}
+		}
+	}
+	A3A_sarhal_lessons = {
+		icon = continue_the_renaissance
+		position = 8
+		required_missions = {
+			A3A_stone_wings
+		}
+		trigger = {
+			475 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 1
+				}
+			}
+			akasik_region = {
+				type = all
+				NOT = { unrest = 1 }
+			}
+		}
+		effect = {
+			country_event = {
+				wyvernmark.300
+			}
+		}
 	}
 }
 A3A_third_slot = {
