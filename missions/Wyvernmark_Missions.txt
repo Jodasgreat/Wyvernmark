@@ -14,7 +14,10 @@ A3A_first_slot = {
 		}
 		effect = {
 			create_general = { tradition = 50 }
-			add_manpower = 1
+			add_country_modifier = {
+				name = a3a_verneman_auxiliaries
+				duration = -1
+			}
 		}
 	}
 }
@@ -32,13 +35,103 @@ A3A_first_slot_p2 = {
 		icon = continue_the_renaissance
 		position = 2
 		provinces_to_highlight = { }
-
+		required_missions = {
+			A3A_fill_the_ranks
+		}
 		trigger = {
-			treasury = 1
+			num_of_owned_provinces_with = {
+				value = 2
+				fort_level = 2
+			}
 		}
 
 		effect = {
-			add_treasury = 100
+			add_country_modifier = {
+				name = a3a_fortified_mountains
+				duration = 3650
+			}
+		}
+	}
+	A3A_deal_with_adv = {
+		icon = continue_the_renaissance
+		position = 3
+		provinces_to_highlight = { }
+		required_missions = {
+			A3A_defend_the_mountains
+			A3A_New_Dynasty
+		}
+		trigger = {
+			crown_land_share = 20
+		}
+		effect = {
+			set_country_flag = monst_adv
+		}
+	}
+	A3A_persuade_adventurers = {
+		icon = continue_the_renaissance
+		position = 4
+		required_missions = {
+			A3A_deal_with_adv
+		}
+		trigger = {
+			is_estate_enchantment_level_1_minimum = yes
+		}
+		effect = {
+			add_estate_loyalty_modifier = {
+				estate = estate_adventurers
+				desc = Entranced_adv
+				loyalty = 10
+			}
+			country_event = {
+				id = wyvernmark.200
+			}
+		}
+	}
+	A3A_those_who_fly = {
+		icon = continue_the_renaissance
+		position = 5
+		required_missions = {
+			A3A_persuade_adventurers
+		}
+		trigger = {
+			has_country_flag = A3A_wyverns_found
+			estate_loyalty = {
+				estate = estate_adventurers
+				loyalty = 50
+			}
+			838 = {
+				cavalry_in_province = 10
+			}
+		}
+		effect = {
+			enable_mythical_cavalry = { mount = wyvern }
+			add_country_modifier = {
+				name = A3A_bronze_wings
+			}
+		}
+	}
+	A3A_wives_on_wyverns = {
+		icon = continue_the_renaissance
+		position = 6
+		required_missions = {
+			A3A_those_who_fly
+		}
+		trigger = {
+			num_of_special_units = {
+				value = 10
+			}
+			calc_true_if = {
+				amount = 8
+				all_known_country = {
+					marriage_with = ROOT
+					junior_union_with = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = A3A_flying_wives
+			}
 		}
 	}
 }
@@ -57,7 +150,26 @@ A3A_second_slot_p2 = {
 	potential = { 
 		tag = A3A 
 		has_country_flag = harpies_take_over
+	}
+	A3A_interdict_corsairs = {
+		icon = continue_the_renaissance
+		position = 2
+		required_missions = {
+			A3A_fill_the_ranks
+		}
+		trigger = {
+			num_of_light_ship = 5
+		}
+		effect = {
+			1296 = {
+				add_trade_modifier = {
+					who = ROOT
+					power = 10
+					key = STRONG_MERCHANTS
+				}
+			}
 		}	
+	}
 }
 A3A_third_slot = {
 	slot = 3
@@ -72,7 +184,7 @@ A3A_third_slot = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			has_heir = "Tia"
+			has_heir = "Asturia"
 		}
 		
 		effect = {
@@ -180,7 +292,9 @@ A3A_fifth_slot = {
 	A3A_challenging_gnolls = {
 		icon = mission_unite_home_region
 		position = 1
-		provinces_to_highlight = { 291 }
+		provinces_to_highlight = { 
+			province_id = 291 
+		}
 		trigger = {
 			291 = {
 				num_of_units_in_province = {
