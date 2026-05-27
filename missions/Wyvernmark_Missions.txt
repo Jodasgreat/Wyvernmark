@@ -338,6 +338,23 @@ A3A_third_slot_p2 = {
 			}
 		}
 	}
+	A3A_imperial_court = {
+		icon = mission_empire
+		position = 4
+		required_missions = {
+			A3A_wyvern_nest
+		}
+		trigger = {
+			any_known_country = {
+				is_elector = yes
+				preferred_emperor = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+			}
+		}
+	}
 }
 
 A3A_fourth_slot = {
