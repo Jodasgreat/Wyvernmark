@@ -628,3 +628,154 @@ A3A_fifth_slot_p2 = {
 		}
 	}
 }
+A3A_first_slot_p3 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = doves_pigeons_resolved
+	} 
+	A3A_rebuilding_trust = {
+		icon = fra_burg_succession
+		position = 11
+		required_missions = {
+			A3A_wings
+			A3A_wives_on_wyverns
+		}
+	}
+	A3A_combined_wings = {
+		icon = fra_burg_succession
+		position = 12
+		required_missions = {
+			A3A_rebuilding_trust
+		}
+	}
+}
+A3A_second_slot_p3 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = doves_pigeons_resolved
+		has_country_flag = pigeons
+	} 
+	A3A_own_wings = {
+		icon = fra_burg_succession
+		position = 11
+		required_missions = {
+			A3A_wings
+		}
+	}
+	A3A_mid_flight_tinkering = {
+		icon = fra_burg_succession
+		position = 12
+		required_missions = {
+			A3A_own_wings
+		}
+	}
+}
+A3A_third_slot_p3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = doves_pigeons_resolved
+	} 
+	A3A_wings = {
+		icon = fra_burg_succession
+		position = 10
+		required_missions = {
+			A3A_pigeons_and_doves
+		}
+		trigger = {
+			has_country_flag = doves_pigeons_resolved
+		}
+		effect = {
+			add_country_modifier = {
+				name = A3A_new_wings
+				duration = -1
+			}
+		}
+	}
+	A3A_extraterritorial = {
+		icon = fra_burg_succession
+		position = 11
+		required_missions = {
+			A3A_wings
+		}
+	}
+	A3A_the_west = {
+		icon = fra_burg_succession
+		position = 12
+		required_missions = {
+			A3A_extraterritorial
+		}
+	}
+	A3A_flying_high = {
+		icon = fra_burg_succession
+		position = 13
+		required_missions = {
+			A3A_the_west
+			OR = {
+				A3A_mid_flight_tinkering
+				A3A_persuading_masses
+			}
+		}
+	}
+}
+A3A_fourth_slot_p3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = doves_pigeons_resolved
+		has_country_flag = doves
+	} 
+	A3A_swaying_powerful = {
+		icon = fra_burg_succession
+		position = 11
+		required_missions = {
+			A3A_wings
+		}
+	}
+	A3A_persuading_masses = {
+		icon = fra_burg_succession
+		position = 12
+		required_missions = {
+			A3A_swaying_powerful
+		}
+	}
+}
+A3A_fifth_slot_p3 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = A3A
+		has_country_flag = doves_pigeons_resolved
+	} 
+	A3A_the_hills = {
+		icon = fra_burg_succession
+		position = 11
+		required_missions = {
+			A3A_wings
+			A3A_path_east
+		}
+	}
+	A3A_final_queendom = {
+		icon = fra_burg_succession
+		position = 12
+		required_missions = {
+			A3A_the_hills
+		}
+	}
+}
