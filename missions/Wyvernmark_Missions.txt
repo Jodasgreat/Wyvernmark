@@ -3,14 +3,34 @@ A3A_first_slot = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
+	potential = { tag = A3A }
+
+	A3A_fill_the_ranks = {
+		icon = mission_assemble_an_army
+		position = 1
+		provinces_to_highlight = {}
+		trigger = {
+			num_of_mercenaries = 1
+		}
+		effect = {
+			create_general = { tradition = 50 }
+			add_manpower = 1
+		}
+	}
+}
+A3A_first_slot_p2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
 	potential = { 
 		tag = A3A
 		has_country_flag = harpies_take_over
 	} 
 
-	A3A_Test_Mission = {
+	A3A_defend_the_mountains = {
 		icon = continue_the_renaissance
-		position = 1
+		position = 2
 		provinces_to_highlight = { }
 
 		trigger = {
@@ -137,7 +157,6 @@ A3A_fourth_slot_p2 = {
 			A33 = {
 				OR = {
 					ruler_culture = stonewing_harpy
-					ruler_culture = bronzewing_harpy
 				}
 				has_opinion = {
 					who = A3A
@@ -161,6 +180,7 @@ A3A_fifth_slot = {
 	A3A_challenging_gnolls = {
 		icon = mission_unite_home_region
 		position = 1
+		provinces_to_highlight = { 291 }
 		trigger = {
 			291 = {
 				num_of_units_in_province = {
