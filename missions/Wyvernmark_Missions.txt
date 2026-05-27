@@ -352,7 +352,61 @@ A3A_third_slot_p2 = {
 		}
 		effect = {
 			country_event = {
+				id = wyvernmark.106
 			}
+		}
+	}
+	A3A_queen_of_frontier = {
+		icon = mission_empire
+		position = 5
+		required_missions = {
+			A3A_imperial_court
+			A3A_handmaidens_handiwork
+		}
+		trigger = {
+			A33 = {
+				is_subject_of = ROOT
+				NOT = { liberty_desire = 50}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with 	= {
+				region = businor_region
+				value = 10
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.107
+			}
+		}
+	}
+	A3A_city_in_the_hills = {
+		icon = mission_empire
+		position = 6
+		required_missions = {
+			A3A_queen_of_frontier
+		}
+	}
+	A3A_flock_together = {
+		icon = mission_empire
+		position = 7
+		required_missions = {
+			A3A_city_in_the_hills
+		}
+	}
+	A3A_heart_of_empire = {
+		icon = mission_empire
+		position = 8
+		required_missions = {
+			A3A_flock_together
+		}
+	}
+	A3A_pigeons_and_doves = {
+		icon = mission_empire
+		position = 9
+		required_missions = {
+			A3A_heart_of_empire
+			A3A_sarhal_lessons
+			A3A_heart_of_power
 		}
 	}
 }
@@ -414,6 +468,43 @@ A3A_fourth_slot_p2 = {
 		effect = {
 			A3A = { grant_independence = yes }
 			create_union = A33
+		}
+	}
+	A3A_handmaidens_handiwork = {
+		icon = fra_burg_succession
+		position = 4
+		required_missions = {
+			A3A_in_the_family
+			A3A_Khenak_Roost
+		}
+		trigger = {
+			has_idea_group = espionage_ideas
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.400
+			}
+		}
+	}
+	A3A_dove_throne = {
+		icon = fra_burg_succession
+		position = 6
+		required_missions = {
+			A3A_queen_of_frontier
+		}
+	}
+	A3A_dove_matriarch = {
+		icon = fra_burg_succession
+		position = 7
+		required_missions = {
+			A3A_dove_throne
+		}
+	}
+	A3A_heart_of_power = {
+		icon = fra_burg_succession
+		position = 8
+		required_missions = {
+			A3A_dove_matriarch
 		}
 	}
 }
@@ -507,5 +598,33 @@ A3A_fifth_slot_p2 = {
 				change_religion = regent_court
 			}
 		}
-	}	
+	}
+	A3A_feather_pillows = {
+		icon = fra_burg_succession
+		position = 6
+		required_missions = {
+			A3A_queen_of_frontier
+		}
+	}
+	A3A_securing_empire = {
+		icon = fra_burg_succession
+		position = 7
+		required_missions = {
+			A3A_dove_throne
+		}
+	}
+	A3A_ancient_home = {
+		icon = fra_burg_succession
+		position = 8
+		required_missions = {
+			A3A_securing_empire
+		}
+	}
+	A3A_path_east = {
+		icon = fra_burg_succession
+		position = 9
+		required_missions = {
+			A3A_ancient_home
+		}
+	}
 }
