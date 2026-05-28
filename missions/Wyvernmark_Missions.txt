@@ -722,6 +722,13 @@ A3A_third_slot_p3 = {
 				mission_completed = A3A_persuading_masses
 				mission_completed = A3A_mid_flight_tinkering
 			}
+			OR = {
+				owns_or_non_sovereign_subject_of = 840
+				840 = {
+					controller = ROOT
+					is_looted = yes
+				}
+			}
 		}
 	}
 }
