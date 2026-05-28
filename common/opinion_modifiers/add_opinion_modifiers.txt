@@ -2,3 +2,7 @@ crypto_harpy_opinion = {
 	opinion = 100
 	max = 100
 }
+crypto_harpy_monst_opinion = {
+	opinion = -100
+	min = -100
+}
