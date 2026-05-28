@@ -665,7 +665,7 @@ A3A_second_slot_p3 = {
 		}
 	}
 	A3A_mid_flight_tinkering = {
-		icon = fra_burg_succession
+		icon = mission_industrial_forging
 		position = 12
 		required_missions = {
 			A3A_own_wings
@@ -682,7 +682,7 @@ A3A_third_slot_p3 = {
 		#has_country_flag = doves_pigeons_resolved
 	} 
 	A3A_wings = {
-		icon = fra_burg_succession
+		icon = mission_harpy_diplomats
 		position = 10
 		required_missions = {
 			A3A_pigeons_and_doves
@@ -698,14 +698,14 @@ A3A_third_slot_p3 = {
 		}
 	}
 	A3A_extraterritorial = {
-		icon = fra_burg_succession
+		icon = mission_assassination
 		position = 11
 		required_missions = {
 			A3A_wings
 		}
 	}
 	A3A_the_west = {
-		icon = fra_burg_succession
+		icon = mission_white_tower
 		position = 12
 		required_missions = {
 			A3A_extraterritorial
@@ -752,14 +752,14 @@ A3A_fourth_slot_p3 = {
 		#has_country_flag = doves
 	} 
 	A3A_swaying_powerful = {
-		icon = fra_burg_succession
+		icon = mission_among_the_great_powers
 		position = 11
 		required_missions = {
 			A3A_wings
 		}
 	}
 	A3A_persuading_masses = {
-		icon = fra_burg_succession
+		icon = bavarian_cultural_dominance
 		position = 12
 		required_missions = {
 			A3A_swaying_powerful
@@ -776,7 +776,7 @@ A3A_fifth_slot_p3 = {
 		#has_country_flag = doves_pigeons_resolved
 	} 
 	A3A_the_hills = {
-		icon = fra_burg_succession
+		icon = mission_potosi_silver
 		position = 11
 		required_missions = {
 			A3A_wings
@@ -784,7 +784,7 @@ A3A_fifth_slot_p3 = {
 		}
 	}
 	A3A_final_queendom = {
-		icon = fra_burg_succession
+		icon = mission_heunthume
 		position = 12
 		required_missions = {
 			A3A_the_hills
