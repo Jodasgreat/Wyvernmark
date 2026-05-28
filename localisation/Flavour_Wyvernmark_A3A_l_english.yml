@@ -20,5 +20,10 @@
  wyvernmark.102.d:0 "When preparing for Tia's debut, I insisted that her peers - girls of her age, not Ishtara's handmaidens - help her get dressed for the event."
  wyvernmark.102.a:0 "Live on, my daughter"
  
+ wyvernmark.103.t:0 "First of Her Name"
+ wyvernmark.103.d:0 "Today is the day.\n\nToday, I will take my father's throne and wield the ceremonial mace as Asturia I, rightful Margravine of Wyvernmark. The first of my kind to rule in Western Cannor since the days of Beastbane. Yet, amid all the festivities, my hand reaches to the skin on my back.\n\nThe scars, the stumps of a limb I never knew. I was never meant to rule; I was meant to fly.\n\nFor all my life, I have cursed my mother and the handmaidens who stole the sky from me. I spurned them. Shouted at them. Made preparations to run away from the castle and join an adventuring band.\n\nWhen I was caught halfway out the door, my mother took me to watch a parade hosted in honor of our recent victory over the gnolls. Images of Beastbane abounded as effigies of gnolls, orcs, goblins, and -- yes -- harpies were beaten and burned in the festivities.\n\n'See how they hate you. See how they wish you dead. These are your people.' On that day, my mother leaned in close, her lips brushing against my ears as she whispered. 'You will rule over them, and your daughters will one day rule over all of Castan's people. Do not mourn what I have stolen, for you will fly far higher than some paltry wings could ever take you.'\n\n'Let others wage war,' she said."
+ wyvernmark.103.a:0 "You, harpy Asturia, marry."
+ 
  crypto_harpy_reform:0 "Cryptoharpy Matriarchy"
  crypto_harpy_reform_desc:0 "Our country is ruled by a flock of harpies, but the rest of the world doesn't have to know that. By paying careful attention to what she wears and how she acts, our Matriarch can walk the halls of any royal court in Cannor like any other noble lady. \n\nA shame, however, that our wings would give us away."
+ crypto_harpy_opinion:0 "Totally not harpies"
