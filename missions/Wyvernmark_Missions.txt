@@ -32,7 +32,7 @@ A3A_first_slot_p2 = {
 	} 
 
 	A3A_defend_the_mountains = {
-		icon = continue_the_renaissance
+		icon = fight_bosnian_heresies
 		position = 2
 		provinces_to_highlight = { }
 		required_missions = {
@@ -53,7 +53,7 @@ A3A_first_slot_p2 = {
 		}
 	}
 	A3A_deal_with_adv = {
-		icon = continue_the_renaissance
+		icon = mission_landsknecht_soldier
 		position = 3
 		provinces_to_highlight = { }
 		required_missions = {
@@ -68,7 +68,7 @@ A3A_first_slot_p2 = {
 		}
 	}
 	A3A_persuade_adventurers = {
-		icon = continue_the_renaissance
+		icon = support_the_orders
 		position = 5
 		required_missions = {
 			A3A_deal_with_adv
@@ -88,7 +88,7 @@ A3A_first_slot_p2 = {
 		}
 	}
 	A3A_those_who_fly = {
-		icon = continue_the_renaissance
+		icon = give_him_back_his_legions
 		position = 6
 		required_missions = {
 			A3A_persuade_adventurers
@@ -112,7 +112,7 @@ A3A_first_slot_p2 = {
 		}
 	}
 	A3A_wives_on_wyverns = {
-		icon = continue_the_renaissance
+		icon = the_viennese_waltz
 		position = 7
 		required_missions = {
 			A3A_those_who_fly
@@ -154,7 +154,7 @@ A3A_second_slot_p2 = {
 		has_country_flag = harpies_take_over
 	}
 	A3A_interdict_corsairs = {
-		icon = continue_the_renaissance
+		icon = mission_corsairs_of_the_north_sea
 		position = 2
 		required_missions = {
 			A3A_fill_the_ranks
@@ -173,7 +173,7 @@ A3A_second_slot_p2 = {
 		}	
 	}
 	A3A_harpy_adv = {
-		icon = continue_the_renaissance
+		icon = mission_italian_condottiere
 		position = 4
 		required_missions = {
 			A3A_deal_with_adv
@@ -193,7 +193,7 @@ A3A_second_slot_p2 = {
 		}
 	}
 	A3A_anti_monster = {
-		icon = continue_the_renaissance
+		icon = mission_new_army
 		position = 6
 		required_missions = {
 			A3A_persuade_adventurers
@@ -217,7 +217,7 @@ A3A_second_slot_p2 = {
 		}
 	}
 	A3A_stone_wings = {
-		icon = continue_the_renaissance
+		icon = arb_riyadh
 		position = 7
 		required_missions = {
 			A3A_anti_monster
@@ -235,7 +235,7 @@ A3A_second_slot_p2 = {
 		}
 	}
 	A3A_sarhal_lessons = {
-		icon = continue_the_renaissance
+		icon = mam_city_thousand_minarets
 		position = 8
 		required_missions = {
 			A3A_stone_wings
@@ -292,7 +292,7 @@ A3A_third_slot_p2 = {
 		has_country_flag = harpies_take_over
 	}	
 	A3A_New_Dynasty = {
-		icon = mission_empire
+		icon = mission_female_throne
 		position = 2
 		required_missions = {
 			A3A_Beautiful_Girl
@@ -308,7 +308,7 @@ A3A_third_slot_p2 = {
 		}
 	}
 	A3A_wyvern_nest = {
-		icon = mission_empire
+		icon = unify_piedmont
 		position = 3
 		required_missions = {
 			A3A_New_Dynasty
@@ -333,7 +333,7 @@ A3A_third_slot_p2 = {
 		}
 	}
 	A3A_imperial_court = {
-		icon = mission_empire
+		icon = unite_the_wittelsbachs
 		position = 4
 		required_missions = {
 			A3A_wyvern_nest
@@ -351,7 +351,7 @@ A3A_third_slot_p2 = {
 		}
 	}
 	A3A_queen_of_frontier = {
-		icon = mission_empire
+		icon = professional_army
 		position = 5
 		required_missions = {
 			A3A_imperial_court
@@ -374,28 +374,28 @@ A3A_third_slot_p2 = {
 		}
 	}
 	A3A_city_in_the_hills = {
-		icon = mission_empire
+		icon = take_the_bishoprics
 		position = 6
 		required_missions = {
 			A3A_queen_of_frontier
 		}
 	}
 	A3A_flock_together = {
-		icon = mission_empire
+		icon = friends_in_high_places
 		position = 7
 		required_missions = {
 			A3A_city_in_the_hills
 		}
 	}
 	A3A_heart_of_empire = {
-		icon = mission_empire
+		icon = weimar_classicism
 		position = 8
 		required_missions = {
 			A3A_flock_together
 		}
 	}
 	A3A_pigeons_and_doves = {
-		icon = mission_empire
+		icon = per_reborn_in_fire
 		position = 9
 		required_missions = {
 			A3A_heart_of_empire
@@ -465,7 +465,7 @@ A3A_fourth_slot_p2 = {
 		}
 	}
 	A3A_handmaidens_handiwork = {
-		icon = fra_burg_succession
+		icon = mission_candide_letter
 		position = 4
 		required_missions = {
 			A3A_in_the_family
@@ -481,21 +481,21 @@ A3A_fourth_slot_p2 = {
 		}
 	}
 	A3A_dove_throne = {
-		icon = fra_burg_succession
+		icon = mission_empire
 		position = 6
 		required_missions = {
 			A3A_queen_of_frontier
 		}
 	}
 	A3A_dove_matriarch = {
-		icon = fra_burg_succession
+		icon = secure_our_rule
 		position = 7
 		required_missions = {
 			A3A_dove_throne
 		}
 	}
 	A3A_heart_of_power = {
-		icon = fra_burg_succession
+		icon = imperial_ascendancy
 		position = 8
 		required_missions = {
 			A3A_dove_matriarch
@@ -594,28 +594,28 @@ A3A_fifth_slot_p2 = {
 		}
 	}
 	A3A_feather_pillows = {
-		icon = fra_burg_succession
+		icon = mission_dual_diplomacy
 		position = 6
 		required_missions = {
 			A3A_queen_of_frontier
 		}
 	}
 	A3A_securing_empire = {
-		icon = fra_burg_succession
+		icon = balance_of_power
 		position = 7
 		required_missions = {
 			A3A_dove_throne
 		}
 	}
 	A3A_ancient_home = {
-		icon = fra_burg_succession
+		icon = up_the_adige
 		position = 8
 		required_missions = {
 			A3A_securing_empire
 		}
 	}
 	A3A_path_east = {
-		icon = fra_burg_succession
+		icon = mission_coromandel_expansion
 		position = 9
 		required_missions = {
 			A3A_ancient_home
@@ -632,7 +632,7 @@ A3A_first_slot_p3 = {
 		#has_country_flag = doves_pigeons_resolved
 	} 
 	A3A_rebuilding_trust = {
-		icon = fra_burg_succession
+		icon = mission_noble_council
 		position = 11
 		required_missions = {
 			A3A_wings
@@ -640,7 +640,7 @@ A3A_first_slot_p3 = {
 		}
 	}
 	A3A_combined_wings = {
-		icon = fra_burg_succession
+		icon = mission_alliances
 		position = 12
 		required_missions = {
 			A3A_rebuilding_trust
@@ -658,7 +658,7 @@ A3A_second_slot_p3 = {
 		#has_country_flag = pigeons
 	} 
 	A3A_own_wings = {
-		icon = fra_burg_succession
+		icon = mission_baloon
 		position = 11
 		required_missions = {
 			A3A_wings
