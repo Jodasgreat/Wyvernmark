@@ -6,7 +6,7 @@ A3A_first_slot = {
 	potential = { tag = A3A }
 
 	A3A_fill_the_ranks = {
-		icon = mission_assemble_an_army
+		icon = mission_knight
 		position = 1
 		provinces_to_highlight = {}
 		trigger = {
@@ -15,7 +15,7 @@ A3A_first_slot = {
 		effect = {
 			create_general = { tradition = 50 }
 			add_country_modifier = {
-				name = a3a_verneman_auxiliaries
+				name = a3a_vernman_auxiliaries
 				duration = -1
 			}
 		}
@@ -379,12 +379,37 @@ A3A_third_slot_p2 = {
 		required_missions = {
 			A3A_queen_of_frontier
 		}
+		trigger = {
+			838 = {
+				has_building = mage_tower
+				development = 20
+			}
+			is_lacking_institutions = no
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.108 #at the academy
+			}
+		}
 	}
 	A3A_flock_together = {
 		icon = friends_in_high_places
 		position = 7
 		required_missions = {
 			A3A_city_in_the_hills
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 3
+				all_known_country = {
+					junior_union_with = ROOT
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.109 #turning PUs into harpies
+			}
 		}
 	}
 	A3A_heart_of_empire = {
@@ -393,6 +418,31 @@ A3A_third_slot_p2 = {
 		required_missions = {
 			A3A_flock_together
 		}
+		trigger = {
+			calc_true_if = {
+				amount = 5
+				all_known_country = {
+					is_subject_of = ROOT
+				}
+			}
+			all_subject_country = {
+				NOT = { liberty_desire = 50 }
+			}
+			all_known_country = {
+				OR = {
+					NOT = { is_part_of_hre = yes }
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.110 #removing IA gain debuff
+			}			
+		}	
 	}
 	A3A_pigeons_and_doves = {
 		icon = per_reborn_in_fire
@@ -401,6 +451,25 @@ A3A_third_slot_p2 = {
 			A3A_heart_of_empire
 			A3A_sarhal_lessons
 			A3A_heart_of_power
+		}
+		trigger = {
+			all_known_country = {
+				OR = {
+					capital_scope = {
+						NOT = { continent = europe }
+					}
+					NOT = { total_development = ROOT }
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_province_modifier = harpy_roost_mod_roost_flourishing_active
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.500 #pigeons and doves disaster
+			}
 		}
 	}
 }
@@ -422,7 +491,7 @@ A3A_fourth_slot_p2 = {
 		has_country_flag = harpies_take_over
 	}	
 	A3A_Giving_Tribute = {
-		icon = mission_harpy_diplomats
+		icon = mission_candide_letter
 		position = 2
 		required_missions = {
 			A3A_Beautiful_Girl
@@ -465,14 +534,14 @@ A3A_fourth_slot_p2 = {
 		}
 	}
 	A3A_handmaidens_handiwork = {
-		icon = mission_candide_letter
+		icon = mission_pirate_havens
 		position = 4
 		required_missions = {
 			A3A_in_the_family
 			A3A_Khenak_Roost
 		}
 		trigger = {
-			has_idea_group = espionage_ideas
+			has_idea_group = spy_ideas
 		}
 		effect = {
 			country_event = {
@@ -658,7 +727,7 @@ A3A_second_slot_p3 = {
 		#has_country_flag = pigeons
 	} 
 	A3A_own_wings = {
-		icon = mission_baloon
+		icon = mission_balloon
 		position = 11
 		required_missions = {
 			A3A_wings
@@ -717,6 +786,9 @@ A3A_third_slot_p3 = {
 		required_missions = {
 			A3A_the_west
 		}
+		provinces_to_highlight = {
+			
+		}
 		trigger = {
 			OR = {
 				mission_completed = A3A_persuading_masses
@@ -725,13 +797,23 @@ A3A_third_slot_p3 = {
 			OR = {
 				owns_or_non_sovereign_subject_of = 840
 				840 = {
-					controller = ROOT
-					is_looted = yes
+					AND = {
+						is_looted = yes
+						controller = {
+							is_or_was_tag = {
+								tag = A3A
+							}
+						}
+					}
 				}
 			}
-			owns_all_provinces = {
-				superregion = western_cannor_superregion
-				is_part_of_hre = no
+			western_cannor_superregion = {
+				type = all
+				OR = {
+					is_part_of_hre = yes
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
 			}
 		}
 		effect = {

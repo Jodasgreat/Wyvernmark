@@ -102,7 +102,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		change_primary_culture = stonewing_harpy
 		add_accepted_culture_or_dip_power = {
-			culture = verneman
+			culture = vernman
 			free = yes
 		}
 		add_government_reform = crypto_harpy_reform
