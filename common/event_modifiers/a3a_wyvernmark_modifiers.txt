@@ -1,0 +1,30 @@
+#Wyvernmark A3A
+# perm mods
+A3A_the_convent = {
+	spy_offence = 0.1
+	stability_cost_modifier = 0.05
+}
+a3a_vernman_auxiliaries = {
+	mercenary_manpower = 0.10
+}
+a3a_fortified_mountains = {
+	defensiveness = 0.10
+}
+A3A_bronze_wings = {
+	movement_speed = 0.2
+}
+A3A_flying_wives = {
+	envoy_travel_time = -1	
+}
+A3A_terrestrial_roost = {
+	local_hostile_attrition = 5
+	local_manpower_modifier = 0.25
+}
+A3A_anbennarians_in_name = {
+	reasons_to_elect = 30
+}
+A3A_arch_margravine = {
+	prestige = 1
+	diplomatic_reputation = 1
+}
+

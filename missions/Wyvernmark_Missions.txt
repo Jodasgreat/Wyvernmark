@@ -83,7 +83,7 @@ A3A_first_slot_p2 = {
 				loyalty = 10
 			}
 			country_event = {
-				id = wyvernmark.200
+				id = wyvernmark.107
 			}
 		}
 	}
@@ -230,7 +230,7 @@ A3A_second_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.301
+				id = wyvernmark.201
 			}
 		}
 	}
@@ -254,7 +254,7 @@ A3A_second_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.300
+				id = wyvernmark.202
 			}
 		}
 	}
@@ -345,8 +345,8 @@ A3A_third_slot_p2 = {
 			}
 		}
 		effect = {
-			country_event = {
-				id = wyvernmark.106
+			add_country_modifier = {
+				name = A3A_anbennarians_in_name
 			}
 		}
 	}
@@ -369,7 +369,7 @@ A3A_third_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.107
+				id = wyvernmark.200
 			}
 		}
 	}
@@ -388,7 +388,7 @@ A3A_third_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.108 #at the academy
+				id = wyvernmark.203 #at the academy
 			}
 		}
 	}
@@ -408,7 +408,7 @@ A3A_third_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.109 #turning PUs into harpies
+				id = wyvernmark.204 #turning PUs into harpies
 			}
 		}
 	}
@@ -440,7 +440,7 @@ A3A_third_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.110 #removing IA gain debuff
+				id = wyvernmark.205 #removing IA gain debuff
 			}			
 		}	
 	}
@@ -790,29 +790,39 @@ A3A_third_slot_p3 = {
 			
 		}
 		trigger = {
+			has_country_flag = slain_the_beast
 			OR = {
 				mission_completed = A3A_persuading_masses
 				mission_completed = A3A_mid_flight_tinkering
 			}
-			OR = {
-				owns_or_non_sovereign_subject_of = 840
-				840 = {
-					AND = {
-						is_looted = yes
-						controller = {
-							is_or_was_tag = {
-								tag = A3A
-							}
-						}
+			western_cannor_superregion = {
+				type = all
+				NOT = {
+					region = dragon_coast_region
+					region = alenic_frontier_region
+				}
+				owner = {
+					OR = {
+						is_part_of_hre = yes
+						tag = ROOT
+						is_subject_of = ROOT
 					}
 				}
 			}
-			western_cannor_superregion = {
+			escann_superregion = {
 				type = all
-				OR = {
-					is_part_of_hre = yes
-					owned_by = ROOT
-					owned_by_subject_of = ROOT
+				owner = {
+					OR = {
+						is_part_of_hre = yes
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			840 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 50
 				}
 			}
 		}

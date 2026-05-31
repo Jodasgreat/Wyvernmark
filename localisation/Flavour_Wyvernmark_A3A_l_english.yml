@@ -30,7 +30,7 @@
  A3A_Beautiful_Girl_desc:0 "My wife has never borne me a son, but the daughter she gave me I wouldn't trade for the world. Soon, it will be time to introduce her to the world."
  
  A3A_New_Dynasty_title:0 "A New Dynasty"
- A3A_New_Dynasty_desc:0 "With our new ruler coming of age, Wyvernmark enters a new era."
+ A3A_New_Dynasty_desc:0 "With our new ruler coming of age, Wyvernmark enters a new era. Henceforth, this land will be ruled by a dynasty of a different character. Yet, for the common people, nothing will change. They will notice nothing.\n\nThey should notice nothing."
  A3A_wyvern_nest_title:0 "The Wyverns' Nest"
  A3A_wyvern_nest_desc:0 "Thus far, the flock has lived in secret among the humans of Wyvernmark. This was fine when our numbers were small, but as the flock expands the risk of detection skyrockets.\n\nWe should take advantage of the majestic mountains around Bronzewing Hall to establish a refuge away from the prying eyes of human society. There, our daughters need not fear the threat of detection, nor the corrupting influence of human men."
  A3A_imperial_court_title:0 "In the Imperial Court"
@@ -47,8 +47,8 @@
  A3A_pigeons_and_doves_desc:0 "Since the establishment of 'The Convent,' tension has brewed among the harpies of Cannor. There are many of us now; that alone is testament to our success. However, many of them hold a deep resentment against our leaders.\n\nThis division can go on no longer. The Matriarch will call an emergency assembly of leading harpies from across our realms to settle the debate between these 'Pigeons' and 'Doves' once and for all."
 
  # column 4
- A3A_giving_tribute_title:0 "Giving Tribute"
- A3A_giving_tribute_desc:0 "From the beginning, the Dukes of Verne have been our gracious overlords. They've protected us from incursions and supported us through disasters. It would only be natural for us to offer the hand of one of our lovely court maidens as a show of our loyalty.\n\nThe Duke already has a wife, you say? That sounds like a solveable problem."
+ A3A_Giving_Tribute_title:0 "Giving Tribute"
+ A3A_Giving_Tribute_desc:0 "From the beginning, the Dukes of Verne have been our gracious overlords. They've protected us from incursions and supported us through disasters. It would only be natural for us to offer the hand of one of our lovely court maidens as a show of our loyalty.\n\nThe Duke already has a wife, you say? That sounds like a solveable problem."
  A3A_in_the_family_title:0 "All in the Family"
  A3A_in_the_family_desc:0 "We mourn the passing of our liege, the good Duke of Verne. How fortunate we are, then, to have one of our own as his successor.\n\nOf course, we will support the new Duchess, but while she might have a superior title from the Empire's perspective, we must make sure she knows that she is of 'The Convent' first and foremost. Every Sister owes her loyalty to the Matriarch above all else."
  A3A_handmaidens_handiwork_title:0 "Handmaidens' Handiwork"
@@ -57,8 +57,8 @@
  A3A_dove_throne_desc:0 "Surely, they would not have called it the 'Dove Throne' if we were not destined to sit upon it."
  A3A_dove_matriarch_title:0 "The Dove Matriarch"
  A3A_dove_matriarch_desc:0 "It is all well and good that one of us has sat upon the Dove Throne, but it would be a shame to watch that honor slip away from us. We must find our way into the courts of each elector and, if possible, their beds."
- A3A_heart_of_power_title:0 "Heart of Cannorian Power"
- A3A_heart_of_power_desc:0 "Ruling the Empire alone is not enough. We must consolidate our control over these lands and establish ourselves as the preeminent rulers of Cannor.\n\nTo the West lie the largest challenges to our domination, the twin giants of Lorent and Gawed. Were they to put aside their differences and join forces against us, they could tear down all that we have worked for. Thankfully, their historical rivalry makes them all too easy to divide and conquer."
+ A3A_heart_of_power_title:0 "Heart of Power"
+ A3A_heart_of_power_desc:0 "Ruling the Empire alone is not enough. We must consolidate our control over these lands and establish ourselves as the preeminent rulers of Cannor.\n\nTo the West lies the grand Kingdom of Lorent. For centuries, they have been the de-facto center of power in Cannor, and their interventions have swayed the fate of the Empire countless times before. We must ensure the rose is tended only by a gardener of our choosing."
 
  # column 5
  A3A_challenging_gnolls_title:0 "Challenging the Gnolls"
@@ -67,7 +67,7 @@
  A3A_Khenak_Roost_desc:0 ""
  A3A_feather_pillows_title:0 "Feather Pillows"
  A3A_feather_pillows_desc:0 ""
- A3A_securing_empire_title:0 "Securing the Empire's Frontiers"
+ A3A_securing_empire_title:0 "Securing the Borders"
  A3A_securing_empire_desc:0 ""
  A3A_ancient_home_title:0 "Our Ancient Home"
  A3A_ancient_home_desc:0 ""
@@ -100,27 +100,80 @@
  A3A_final_queendom_title:0 "The Final Queendom"
  A3A_final_queendom_desc:0 ""
  
+ #100 events - Part 1
  wyvernmark.100.t:0 "The Convent"
- wyvernmark.100.d:0 "Some weird women, and a pretty one too."
- wyvernmark.100.a:0 "I"ll marry that one"
+ wyvernmark.100.d:0 "She wore a long-sleeved black dress that dragged across the floor. White gloves that left nothing exposed. A veil that covered everything but her face.\n\nShe arrived several years ago as part of a group of women people called 'The Convent,' though they never let on what god they served. Even now, long after Ishtara and I married, her 'Sisters' still remain an enigma.\n\nThey came from the South, she had said once. From the land of Akasik, ravaged by ferocious gnolls. Every day I see her, it aches me that Wyvernmark is too weak to do anything about those beasts. If only I was a greater ruler. If only our land had the resources to mount an expedition.\n\nIf only the spirit of Castan II flowed through my veins, I wouldn't hesitate to be the first on the beaches to liberate her homeland.\n\nAlas, my dear Ishtara has persuaded me to keep my calm. She is safe now, here in Bronzewing Hall. Her 'Sisters' all employed as handmaidens in the castle. Some of them have even found husbands and built families. It delights me to see their children -- all daughters, by some funny coincidence -- run about the castle grounds, never to know the cruelties of the monsters their mothers escaped.\n\nIshtara and I have three daughters of our own, each one precious and talented beyond belief. She and I have supported each other through thick and thin, and every night I whisper the same words of gratitude in her ear:"
+ wyvernmark.100.a:0 "My dear Ishtara, I will love you until my dying breath."
  
  wyvernmark.101.t:0 "Scars"
- wyvernmark.101.d:0 "I rarely get the opportunity to see Ishtara beneath her robes. Even in bed, she is remarkably modest. Still, over these years, I've seen enough.\n Her skin is marred with horrendous scars."
- wyvernmark.101.a:0 "The world will know our daughter."
+ wyvernmark.101.d:0 "I rarely get the opportunity to see Ishtara beneath her robes. Even in bed, she is remarkably modest. Still, over these years, I've seen enough. Her skin is marred with horrendous scars.\n\nThey are relics, I believe, of the life she and her 'sisters' lived on the other side of the Divenhal. Reminders of the wanton and inexcusable cruelties of the gnolls, a race the gods should never have allowed to exist.\n\nMost prominent of her scars is a pair of wide pus-filled gashes running down her back, from her shoulders to her waist. She always refused to let me look at them, so it is only from our embraces that I know the extent of her injuries.\n\nWhen first I noticed those scars, I declared that I would sail down to Akasik and slay the beasts myself! She only smiled in reply.\n\nThat was years ago. Now, our eldest daughter Asturia is thirteen, and today marks her debut into public life.\n\nI"ve ordered the finest dress for her, and although she insists on wearing the same gloves and veil her mother does, she looks as if a true princess has come to grace this backwater realm of Wyvernmark.\n\nShe greeted the visiting dignitaries with grace far beyond her years, and even when a boorish man lifted her veil to sneak in a kiss, she told him off with such propriety and authority, I was almost ready to abdicate and declare her Margravine on the spot!\n\nHold on, when he lifted her veil, for just the briefest moment... Were those scars I saw on her back? Scars almost identical to her mother's?"
+ wyvernmark.101.a:0 "No, I must be imagining things."
  
- wyvernmark.102.t:0 "She is my world"
- wyvernmark.102.d:0 "When preparing for Tia's debut, I insisted that her peers - girls of her age, not Ishtara's handmaidens - help her get dressed for the event."
- wyvernmark.102.a:0 "Live on, my daughter"
+ wyvernmark.102.t:0 "A Gift from a Loving Wife"
+ wyvernmark.102.d:0 "If the slavers who took her were human, perhaps they may have only clipped her flight feathers. That way she would have been able to keep her pride, even if robbed of her flight.\n\nIn a sense, it was fortunate, then, that it was gnolls who enslaved her instead.\n\nIshtara may have worn a habit, but she was no nun. Her sisters in 'The Convent' worshipped no god. They were birds who had migrated from the south to build a nest in these mountains. 'Stonewings,' they were called, although all her sisters now lacked any visible wings. It was fate's penchant for irony that allowed them to survive -- the cruelty of those ravenous beasts who enslaved them was the only reason they were now able to pass themselves off as an eccentric group of human women.\n\nTheir grudge against the gnolls was obvious, but it was the humans who truly earned Ishtara's ire. For centuries, her people have lived in harmony alongside the humans of Akasik, but every last one of those smoothskin land-walkers only averted their eyes as the gnolls paraded her and her sisters through the streets in chains. It should have come as no surprise -- humans have always been the most treacherous race. Were it not for the humans and their 'heroes,' the Stonewings would still soar the skies over the mighty Godshield Mountains, living according to the ways of the Old Hunt!\n\nYet, when the lord of this backwater fiefdom asked for her hand in marriage, Ishtara did not refuse him. She did not love him, not at all. Nor was she forced into the arrangement. No, she hated him and all his people, and this marriage was her way of revenge.\n\nPerhaps poor Roger might have felt it strange that she only ever bore him daughters, but it was far too late for him to do anything about it. Their eldest, Asturia -- sheared of her wings at birth to maintain the masquerade -- would soon be coming of age.\n\nTonight, Ishtara will enter the lord's chambers as she always had, and she will expose her secret. Roger will know that the woman he married is a monster. He will know his bloodline will only live on through monsters."
+ wyvernmark.102.a:0 "And he will take those secrets to the grave."
  
  wyvernmark.103.t:0 "First of Her Name"
  wyvernmark.103.d:0 "Today is the day.\n\nToday, I will take my father's throne and wield the ceremonial mace as Asturia I, rightful Margravine of Wyvernmark. The first of my kind to rule in Western Cannor since the days of Beastbane. Yet, amid all the festivities, my hand reaches to the skin on my back.\n\nThe scars, the stumps of a limb I never knew. I was never meant to rule; I was meant to fly.\n\nFor all my life, I have cursed my mother and the handmaidens who stole the sky from me. I spurned them. Shouted at them. Made preparations to run away from the castle and join an adventuring band.\n\nWhen I was caught halfway out the door, my mother took me to watch a parade hosted in honor of our recent victory over the gnolls. Images of Beastbane abounded as effigies of gnolls, orcs, goblins, and -- yes -- harpies were beaten and burned in the festivities.\n\n'See how they hate you. See how they wish you dead. These are your people.' On that day, my mother leaned in close, her lips brushing against my ears as she whispered. 'You will rule over them, and your daughters will one day rule over all of Castan's people. Do not mourn what I have stolen, for you will fly far higher than some paltry wings could ever take you.'\n\n'Let others wage war,' she said."
  wyvernmark.103.a:0 "You, harpy Asturia, marry."
+ 
+ wyvernmark.104.t:0 "The Long Game"
+ wyvernmark.104.d:0 ""
+ wyvernmark.104.a:0 ""
+ 
+ wyvernmark.105.t:0 "A New Kind of Roost"
+ wyvernmark.105.d:0 ""
+ wyvernmark.105.a:0 ""
+ 
+ wyvernmark.106.t:0 ""
+ wyvernmark.106.d:0 ""
+ wyvernmark.106.a:0 ""
+ 
+ wyvernmark.107.t:0 "He Who Fights Monsters"
+ wyvernmark.107.d:0 ""
+ wyvernmark.107.a:0 ""
+ 
+ wyvernmark.200.t:0 "Backwater no More"
+ wyvernmark.200.d:0 "For centuries, Wyvernmark has been regarded as an irrelevant stretch of mountains on the far edges of the Empire. You would be hard-pressed to find anyone in Anbencost who could even identify it on a map.\n\nNo longer.\n\nSince the Convent took power, Wyvernmark has grown to eclipse its historic overlords in Verne. Now, when [Root.Monarch.GetName] enters the hall of the Imperial Palace, everyone turns to look. They do not know that a monster walks among them, but they will learn to fear [Root.Monarch.GetHerHim] all the same.\n\nToday, [Root.Monarch.GetSheHe] has but one demand for the diet -- A title. A title worthy of Wyvernmark's new status.\n\nNo more shall it be regarded as a common Margravate."
+ wyvernmark.200.a:0 "From today onwards, it is an Arch-Margravate."
 
+ #200 events - part 2
+ #300 events - part 3
+ #400 events - unique mechanics
  wyvernmark.400.t:0 "An Empty Bed"
  wyvernmark.400.d:0 "The Honorable Baron Blimpleston is a good man. Every day he rides out of the castle to meet with his peasants, and every night he comes back to embrace his loving wife. His life is truly the ideal of how a Cannorian noble should live.\n\nOh no! What's this!? Poor Baron Blimpleston returns home after a long day of caring for his subjects only to find his beautiful wife has succumbed to a sudden and tragic illness! However shall he recover?\n\nFortunately, a spritely young maid from Wyvernmark had recently come to his castle and is more than willing to provide him comfort in these trying times.\n\nFunny how they always seem to be in just the right place whenever tragedy strikes."
  wyvernmark.400.a:0 "I'm sorry for your loss"
+ #500 events - Disaster
+ #900 events - Final Boss
+ #1000 - capstone
  
+ #00 events - Flavor events
+ wyvernmark.2.t:0 "Necessary Sacrifices"
+ wyvernmark.2.d:0 "There is a fireplace in the hatchery. When the first cracks appear in the shell, a veiled sister dutifully takes a pair of shears and sterilizes them above the flame.\n\nThe mother is confined to her room when her child is ready to hatch. She wails and pounds against the locked door, but no one pays her any mind. This is normal.\n\nWithout a word, the sister lifts the hatchling out of her egg. Before the hatchling can even take her first breath, her nascent wings are severed from her back and placed on a tray. One by one, the sister removes each claw and talon then plucks each remaining body feather.\n\nBloodied and crying, the child is handed to a waiting assistant who wraps her in bandages and takes her away. After a week of recovery, the child will be returned to her mother and only then could the mother return to her husband.\n\nNot even the gnolls would have considered such cruelties -- For all their malice and ferocity, the gnolls are perhaps too hateful to conceive of such a thing. One does not cause harm on such an industrial scale unless they believe it is right.\n\nBut it is right. Every sister is confident in that belief.\n\nEvery member of The Convent must travel here to deliver. No exceptions will be permitted. No outsiders will be admitted. All know that a single misstep will mean the eradication of their race at the hands of the foolish and vindictive humans -- the people of Castan.\n\nTo have their revenge, the harpies must destroy who they are."
+ wyvernmark.2.a:0 "One can only hope they forget the pain."
+ 
+ #Mechanics
  crypto_harpy_reform:0 "Cryptoharpy Matriarchy"
  crypto_harpy_reform_desc:0 "Our country is ruled by a flock of harpies, but the rest of the world doesn't have to know that. By paying careful attention to what she wears and how she acts, our Matriarch can walk the halls of any royal court in Cannor like any other noble lady. \n\nA shame, however, that our wings would give us away."
- crypto_harpy_opinion:0 "Totally not harpies"
+ #Government names
+ MARGRAVATE:0 "Margravate"
+ ARCH-MARGRAVATE:0 "Arch-Margravate"
+ MARGRAVE:0 "Margrave"
+ MARGRAVINE:0 "Margravine"
+ ARCH-MARGRAVE:0 "Arch-Margrave"
+ ARCH-MARGRAVINE:0 "Arch-Margravine"
+ MARGRAVE-CONSORT:0 "Margrave-Consort"
+ ARCHMARGRAVE-CONSORT:0 "Archmargrave-Consort"
+ 
+ crypto_harpy_opinion:0 "Totally Not Harpies"
  crypto_harpy_monst_opinion:0 "Humans?"
+ 
+ #modifiers
+ A3A_the_convent:0 "The Convent"
+ a3a_vernman_auxiliaries:0 "Vernman Auxiliaries"
+ a3a_fortified_mountains:0 "Fortified Mountains"
+ A3A_bronze_wings:0 "Riding on Bronze Wings"
+ A3A_flying_wives:0 "Wives on Wyverns"
+ A3A_terrestrial_roost:0 "Terrestrial Roost"
+ A3A_anbennarians_in_name:0 "Anbennarians in Name"\
+ A3A_arch_margravine:0 "Arch-Margravines of Wyvernmark"
