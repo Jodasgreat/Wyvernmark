@@ -6,6 +6,7 @@
  A3A_defend_the_mountains_desc:0 "The fortress at Arca Sur has long guarded the Empire's Southeastern frontier. It has served us well, but were it to fall, all of Wyvernmark would fall with it. We must plan for defense in depth and construct another bastion in the mountains."
  A3A_deal_with_adv_title:0 "Deal with the Adventurers"
  A3A_deal_with_adv_desc:0 "The Verneman people have a proud tradition of adventuring. The most decorated among them have recorded countless kills on beasts and monsters -- including our fellow harpies.\n\nWhile many in our new administration are wary of their attitude towards 'monsters,' we cannot deny that the aid of these adventurers is indispensible in keeping the peace and guarding our frontier. We must find a way to integrate the adventurers into our administration without letting them catch on to our secret."
+ A3A_deal_with_adv_tt:0 "Enables the §YHuman Adventurers§! estate."
  A3A_persuade_adventurers_title:0 "Persuade the Adventurers"
  A3A_persuade_adventurers_desc:0 "As the Verneman adventurers become more integrated in our administration, we must find a way to enure their loyalty… and their silence."
  A3A_those_who_fly_title:0 "Those who Fly for Us"
@@ -33,6 +34,7 @@
  A3A_New_Dynasty_desc:0 "With our new ruler coming of age, Wyvernmark enters a new era. Henceforth, this land will be ruled by a dynasty of a different character. Yet, for the common people, nothing will change. They will notice nothing.\n\nThey should notice nothing."
  A3A_wyvern_nest_title:0 "The Wyverns' Nest"
  A3A_wyvern_nest_desc:0 "Thus far, the flock has lived in secret among the humans of Wyvernmark. This was fine when our numbers were small, but as the flock expands the risk of detection skyrockets.\n\nWe should take advantage of the majestic mountains around Bronzewing Hall to establish a refuge away from the prying eyes of human society. There, our daughters need not fear the threat of detection, nor the corrupting influence of human men."
+ A3A_wyvern_nest_tt:0 "§CEvent Insight:§!\nWe will make improvements to all existing §Yroosts§!."
  A3A_imperial_court_title:0 "In the Imperial Court"
  A3A_imperial_court_desc:0 "Our ambitions do not stop here at the Empire's frontier. We must establish our presence as an integral member of the Empire of Anbennar. Should we attain the backing of one of the Empire's foremost noble houses, we will find it far easier to garner the respect we deserve."
  A3A_queen_of_frontier_title:0 "Queen of the Frontier"
@@ -152,9 +154,26 @@
  wyvernmark.2.d:0 "There is a fireplace in the hatchery. When the first cracks appear in the shell, a veiled sister dutifully takes a pair of shears and sterilizes them above the flame.\n\nThe mother is confined to her room when her child is ready to hatch. She wails and pounds against the locked door, but no one pays her any mind. This is normal.\n\nWithout a word, the sister lifts the hatchling out of her egg. Before the hatchling can even take her first breath, her nascent wings are severed from her back and placed on a tray. One by one, the sister removes each claw and talon then plucks each remaining body feather.\n\nBloodied and crying, the child is handed to a waiting assistant who wraps her in bandages and takes her away. After a week of recovery, the child will be returned to her mother and only then could the mother return to her husband.\n\nNot even the gnolls would have considered such cruelties -- For all their malice and ferocity, the gnolls are perhaps too hateful to conceive of such a thing. One does not cause harm on such an industrial scale unless they believe it is right.\n\nBut it is right. Every sister is confident in that belief.\n\nEvery member of The Convent must travel here to deliver. No exceptions will be permitted. No outsiders will be admitted. All know that a single misstep will mean the eradication of their race at the hands of the foolish and vindictive humans -- the people of Castan.\n\nTo have their revenge, the harpies must destroy who they are."
  wyvernmark.2.a:0 "One can only hope they forget the pain."
  
+ #ideas
+ A3A_legacy_of_the_wyvern_riders:0 "Legacy of the Wyvern Riders"
+ A3A_legacy_of_the_wyvern_riders_desc:0 "As with our brothers in Verne, the legacy of Armoc Vernid, the first Wyvern King, lives on in the hills of Wyvernmark. However, while the Wyvern Riders may be a distant and glorious memory to the burghers of Verne, here that history is much more real.\n\nThe last surviving Wyverns make their roosts here in our hills, and the Margrave of Wyvernmark is chiefly tasked with ensuring these endangered populations are protected from prospective poachers. To that end, Wyvernmark seeks the aid of adventurers and mercenaries from Verne and beyond to guard the mountains from threats both external and internal."
+ A3A_sarhaly_advice:0 "Sarhaly Advice"
+ A3A_sarhaly_advice_desc:0 ""
+ A3A_gates_of_divenhal:0 "Gates of the Divenhal"
+ A3A_gates_of_divenhal_desc:0 ""
+ A3A_in_high_halls:0 "In High Halls"
+ A3A_in_high_halls_desc:0 ""
+ A3A_soft_words:0 "Soft Words"
+ A3A_soft_words_desc:0 ""
+ A3A_handpicked_warriors:0 "Handpicked Warriors"
+ A3A_handpicked_warriors_desc:0 ""
+ A3A_into_the_fold:0 "Into the Fold"
+ A3A_into_the_fold_desc:0 ""
+ 
  #Mechanics
  crypto_harpy_reform:0 "Cryptoharpy Matriarchy"
  crypto_harpy_reform_desc:0 "Our country is ruled by a flock of harpies, but the rest of the world doesn't have to know that. By paying careful attention to what she wears and how she acts, our Matriarch can walk the halls of any royal court in Cannor like any other noble lady. \n\nA shame, however, that our wings would give us away."
+ estate_human_adventurers:0 "Human Adventurers"
  #Government names
  MARGRAVATE:0 "Margravate"
  ARCH-MARGRAVATE:0 "Arch-Margravate"
@@ -177,3 +196,14 @@
  A3A_terrestrial_roost:0 "Terrestrial Roost"
  A3A_anbennarians_in_name:0 "Anbennarians in Name"\
  A3A_arch_margravine:0 "Arch-Margravines of Wyvernmark"
+ A3A_entranced_adv:0 "Entranced Adventurers"
+ a3a_enchanted_adventurers:0 "Enchanted Sellswords"
+ 
+ #mercs
+ merc_vernman_auxiliaries:0 "Vernman Auxiliaries"
+ merc_mountain_company:0 "Mountain Company"
+ merc_anbennarian_host:0 "Anbennarian Host"
+ merc_entranced_adventurers:0 "Entranced Adventurers"
+ merc_wyvern_rider_company:0 "Wyvern Rider Company"
+ merc_daughters_of_stone:0 "Daughters of Stone"
+ 

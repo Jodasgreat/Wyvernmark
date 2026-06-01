@@ -1,0 +1,97 @@
+#special merc companies for wyvernmark
+merc_vernman_auxiliaries = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0.4
+	cavalry_cap = 6
+	home_province = 292
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_or_was_tag = { tag = A3A }
+		has_country_flag = A3A_vernman_mercs
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}
+merc_mountain_company = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0.4
+	cavalry_cap = 6
+	home_province = 292
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_or_was_tag = { tag = A3A }
+		has_country_flag = A3A_mountain_mercs
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}
+merc_anbennarian_host = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0.4
+	cavalry_cap = 6
+	home_province = 292
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_or_was_tag = { tag = A3A }
+		has_country_flag = A3A_monst_adv
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}
+merc_entranced_adventurers = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0.4
+	cavalry_cap = 6
+	home_province = 292
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_or_was_tag = { tag = A3A }
+		has_country_flag = A3A_entranced_adv
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}
+merc_wyvern_rider_company = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0.4
+	cavalry_cap = 6
+	home_province = 292
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_or_was_tag = { tag = A3A }
+		has_country_flag = A3A_wyvern_mercs
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}
+merc_daughters_of_stone = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0.4
+	cavalry_cap = 6
+	home_province = 292
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_or_was_tag = { tag = A3A }
+		has_country_flag = A3A_harpy_mercs
+	}
+	cost_modifier = 0.9
+	modifier = {
+		shock_damage_received = -0.1
+		land_morale = 0.1
+	}
+}

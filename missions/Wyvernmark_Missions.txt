@@ -18,6 +18,7 @@ A3A_first_slot = {
 				name = a3a_vernman_auxiliaries
 				duration = -1
 			}
+			set_country_flag = A3A_vernman_mercs
 		}
 	}
 }
@@ -50,6 +51,7 @@ A3A_first_slot_p2 = {
 				name = a3a_fortified_mountains
 				duration = 3650
 			}
+			set_country_flag = A3A_mountain_mercs
 		}
 	}
 	A3A_deal_with_adv = {
@@ -64,7 +66,8 @@ A3A_first_slot_p2 = {
 			crown_land_share = 20
 		}
 		effect = {
-			set_country_flag = monst_adv
+			custom_tooltip = A3A_deal_with_adv_tt
+			set_country_flag = A3A_monst_adv
 		}
 	}
 	A3A_persuade_adventurers = {
@@ -78,12 +81,20 @@ A3A_first_slot_p2 = {
 		}
 		effect = {
 			add_estate_loyalty_modifier = {
-				estate = estate_adventurers
-				desc = Entranced_adv
+				estate = estate_human_adventurers
+				desc = A3A_entranced_adv
 				loyalty = 10
 			}
 			country_event = {
 				id = wyvernmark.107
+			}
+			set_country_flag = A3A_enthralled_mercs
+			hidden_effect = {
+				add_estate_loyalty_modifier = {
+					estate = estate_adventurers
+					desc = A3A_entranced_adv
+					loyalty = 10
+				}
 			}
 		}
 	}
@@ -109,6 +120,7 @@ A3A_first_slot_p2 = {
 				name = A3A_bronze_wings
 				duration = -1
 			}
+			set_country_flag = A3A_wyvern_mercs
 		}
 	}
 	A3A_wives_on_wyverns = {
@@ -190,6 +202,7 @@ A3A_second_slot_p2 = {
 				skill = 2
 				discount = yes
 			}
+			set_country_flag = A3A_harpy_mercs
 		}
 	}
 	A3A_anti_monster = {
@@ -330,6 +343,7 @@ A3A_third_slot_p2 = {
 			country_event = {
 				id = wyvernmark.105
 			}
+			custom_tooltip = A3A_wyvern_nest_tt
 		}
 	}
 	A3A_imperial_court = {

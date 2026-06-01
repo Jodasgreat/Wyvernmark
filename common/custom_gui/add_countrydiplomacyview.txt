@@ -1,0 +1,156 @@
+custom_button = {
+	name = A3A_kill_consort_action
+	tooltip = A3A_kill_consort_action_tt
+	potential = {
+		FROM = {
+			has_country_flag = can_kill_consort
+		}
+	}
+	trigger = {
+		has_spy_network_from = {
+			who = FROM
+			value = 50
+		}
+		custom_trigger_tooltip = {
+			tooltip = A3A_can_kill_consort_tt
+			NOT = { has_country_modifier = A3A_killed_consort_cooldown }
+		}
+	}
+	effect = {
+		FROM = {
+			# lose 50 spy network
+			add_spy_network_from = {
+				who = FROM
+				value = -50
+			}
+			# kill_consort
+			remove_consort = yes
+			random_list = {
+				70 = { #Grateful for your support
+					country_event = {
+						id = wyvernmark.401
+					}
+				}
+				30 = { #They find out
+					country_event = {
+						id = wyvernmark.402
+					}
+				}
+			}
+		}
+		ROOT = {
+			# Cooldown
+			hidden_effect = {
+				add_country_modifier = {
+					name = A3A_killed_consort_cooldown
+					duration = 1825 # 5 years
+					hidden = yes
+				}
+			}
+		}
+	}
+}
+custom_button = {
+	name = A3A_kill_heir_action
+	tooltip = A3A_kill_heir_action_tt
+	potential = {
+		FROM = {
+			has_country_flag = can_kill_heir
+		}
+	}
+	trigger = {
+		has_spy_network_from = {
+			who = FROM
+			value = 50
+		}
+		custom_trigger_tooltip = {
+			tooltip = A3A_can_kill_heir_tt
+			NOT = { has_country_modifier = A3A_killed_heir_cooldown }
+		}
+	}
+	effect = {
+		FROM = {
+			# lose 50 spy network
+			add_spy_network_from = {
+				who = FROM
+				value = -50
+			}
+			# kill_consort
+			remove_consort = yes
+			random_list = {
+				50 = { #Grateful for your support
+					country_event = {
+						id = wyvernmark.404
+					}
+				}
+				50 = { #They find out
+					country_event = {
+						id = wyvernmark.405
+					}
+				}
+			}
+		}
+		ROOT = {
+			# Cooldown
+			hidden_effect = {
+				add_country_modifier = {
+					name = A3A_killed_heir_cooldown
+					duration = 1825 # 5 years
+					hidden = yes
+				}
+			}
+		}
+	}
+}
+custom_button = {
+	name = A3A_kill_ruler_action
+	tooltip = A3A_kill_ruler_action_tt
+	potential = {
+		FROM = {
+			has_country_flag = can_kill_ruler
+		}
+	}
+	trigger = {
+		has_spy_network_from = {
+			who = FROM
+			value = 50
+		}
+		custom_trigger_tooltip = {
+			tooltip = A3A_can_kill_ruler_tt
+			NOT = { has_country_modifier = A3A_killed_ruler_cooldown }
+		}
+	}
+	effect = {
+		FROM = {
+			# lose 50 spy network
+			add_spy_network_from = {
+				who = FROM
+				value = -50
+			}
+			# kill_consort
+			remove_consort = yes
+			random_list = {
+				30 = { #Grateful for your support
+					country_event = {
+						id = wyvernmark.404
+					}
+				}
+				70 = { #They find out
+					country_event = {
+						id = wyvernmark.405
+					}
+				}
+			}
+		}
+		ROOT = {
+			# Cooldown
+			hidden_effect = {
+				add_country_modifier = {
+					name = A3A_killed_ruler_cooldown
+					duration = 1825 # 5 years
+					hidden = yes
+				}
+			}
+		}
+	}
+}

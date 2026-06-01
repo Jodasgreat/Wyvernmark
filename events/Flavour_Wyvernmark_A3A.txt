@@ -147,7 +147,38 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		
+		name = wyvernmark.105.a
+		every_owned_province = {
+			if = {
+				limit = {
+					OR = {
+						has_province_modifier = harpy_roost_mod_roost_flourishing_active
+						has_province_modifier = harpy_roost_mod_roost_fledgling
+					}
+				}
+				add_province_modifier = {
+					name = A3A_terrestrial_roost
+					duration = -1
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.107
+	title = wyvernmark.107.t
+	desc = wyvernmark.107.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.107.a
+		add_country_modifier = {
+			name = a3a_enchanted_adventurers
+			duration = -1
+		}
 	}
 }
 country_event = {
@@ -160,6 +191,39 @@ country_event = {
 	
 	option = {
 		name = wyvernmark.200.a
+		if = {
+			limit = { NOT = { is_elector = yes } } 
+			if = {
+				limit = { any_subject_country = { is_elector = yes } } 
+				random_subject_country = {
+					limit = { is_elector = yes } 
+					elector = no
+				}
+				elector = yes
+			}
+			else_if = {
+				limit = { A11 = { is_elector = yes } } 
+				A11 = { elector = no } 
+				elector = yes
+			}
+			else = {
+				random_elector = {
+					limit = {
+						NOT = {
+							tag = A46
+							tag = A31
+							tag = A45
+							tag = A85
+							tag = A73
+							tag = A12
+						}
+						ai = yes
+					}
+					elector = no
+				}
+				elector = yes
+			}
+		}
 		set_government_rank_scripted_effect = { rank = 2 }
 		add_country_modifier = { 
 			name = A3A_arch_margravine

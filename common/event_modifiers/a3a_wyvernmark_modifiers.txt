@@ -27,4 +27,9 @@ A3A_arch_margravine = {
 	prestige = 1
 	diplomatic_reputation = 1
 }
-
+a3a_enchanted_adventurers = {
+	mercenary_cost = -0.25
+}
+A3A_killed_ruler_cooldown = {}
+A3A_killed_heir_cooldown = {}
+A3A_killed_consort_cooldown = {}
