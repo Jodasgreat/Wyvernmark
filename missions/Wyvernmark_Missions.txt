@@ -825,6 +825,9 @@ A3A_third_slot_p3 = {
 			}
 			escann_superregion = {
 				type = all
+				NOT = {
+					region = deepwoods_region
+				}
 				owner = {
 					OR = {
 						is_part_of_hre = yes
