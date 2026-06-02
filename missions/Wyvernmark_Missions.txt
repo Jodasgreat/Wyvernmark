@@ -197,11 +197,10 @@ A3A_second_slot_p2 = {
 			}
 		}
 		effect = {
-			define_advisor = {
-				culture = stonewing_harpy
-				skill = 2
-				discount = yes
+			country_event = {
+				id = wyvernmark.106
 			}
+			custom_tooltip = A3A_harpy_adv_tt
 			set_country_flag = A3A_harpy_mercs
 		}
 	}
