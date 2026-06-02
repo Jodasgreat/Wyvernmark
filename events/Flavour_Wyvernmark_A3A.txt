@@ -229,6 +229,7 @@ country_event = {
 			name = A3A_arch_margravine
 			duration = -1
 		}
+		set_country_flag = A3A_can_integrate
 	}
 }
 country_event = {
@@ -242,6 +243,7 @@ country_event = {
 	
 	option = {
 		name = wyvernmark.400.a
+		custom_tooltip = wyvernmark.400.tt
 		set_country_flag = can_kill_consort
 	}
 }

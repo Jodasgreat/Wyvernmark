@@ -1,0 +1,124 @@
+
+country_decisions = {
+
+	bring_into_fold = {
+		major = yes
+		color = { 195 160 20 }
+		potential = {
+			is_or_was_tag = { tag = A3A }
+			has_country_flag = A3A_can_integrate
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = CAN_USE_ESTATE_ACTION_EVERY_7300
+				NOT = {
+					has_country_modifier = bring_into_fold_cooldown
+				}
+			}
+			any_ally = {
+				ruler_culture = stonewing_harpy
+				is_subject = no
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = A3A_bring_into_fold_tt
+			random_ally = {
+				limit = {
+					ruler_culture = stonewing_harpy
+					is_subject = no
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+				ROOT = { create_union = PREV }
+			}
+			hidden_effect = {
+				add_country_modifier = { name = bring_into_fold_cooldown hidden = yes duration = 7300 }
+			}
+		}
+	}
+
+	A3A_kill_consort = {
+		major = yes
+		color = { 195 160 20 }
+		potential = {
+			is_or_was_tag = { tag = A3A }
+			has_country_flag = can_kill_consort
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				is_female = no
+				has_consort = yes
+				NOT = { consort_culture = stonewing_harpy }
+				is_subject = no
+				marriage_with = ROOT
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		allow = {
+			any_known_country = {
+				is_female = no
+				has_consort = yes
+				NOT = { consort_culture = stonewing_harpy }
+				is_subject = no
+				marriage_with = ROOT
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = A3A_kill_consort_tt
+			random_known_country = {
+				limit = {
+					is_female = no
+					has_consort = yes
+					NOT = { consort_culture = stonewing_harpy }
+					is_subject = no
+					marriage_with = ROOT
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				define_consort = {
+					country_of_origin = ROOT
+					culture = ROOT
+					female = yes
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -50
+				}
+			}
+		}
+	}
+	A3A_harpy_highlighter_consort = {
+		potential = {
+			is_or_was_tag = { tag = A3A }
+			has_country_flag = can_kill_consort
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				consort_culture = stonewing_harpy
+			}
+		}
+		allow = {
+			
+		}
+		effect = {
+			custom_tooltip = A3A_harpy_highlighter_tt
+		}
+	}
+}

@@ -145,6 +145,7 @@
  wyvernmark.400.t:0 "An Empty Bed"
  wyvernmark.400.d:0 "The Honorable Baron Blimpleston is a good man. Every day he rides out of the castle to meet with his peasants, and every night he comes back to embrace his loving wife. His life is truly the ideal of how a Cannorian noble should live.\n\nOh no! What's this!? Poor Baron Blimpleston returns home after a long day of caring for his subjects only to find his beautiful wife has succumbed to a sudden and tragic illness! However shall he recover?\n\nFortunately, a spritely young maid from Wyvernmark had recently come to his castle and is more than willing to provide him comfort in these trying times.\n\nFunny how they always seem to be in just the right place whenever tragedy strikes."
  wyvernmark.400.a:0 "I'm sorry for your loss"
+ wyvernmark.400.tt:0 "Enables a decision allowing you to §RKill the consort§! of a country you have a §Yroyal marriage§! and §Y50 spy network§! in."
  #500 events - Disaster
  #900 events - Final Boss
  #1000 - capstone
@@ -174,6 +175,17 @@
  crypto_harpy_reform:0 "Cryptoharpy Matriarchy"
  crypto_harpy_reform_desc:0 "Our country is ruled by a flock of harpies, but the rest of the world doesn't have to know that. By paying careful attention to what she wears and how she acts, our Matriarch can walk the halls of any royal court in Cannor like any other noble lady. \n\nA shame, however, that our wings would give us away."
  estate_human_adventurers:0 "Human Adventurers"
+ bring_into_fold_title:0 "Bring Our Sisters into the Fold"
+ bring_into_fold_desc:0 "It is fine and well that one of our sisters sits upon another nation's throne, but if left alone too long, she may start to believe she actually has any power of her own. We must remind our sisters that the Matriarch's will is absolute, and that all that's yours is the Matriarch's."
+ A3A_bring_into_fold_tt:0 "Form a §Ypersonal union§! with a random country that meets the requirements."
+ A3A_kill_consort_title:0 "Assassinate a Consort"
+ A3A_kill_consort_desc:0 "Shank that bitch."
+ A3A_kill_consort_tt:0 "§RKill the consort§! of a random country that meets the requirements."
+ A3A_harpy_highlighter_consort_title:0 "Highlight Stonewing Harpy Consorts"
+ A3A_harpy_highlighter_consort_desc:0 "We make sure to keep tabs on our sisters who have married into foreign nobility."
+ A3A_harpy_highlighter_tt:0 "Click to refresh."
+ 
+ 
  #Government names
  MARGRAVATE:0 "Margravate"
  ARCH-MARGRAVATE:0 "Arch-Margravate"
