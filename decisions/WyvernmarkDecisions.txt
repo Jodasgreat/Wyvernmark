@@ -76,6 +76,7 @@ country_decisions = {
 					value = 50
 				}
 			}
+			dip_power = 100
 		}
 		effect = {
 			custom_tooltip = A3A_kill_consort_tt
@@ -91,16 +92,27 @@ country_decisions = {
 						value = 50
 					}
 				}
-				define_consort = {
-					country_of_origin = ROOT
-					culture = ROOT
-					female = yes
+				random_list = {
+					70 = {
+						define_consort = {
+							country_of_origin = ROOT
+							culture = ROOT
+							female = yes
+						}
+					}
+					30 = {
+						country_event = {
+							id = wyvernmark.401 #kill consort and send event back
+							FROM = ROOT
+						}
+					}
 				}
 				add_spy_network_from = {
 					who = ROOT
 					value = -50
 				}
 			}
+			add_dip_power = -100
 		}
 	}
 	A3A_harpy_highlighter_consort = {
@@ -152,6 +164,7 @@ country_decisions = {
 					value = 80
 				}
 			}
+			dip_power = 200
 		}
 		effect = {
 			custom_tooltip = A3A_kill_heir_tt
@@ -167,16 +180,26 @@ country_decisions = {
 						value = 80
 					}
 				}
-				define_consort = {
-					country_of_origin = ROOT
-					culture = ROOT
-					female = yes
+				random_list = {
+					50 = {
+						define_heir = {
+							culture = ROOT
+							female = yes
+						}
+					}
+					50 = {
+						country_event = {
+							id = wyvernmark.411 #kill heir and send event back
+							FROM = ROOT
+						}
+					}
 				}
 				add_spy_network_from = {
 					who = ROOT
 					value = -80
 				}
 			}
+			add_dip_power = -200
 		}
 	}
 	A3A_harpy_highlighter_heir = {
@@ -202,57 +225,64 @@ country_decisions = {
 		color = { 195 160 20 }
 		potential = {
 			is_or_was_tag = { tag = A3A }
-			has_country_flag = can_kill_heir
+			has_country_flag = can_kill_ruler
 		}
 		provinces_to_highlight = {
 			is_capital = yes
 			owner = {
 				heir_culture = stonewing_harpy
-				NOT = { heir_culture = stonewing_harpy }
+				NOT = { ruler_culture = stonewing_harpy }
 				is_subject = no
-				marriage_with = ROOT
 				has_spy_network_from = {
 					who = ROOT
-					value = 80
+					value = 100
 				}
 			}
 		}
 		allow = {
 			any_known_country = {
-				has_heir = yes
-				NOT = { heir_culture = stonewing_harpy }
+				heir_culture = stonewing_harpy
+				NOT = { ruler_culture = stonewing_harpy }
 				is_subject = no
-				marriage_with = ROOT
 				has_spy_network_from = {
 					who = ROOT
-					value = 80
+					value = 100
 				}
 			}
+			dip_power = 300
 		}
 		effect = {
 			custom_tooltip = A3A_kill_heir_tt
 			random_known_country = {
 				limit = {
-					is_female = no
-					has_consort = yes
-					NOT = { consort_culture = stonewing_harpy }
+					heir_culture = stonewing_harpy
+					NOT = { ruler_culture = stonewing_harpy }
 					is_subject = no
-					marriage_with = ROOT
 					has_spy_network_from = {
 						who = ROOT
-						value = 80
+						value = 100
 					}
 				}
-				define_consort = {
-					country_of_origin = ROOT
-					culture = ROOT
-					female = yes
+				random_list = {
+					30 = {
+						define_ruler = {
+							culture = ROOT
+							female = yes
+						}
+					}
+					70 = {
+						country_event = {
+							id = wyvernmark.421 #kill ruler and send event back
+							FROM = ROOT
+						}
+					}
 				}
 				add_spy_network_from = {
 					who = ROOT
-					value = -80
+					value = -100
 				}
 			}
+			add_dip_power = -300
 		}
 	}
 }
