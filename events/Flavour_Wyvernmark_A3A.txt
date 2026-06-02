@@ -165,6 +165,26 @@ country_event = {
 	}
 }
 country_event = {
+	id = wyvernmark.106
+	title = wyvernmark.106.t
+	desc = wyvernmark.106.d
+	picture = wihgfx_FEMALE_GENERAL_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.106.a
+		define_advisor = {
+			culture = stonewing_harpy
+			female = no
+			type = army_organizer
+			skill = 2
+			discount = yes
+		}
+	}
+}
+country_event = {
 	id = wyvernmark.107
 	title = wyvernmark.107.t
 	desc = wyvernmark.107.d
