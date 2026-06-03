@@ -411,6 +411,38 @@ country_event = {
 		add_prestige = -30
 	}
 }
+#500 events - pigeons and doves disaster
+country_event = { #disaster start
+	id = wyvernmark.500
+	title = wyvernmark.500.t
+	desc = wyvernmark.500.d
+	picture = HARPY_TOWN_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+	effect = {
+		custom_tooltip = wyvernmark.500.tt
+		set_country_flag = pigeons_doves_start
+	}
+}
+country_event = { #disaster end, unlock part 3
+	id = wyvernmark.599
+	title = wyvernmark.599.t
+	desc = wyvernmark.599.d
+	picture = HARPY_TOWN_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		
+	}
+	effect = {
+		custom_tooltip = wyvernmark.599.tt
+		set_country_flag = pigeons_doves_resolved
+		swap_non_generic_missions = yes
+	}
+}
 # 00 events - hidden mechanics
 country_event = {
 	id = wyvernmark.1
