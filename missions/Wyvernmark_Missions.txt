@@ -873,7 +873,7 @@ A3A_first_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = doves_pigeons_resolved
+		#has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_rebuilding_trust = {
 		icon = mission_noble_council
@@ -882,12 +882,34 @@ A3A_first_slot_p3 = {
 			A3A_wings
 			A3A_wives_on_wyverns
 		}
+		trigger = {
+			NOT = { has_country_modifier = monstrous_nation }
+		}
+		effect = {
+			add_country_modifier = [	
+				name = A3A_earned_trust #diprep, prestige, libdes
+			}
+		}
 	}
 	A3A_combined_wings = {
 		icon = mission_alliances
 		position = 12
 		required_missions = {
 			A3A_rebuilding_trust
+		}
+		trigger = {
+			high_tolerance_elven_race_trigger = yes
+			high_tolerance_human_race_trigger = yes
+			high_tolerance_half_elven_race_trigger = yes
+			num_of_special_units = {
+				value = 40
+				type = cavalry
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				A3A_combined_arms_cav
+			}
 		}
 	}
 }
@@ -898,7 +920,7 @@ A3A_second_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = doves_pigeons_resolved
+		#has_country_flag = pigeons_doves_resolved
 		#has_country_flag = pigeons
 	} 
 	A3A_own_wings = {
@@ -907,12 +929,40 @@ A3A_second_slot_p3 = {
 		required_missions = {
 			A3A_wings
 		}
+		trigger = {
+			custom_tooltip = A3A_own_wings_tt
+			has_country_flag = pigeons
+			adm_tech = 10
+			estate_influence = {
+				estate = estate_adventurers
+				influence = 50
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 50
+			}	
+		}
+		effect = {
+			unlock_artificery = yes
+			country_event = {
+				id = wyvernmark.301 #substitute wings invention
+			}
+		}
 	}
 	A3A_mid_flight_tinkering = {
 		icon = mission_industrial_forging
 		position = 12
 		required_missions = {
 			A3A_own_wings
+		}
+		trigger = { #add req for 3 inventions
+			estate_influence = {
+				estate = estate_artificers
+				influence = 50
+			}
+			has_country_modifier = A3A_substitute_wings
+		}
+		effect = { #artificery capacity +10, research speed -6m
 		}
 	}
 }
@@ -923,7 +973,7 @@ A3A_third_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = doves_pigeons_resolved
+		#has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_wings = {
 		icon = mission_harpy_diplomats
@@ -932,7 +982,8 @@ A3A_third_slot_p3 = {
 			A3A_pigeons_and_doves
 		}
 		trigger = {
-			has_country_flag = doves_pigeons_resolved
+			custom_tooltip = A3A_wings_tt
+			has_country_flag = pigeons_doves_resolved
 		}
 		effect = {
 			add_country_modifier = {
@@ -947,12 +998,53 @@ A3A_third_slot_p3 = {
 		required_missions = {
 			A3A_wings
 		}
+		trigger = {
+			OR = {
+				hre_reform_passed = anbennar_internal_divisions
+				hre_reform_passed = anbennar_enable_magisterium_governance
+			}
+			diplomatic_reputation = 10
+			NOT = {
+				any_country = {
+					capital_scope = {
+						continent = europe
+					}
+					army_size = ROOT
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.420
+			}
+		}	
 	}
 	A3A_the_west = {
 		icon = mission_white_tower
 		position = 12
 		required_missions = {
 			A3A_extraterritorial
+		}
+		trigger = {
+			OR = {
+				A01 = {
+					is_subject_of = ROOT
+					NOT = { liberty_desire = 50}
+				}
+				A01 = { exists = no }
+			}
+			owns_all_provinces = {
+				region = lencenor_region
+			}
+		}
+		effect = {
+			inherit = A01
+			hidden_effect = {
+				country_event = {
+					id = wyvernmark.900 #The rise of Beastbane Reborn
+					days = 30
+				}
+			}
 		}
 	}
 	A3A_flying_high = {
@@ -1018,7 +1110,7 @@ A3A_fourth_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = doves_pigeons_resolved
+		#has_country_flag = pigeons_doves_resolved
 		#has_country_flag = doves
 	} 
 	A3A_swaying_powerful = {
@@ -1043,7 +1135,7 @@ A3A_fifth_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = doves_pigeons_resolved
+		#has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_the_hills = {
 		icon = mission_potosi_silver
