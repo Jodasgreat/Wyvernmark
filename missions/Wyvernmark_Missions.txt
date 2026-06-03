@@ -681,11 +681,9 @@ A3A_fourth_slot_p2 = {
 				}
 			}
 			hidden_effect = {
-				A13 = {
-					country_event = {
-						id = wyvernmark.211
-						days = 365
-					}
+				country_event = {
+					id = wyvernmark.211
+					days = 365
 				}
 			}
 		}
@@ -788,10 +786,22 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_queen_of_frontier
 		}
+		trigger = {
+			calc_true_if = {
+				amount = 3
+				all_known_country = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+		}
 		effect = {
 			country_event = {
 				id = wyvernmark.410
 			}
+			custom_tooltip = A3A_feather_pillows_tt
 		}
 	}
 	A3A_securing_empire = {
@@ -800,6 +810,19 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_dove_throne
 		}
+		the_borders_region = {
+			type = all
+			OR = {
+				is_part_of_hre = yes
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
+		}
+		effect = {
+			dostanor_region = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	A3A_ancient_home = {
 		icon = up_the_adige
@@ -807,12 +830,39 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_securing_empire
 		}
+		trigger = {
+			dostanor_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = wyvernmark.212
+			}
+			custom_tooltip = A3A_ancient_home_tt
+		}
 	}
 	A3A_path_east = {
 		icon = mission_coromandel_expansion
 		position = 9
 		required_missions = {
 			A3A_ancient_home
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 20
+				region = daravans_folly_region
+				region = ourdia_region
+			}
+		}
+		effect = {
+			bahar_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
