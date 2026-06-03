@@ -365,6 +365,9 @@ A3A_third_slot_p2 = {
 			add_country_modifier = {
 				name = A3A_anbennarians_in_name
 			}
+			businor_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	A3A_queen_of_frontier = {
@@ -388,6 +391,7 @@ A3A_third_slot_p2 = {
 			country_event = {
 				id = wyvernmark.200
 			}
+			custom_tooltip = A3A_queen_of_frontier_tt
 		}
 	}
 	A3A_city_in_the_hills = {
@@ -564,6 +568,7 @@ A3A_fourth_slot_p2 = {
 			country_event = {
 				id = wyvernmark.400
 			}
+			custom_tooltip = A3A_handmaidens_handiwork_tt
 		}
 	}
 	A3A_dove_throne = {
@@ -572,6 +577,19 @@ A3A_fourth_slot_p2 = {
 		required_missions = {
 			A3A_queen_of_frontier
 		}
+		trigger = {
+			is_emperor = yes
+		}
+		effect = {
+			add_prestige = 30
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+			add_country_modifier = {
+				name = A3A_new_empresses
+				duration = -1
+			}
+		}
 	}
 	A3A_dove_matriarch = {
 		icon = secure_our_rule
@@ -579,12 +597,97 @@ A3A_fourth_slot_p2 = {
 		required_missions = {
 			A3A_dove_throne
 		}
+		trigger = {
+			all_electors = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+			all_electors = {
+				OR = {
+					tag = ROOT
+					marriage_with = ROOT
+					ruler_culture = stonewing_harpy
+					NOT = { government = monarchy }
+					NOT = { 
+						culture_group = anbennarian
+						culture_group = alenic
+						culture_group = lencori
+					}
+				}
+			}
+		}
+		effect = {
+			every_elector = {
+				country_event = {
+					id = wyvernmark.210
+				}
+			}
+			custom_tooltip = A3A_dove_matriarch_tt
+		}
 	}
 	A3A_heart_of_power = {
 		icon = imperial_ascendancy
 		position = 8
 		required_missions = {
 			A3A_dove_matriarch
+		}
+		trigger = {
+			hre_reform_passed = anbennar_reinforce_imperial_frontiers
+			A01 = {
+				OR = {
+					exists = no
+					is_subject = yes
+					AND = {
+						marriage_with = ROOT
+						OR = {
+							has_spy_network_from = {
+								who = ROOT
+								value = 50
+							}
+							trust = {
+								who = ROOT
+								value = 50
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			
+			if = {
+				limit = {
+					A01 = { exists = no }
+				}
+				lencenor_region = {
+					add_permanent_claim = ROOT
+				}
+			}
+			else = {
+				add_casus_belli = {
+					type = cb_claim_throne
+					target = A01
+				}	
+				lencenor_region = {
+					add_permanent_claim = A01
+				}
+			}
+			hidden_effect = {
+				A13 = {
+					country_event = {
+						id = wyvernmark.211
+						days = 365
+					}
+				}
+			}
 		}
 	}
 }
