@@ -1119,12 +1119,32 @@ A3A_fourth_slot_p3 = {
 		required_missions = {
 			A3A_wings
 		}
+		triggers = {
+			custom_tooltip = A3A_swaying_powerful_tt
+			has_country_flag = doves
+			dip_tech = 10
+			estate_influence = {
+				estate = estate_mages
+				influence = 50
+			}
+			estate_influence = {
+				estate = estate_clergy
+				influence = 50
+			}
+		}
+		effects = { #enchantment exp modifier, mana recovery
+		}
 	}
 	A3A_persuading_masses = {
 		icon = bavarian_cultural_dominance
 		position = 12
 		required_missions = {
 			A3A_swaying_powerful
+		}
+		trigger = {
+			is_estate_enchantment_level_2_minimum = yes
+		}
+		effect = { #spell to decrease libdes
 		}
 	}
 }
@@ -1144,12 +1164,53 @@ A3A_fifth_slot_p3 = {
 			A3A_wings
 			A3A_path_east
 		}
+		trigger = {
+			calc_true_if = {
+				amount = 15
+				bahar_region = {
+					type = all
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
+			}
+		}
+		effect = {
+			harpy_hills_region = {
+				add_permanent_claim = ROOT
+			}
+			every_known_country = {
+				culture_group = harpy
+				capital_scope = {
+					superregion = bulwar_superregion
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = cb_claim_throne
+					months = 480
+				}
+			}
+			#allow royal marriages
+		}
 	}
 	A3A_final_queendom = {
 		icon = mission_heunthume
 		position = 12
 		required_missions = {
 			A3A_the_hills
+		}
+	}
+	trigger = { #660 - heunthume
+		harpy_hills_region = {
+					type = all
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
+			}
+		}
+	}
+	effect = {
+		country_event = {
+			id = wyvernmark.302
 		}
 	}
 }
