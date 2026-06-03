@@ -302,10 +302,6 @@ country_event = {
 	option = {
 		name = wyvernmark.402.a
 		custom_tooltip = wyvernmark.402.tt
-		add_opinion = {
-				who = FROM
-				value = -50
-		}
 		add_prestige = -10
 	}
 }
@@ -335,7 +331,7 @@ country_event = {
 	option = {
 		name = wyvernmark.411.a
 		custom_tooltip = wyvernmark.411.tt
-		remove_heir = yes
+		remove_heir = {}
 		add_casus_belli = {
 			target = FROM
 			type = cb_insult
@@ -359,10 +355,6 @@ country_event = {
 	option = {
 		name = wyvernmark.412.a
 		custom_tooltip = wyvernmark.412.tt
-		add_opinion = {
-				who = FROM
-				value = -80
-		}
 		add_prestige = -15
 	}
 }
@@ -416,10 +408,6 @@ country_event = {
 	option = {
 		name = wyvernmark.422.a
 		custom_tooltip = wyvernmark.422.tt
-		add_opinion = {
-				who = FROM
-				value = -100
-		}
 		add_prestige = -30
 	}
 }
