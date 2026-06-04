@@ -6,7 +6,7 @@
  A3A_fill_the_ranks_tt:0 "Unlocks the §YVernman Auxiliaries§! mercenary company."
  A3A_defend_the_mountains_title:0 "Defend the Mountains"
  A3A_defend_the_mountains_desc:0 "The fortress at Arca Sur has long guarded the Empire's Southeastern frontier. It has served us well, but were it to fall, all of Wyvernmark would fall with it. We must plan for defense in depth and construct another bastion in the mountains."
- custom_tooltip = A3A_defend_the_mountains_tt:0 "Unlocks the §YMountain Company§! mercenary company."
+ A3A_defend_the_mountains_tt:0 "Unlocks the §YMountain Company§! mercenary company."
  A3A_deal_with_adv_title:0 "Deal with the Adventurers"
  A3A_deal_with_adv_desc:0 "The Verneman people have a proud tradition of adventuring. The most decorated among them have recorded countless kills on beasts and monsters -- including our fellow harpies.\n\nWhile many in our new administration are wary of their attitude towards 'monsters,' we cannot deny that the aid of these adventurers is indispensible in keeping the peace and guarding our frontier. We must find a way to integrate the adventurers into our administration without letting them catch on to our secret."
  A3A_deal_with_adv_tt:0 "Enables the §YHuman Adventurers§! estate."
