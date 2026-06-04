@@ -364,6 +364,7 @@ A3A_third_slot_p2 = {
 		effect = {
 			add_country_modifier = {
 				name = A3A_anbennarians_in_name
+				duration = -1
 			}
 			businor_region = {
 				add_permanent_claim = ROOT
@@ -598,7 +599,7 @@ A3A_fourth_slot_p2 = {
 			A3A_dove_throne
 		}
 		trigger = {
-			all_electors = {
+			all_elector = {
 				OR = {
 					has_opinion = {
 						who = ROOT
@@ -610,16 +611,18 @@ A3A_fourth_slot_p2 = {
 					}
 				}
 			}
-			all_electors = {
+			all_elector = {
 				OR = {
 					tag = ROOT
 					marriage_with = ROOT
 					ruler_culture = stonewing_harpy
 					NOT = { government = monarchy }
 					NOT = { 
-						culture_group = anbennarian
-						culture_group = alenic
-						culture_group = lencori
+						OR = {
+							culture_group = anbennarian
+							culture_group = alenic
+							culture_group = lencori
+						}
 					}
 				}
 			}
@@ -810,12 +813,14 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_dove_throne
 		}
-		the_borders_region = {
-			type = all
-			OR = {
-				is_part_of_hre = yes
-				owned_by = ROOT
-				owned_by_subject_of = ROOT
+		trigger = {
+			the_borders_region = {
+				type = all
+				OR = {
+					is_part_of_hre = yes
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
 			}
 		}
 		effect = {
@@ -873,7 +878,7 @@ A3A_first_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = pigeons_doves_resolved
+		has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_rebuilding_trust = {
 		icon = mission_noble_council
@@ -888,6 +893,7 @@ A3A_first_slot_p3 = {
 		effect = {
 			add_country_modifier = [	
 				name = A3A_earned_trust #diprep, prestige, libdes
+				duration = -1
 			}
 		}
 	}
@@ -908,7 +914,8 @@ A3A_first_slot_p3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				A3A_combined_arms_cav
+				name = A3A_combined_arms_cav
+				duration = -1
 			}
 		}
 	}
@@ -920,8 +927,8 @@ A3A_second_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = pigeons_doves_resolved
-		#has_country_flag = pigeons
+		has_country_flag = pigeons_doves_resolved
+		has_country_flag = pigeons
 	} 
 	A3A_own_wings = {
 		icon = mission_balloon
@@ -930,7 +937,7 @@ A3A_second_slot_p3 = {
 			A3A_wings
 		}
 		trigger = {
-			custom_tooltip = A3A_own_wings_tt
+			#custom_tooltip = A3A_own_wings_tt
 			has_country_flag = pigeons
 			adm_tech = 10
 			estate_influence = {
@@ -973,7 +980,7 @@ A3A_third_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = pigeons_doves_resolved
+		has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_wings = {
 		icon = mission_harpy_diplomats
@@ -982,7 +989,7 @@ A3A_third_slot_p3 = {
 			A3A_pigeons_and_doves
 		}
 		trigger = {
-			custom_tooltip = A3A_wings_tt
+			#custom_tooltip = A3A_wings_tt
 			has_country_flag = pigeons_doves_resolved
 		}
 		effect = {
@@ -1079,7 +1086,9 @@ A3A_third_slot_p3 = {
 			escann_superregion = {
 				type = all
 				NOT = {
-					region = deepwoods_region
+					region = west_deepwoods_region
+					region = east_deepwoods_region
+					region = deepwoods_portal_region
 				}
 				owner = {
 					OR = {
@@ -1110,8 +1119,8 @@ A3A_fourth_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = pigeons_doves_resolved
-		#has_country_flag = doves
+		has_country_flag = pigeons_doves_resolved
+		has_country_flag = doves
 	} 
 	A3A_swaying_powerful = {
 		icon = mission_among_the_great_powers
@@ -1119,8 +1128,8 @@ A3A_fourth_slot_p3 = {
 		required_missions = {
 			A3A_wings
 		}
-		triggers = {
-			custom_tooltip = A3A_swaying_powerful_tt
+		trigger = {
+			#custom_tooltip = A3A_swaying_powerful_tt
 			has_country_flag = doves
 			dip_tech = 10
 			estate_influence = {
@@ -1132,7 +1141,7 @@ A3A_fourth_slot_p3 = {
 				influence = 50
 			}
 		}
-		effects = { #enchantment exp modifier, mana recovery
+		effect = { #enchantment exp modifier, mana recovery
 		}
 	}
 	A3A_persuading_masses = {
@@ -1155,7 +1164,7 @@ A3A_fifth_slot_p3 = {
 	has_country_shield = yes
 	potential = { 
 		tag = A3A
-		#has_country_flag = pigeons_doves_resolved
+		has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_the_hills = {
 		icon = mission_potosi_silver
@@ -1179,9 +1188,11 @@ A3A_fifth_slot_p3 = {
 				add_permanent_claim = ROOT
 			}
 			every_known_country = {
-				culture_group = harpy
-				capital_scope = {
-					superregion = bulwar_superregion
+				limit = {
+					culture_group = harpy
+					capital_scope = {
+						superregion = bulwar_superregion
+					}
 				}
 				reverse_add_casus_belli = {
 					target = ROOT
@@ -1198,19 +1209,17 @@ A3A_fifth_slot_p3 = {
 		required_missions = {
 			A3A_the_hills
 		}
-	}
-	trigger = { #660 - heunthume
-		harpy_hills_region = {
-					type = all
-					owned_by = ROOT
-					owned_by_subject_of = ROOT
-				}
+		trigger = { #660 - heunthume
+			harpy_hills_region = {
+				type = all
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
 			}
 		}
-	}
-	effect = {
-		country_event = {
-			id = wyvernmark.302
+		effect = {
+			country_event = {
+				id = wyvernmark.302
+			}
 		}
 	}
 }

@@ -252,6 +252,8 @@ country_event = {
 		set_country_flag = A3A_can_integrate
 	}
 }
+
+#400 events - unique mechanics
 country_event = {
 	id = wyvernmark.400
 	title = wyvernmark.400.t
@@ -419,10 +421,8 @@ country_event = { #disaster start
 	picture = HARPY_TOWN_eventPicture
 	is_triggered_only = yes
 
-	trigger = {
-		
-	}
-	effect = {
+	
+	option = {
 		custom_tooltip = wyvernmark.500.tt
 		set_country_flag = pigeons_doves_start
 	}
@@ -434,10 +434,7 @@ country_event = { #disaster end, unlock part 3
 	picture = HARPY_TOWN_eventPicture
 	is_triggered_only = yes
 
-	trigger = {
-		
-	}
-	effect = {
+	option = {
 		custom_tooltip = wyvernmark.599.tt
 		set_country_flag = pigeons_doves_resolved
 		swap_non_generic_missions = yes
