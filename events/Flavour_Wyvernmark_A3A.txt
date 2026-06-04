@@ -201,8 +201,9 @@ country_event = {
 		}
 	}
 }
+#200 events - part 2
 country_event = {
-	id = wyvernmark.200
+	id = wyvernmark.200 #end of part 1
 	title = wyvernmark.200.t
 	desc = wyvernmark.200.d
 	picture = wihgfx_FEMALE_RULER.eventPicture
@@ -252,7 +253,96 @@ country_event = {
 		set_country_flag = A3A_can_integrate
 	}
 }
+country_event = {
+	id = wyvernmark.201 #return of the stonewings
+	title = wyvernmark.201.t
+	desc = wyvernmark.201.d
+	picture = muslimgfx_FORT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
 
+	option = {
+		name = wyvernmark.201.a
+		akasik_region = {
+			type = all
+			limit = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+			cede_province = ROOT
+			change_culture = stonewing_harpy
+			change_religion = ROOT
+			add_province_modifier = {
+				name = A3A_stonewing_akasik_mp
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.202 #lessons from sarhal
+	title = wyvernmark.202.t
+	desc = wyvernmark.202.d
+	picture = muslimgfx_CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.202.a
+		add_country_modifier = {
+			name = A3A_sarhaly_rule
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.203 #in the academy
+	title = wyvernmark.203.t
+	desc = wyvernmark.203.d
+	picture = MAGES_ESTATE_MAD_eventPicture.dds 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #she stands out too much, make her drop out!
+		name = wyvernmark.203.a
+		small_increase_of_human_tolerance_effect = yes
+		add_country_modifier = {
+			name = A3A_integrated_academies
+			duration = 7300
+		}
+	}
+	option = { #let her continue her studies!
+		name = wyvernmark.203.b
+		small_decrease_of_human_tolerance_effect = yes
+		define_advisor = {
+			female = yes
+			culture = stonewing_harpy
+			type = court_mage
+			skill = 2
+			discount = yes
+			name = "Tia"
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.204 #turn PUs into harpies
+	title = wyvernmark.204.t
+	desc = wyvernmark.204.d
+	picture = muslimgfx_CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.204.a
+		add_country_modifier = {
+			name = A3A_convent_administration
+			duration = -1
+		}
+	}
+}
 #400 events - unique mechanics
 country_event = {
 	id = wyvernmark.400
