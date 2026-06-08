@@ -109,6 +109,8 @@ country_event = {
 			free = yes
 		}
 		add_government_reform = crypto_harpy_reform
+		set_country_flag = cannot_demonsterise
+		set_country_flag = disable_racial_mil_swap_flag
 	}
 }
 country_event = {
@@ -199,6 +201,12 @@ country_event = {
 			name = a3a_enchanted_adventurers
 			duration = -1
 		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.600
+				days = 730
+			}
+		}
 	}
 }
 #200 events - part 2
@@ -273,8 +281,10 @@ country_event = {
 				}
 			}
 			cede_province = ROOT
+			add_core = ROOT
 			change_culture = stonewing_harpy
 			change_religion = ROOT
+			add_devastation = 30
 			add_province_modifier = {
 				name = A3A_stonewing_akasik_mp
 				duration = -1
@@ -341,6 +351,161 @@ country_event = {
 			name = A3A_convent_administration
 			duration = -1
 		}
+	}
+}
+country_event = {
+	id = wyvernmark.205 #remove IA malus
+	title = wyvernmark.205.t
+	desc = wyvernmark.205.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.205.a
+		add_country_modifier = {
+			name = A3A_competent_administrators
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.210 #accept harpies or else
+	title = wyvernmark.210.t
+	desc = wyvernmark.210.d
+	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.210.a
+		define_consort = {
+			culture = stonewing_harpy
+			female = yes
+		}
+		define_heir = {
+			culture = stonewing_harpy
+			female = yes
+		}
+	}
+	option = {
+		name = wyvernmark.210.b
+		reverse_add_casus_belli = {
+			target = FROM
+			type = cb_claim_throne
+			months = 120
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.211 #gawed angy
+	title = wyvernmark.211.t
+	desc = wyvernmark.211.d
+	picture = KINGS_CHOICE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.211.a
+		A13 = {
+			add_historical_rival = ROOT
+			add_country_modifier = {
+				name = A3A_gawed_angy
+				duration = 10950
+			}
+		}
+		alenic_frontier_region = {
+			add_core = A13
+		}
+		small_country_region = {
+			add_core = A13
+		}
+	}
+}
+country_event = {
+	id = wyvernmark.212 #ending the legacy of beastbane
+	title = wyvernmark.212.t
+	desc = wyvernmark.212.d
+	picture = HARPY_TOWN_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.212.a
+		blackwoods_area = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = stonewing_harpy
+			change_religion = ROOT
+			add_devastation = 10
+		}
+		baldostan_area = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = stonewing_harpy
+			change_religion = ROOT
+			add_devastation = 10
+		}
+		436 = {
+			add_province_modifier = {
+				name = harpy_roost_mod_roost_flourishing_active
+				duration = -1
+			}
+		}
+		daravans_folly_region = {
+			add_permanent_claim = ROOT
+		}
+		ourdia_region = {
+			add_permanent_claim = ROOT
+		}
+		add_prestige = 50
+	}
+}
+
+#300 events - part 3
+country_event = {
+	id = wyvernmark.301 #substitute wings invention
+	title = wyvernmark.301.t
+	desc = wyvernmark.301.d
+	picture = HARPY_IMMORTAL_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = wyvernmark.301.a
+		set_country_flag = A3A_substitute_wings_research
+	}
+}
+country_event = {
+	id = wyvernmark.302 #end the queendom
+	title = wyvernmark.302.t
+	desc = wyvernmark.302.d
+	picture = HARPY_TOWN_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #The final queendom is dead.
+		name = wyvernmark.302.a
+		add_country_modifier = {
+			name = A3A_overcome_queendom
+			duration = -1
+		}
+		custom_tooltip = wyvernmark.302.att
+	}
+	option = { #We *are* the final queendom!
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = wyvernmark.302.ttt
+				has_country_flag = doves
+			}
+		}
+		name = wyvernmark.302.b
+		set_capital = 660 
+		change_primary_culture = firanyan_harpy
+		bulwar_proper_region = {
+			add_permanent_claim = ROOT
+		}
+		custom_tooltip = wyvernmark.302.btt
 	}
 }
 #400 events - unique mechanics
@@ -510,11 +675,282 @@ country_event = { #disaster start
 	desc = wyvernmark.500.d
 	picture = HARPY_TOWN_eventPicture
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	
 	option = {
+		name = wyvernmark.500.a
 		custom_tooltip = wyvernmark.500.tt
 		set_country_flag = pigeons_doves_start
+		set_country_flag = pigeons
+	}
+	option = {
+		name = wyvernmark.500.b
+		custom_tooltip = wyvernmark.500.tt
+		set_country_flag = pigeons_doves_start
+		set_country_flag = doves
+	}
+}
+country_event = { #disaster proper kicks off
+	id = wyvernmark.501
+	title = wyvernmark.501.t
+	desc = wyvernmark.501.d
+	picture = CONSORT_DOING_BADLY_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.501.a
+		remove_government_reform = crypto_harpy_reform
+		add_stability = -3
+		remove_country_modifier = A3A_the_convent
+		remove_country_modifier = A3A_anbennarians_in_name
+		remove_country_modifier = A3A_convent_administration
+		remove_country_modifier = A3A_competent_administrators
+		clr_country_flag = cannot_demonsterise
+		start_demonsterization_effect = yes
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = pigeons }
+				country_event = {
+					id = wyvernmark.510
+					days = 60
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = doves }
+				country_event = {
+					id = wyvernmark.520
+					days = 60
+				}
+			}
+			every_subject_country = {
+				limit = { has_reform = crypto_harpy_reform }
+				remove_government_reform = crypto_harpy_reform
+			}
+		}
+	}
+}
+country_event = { #pigeons debuffs
+	id = wyvernmark.510
+	title = wyvernmark.510.t
+	desc = wyvernmark.510.d
+	picture = HARPY_IMMORTAL_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.510.a
+		add_disaster_modifier = {
+			name = A3A_pigeons_debuff
+			duration = -1
+			disaster = pigeons_and_doves
+		}
+		every_subject_country = {
+			limit = { culture_group = harpy }
+			add_liberty_desire = 50
+		}
+		custom_tooltip = wyvernmark.510.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_province_modifier = harpy_roost_mod_roost_flourishing_active }
+				add_province_modifier = {
+					name = A3A_rebellious_roost
+					duration = -1
+				}
+			}
+			every_owned_province = {
+				limit = { has_province_modifier = harpy_roost_mod_roost_fledgling }
+				add_province_modifier = {
+					name = A3A_rebellious_fledg_roost
+					duration = -1 
+				}
+			}
+			country_event = {
+				id = wyvernmark.511
+				days = 180
+			}
+		}
+	}
+}
+country_event = { #pigeons buffs
+	id = wyvernmark.511
+	title = wyvernmark.511.t
+	desc = wyvernmark.511.d
+	picture = DIVERSE_COURT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.511.a
+		add_dip_power = 100
+		add_adm_power = 100
+		decrease_monstrous_50 = yes
+		add_country_modifier = {
+			name = A3A_pigeons_bonus
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.512
+				days = 365
+			}
+		}
+	}
+}
+country_event = { #pigeons revolt
+	id = wyvernmark.512
+	title = wyvernmark.512.t
+	desc = wyvernmark.512.d
+	picture = HARPY_IMMORTAL_FIGHT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.512.a
+		set_country_flag = A3A_pigeons_war_start
+		every_subject_country = {
+			limit = { ruler_culture = stonewing_harpy }
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+}
+country_event = { #victory
+	id = wyvernmark.513
+	title = wyvernmark.513.t
+	desc = wyvernmark.513.d
+	picture = HARPY_IMMORTAL_FIGHT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	
+	option = {
+		name = wyvernmark.513.a
+		
+	}
+}
+country_event = { #defeat
+	id = wyvernmark.514
+	title = wyvernmark.514.t
+	desc = wyvernmark.514.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.514.a
+	}
+}
+country_event = { #doves debuffs
+	id = wyvernmark.520
+	title = wyvernmark.520.t
+	desc = wyvernmark.520.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.520.a
+		add_disaster_modifier = {
+			name = A3A_doves_debuff
+			duration = -1
+			disaster = pigeons_and_doves
+		}
+		every_subject_country = {
+			limit = { NOT = { culture_group = harpy } }
+			add_liberty_desire = 50
+		}
+		custom_tooltip = wyvernmark.520.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = { NOT = { culture_group = harpy } }
+				add_province_modifier = {
+					name = A3A_rebellious_subjects
+					duration = -1
+				}
+			}
+			country_event = {
+				id = wyvernmark.521
+				days = 180
+			}
+		}
+	}
+}
+country_event = { #doves buffs
+	id = wyvernmark.521
+	title = wyvernmark.521.t
+	desc = wyvernmark.521.d
+	picture = HARPY_IMMORTAL_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.521.a
+		clear_racial_military = yes
+		add_mil_power = 200
+		set_global_flag = A3A_harpization
+		add_government_reform = harpy_matriarchy_reform
+		racial_mil_change_military_effect = { RACE = harpy }
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.522
+				days = 365
+			}
+		}
+	}
+}
+country_event = { #doves revolt
+	id = wyvernmark.522
+	title = wyvernmark.522.t
+	desc = wyvernmark.522.d
+	picture = HARPY_IMMORTAL_FIGHT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.522.a
+		set_country_flag = A3A_pigeons_war_start
+		every_neighbor_country = {
+			limit = { NOT = { culture_group = harpy } }
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_civ_vs_monster
+			}
+		}
+	}
+}
+country_event = { #harpy agitators
+	id = wyvernmark.560
+	title = wyvernmark.560.t
+	desc = wyvernmark.560.d
+	picture = HARPY_IMMORTAL_FIGHT_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = wyvernmark.560.a
+		random_owned_province = {
+			limit = { culture_group = harpy }
+			create_revolt = 2
+		}
+	}
+}
+country_event = { #human agitators
+	id = wyvernmark.561
+	title = wyvernmark.561.t
+	desc = wyvernmark.561.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = wyvernmark.561.a
+		random_owned_province = {
+			limit = { NOT = { culture_group = harpy } }
+			create_revolt = 2
+		}
 	}
 }
 country_event = { #disaster end, unlock part 3
@@ -522,12 +958,371 @@ country_event = { #disaster end, unlock part 3
 	title = wyvernmark.599.t
 	desc = wyvernmark.599.d
 	picture = HARPY_TOWN_eventPicture
-	is_triggered_only = yes
+	fire_only_once = yes
 
+	trigger = {
+		has_country_flag = A3A_pigeons_war_start
+		is_at_war = no
+	}
 	option = {
-		custom_tooltip = wyvernmark.599.tt
+		end_disaster = pigeons_and_doves
 		set_country_flag = pigeons_doves_resolved
 		swap_non_generic_missions = yes
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = A3A_rebellious_roost
+				remove_province_modifier = A3A_rebellious_fledg_roost
+			}
+		}
+	}
+}
+# 600 events - flavor
+country_event = { #try to tame the wyverns
+	id = wyvernmark.600
+	title = wyvernmark.600.t
+	desc = wyvernmark.600.d
+	picture = DRAGON_FLY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = wyvernmark.600.a
+		country_event = {
+			id = wyvernmark.601
+			days = 3650
+		}
+	}
+}
+country_event = { #tamed the wyverns
+	id = wyvernmark.601
+	title = wyvernmark.601.t
+	desc = wyvernmark.601.d
+	picture = DRAGON_ATTACK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = wyvernmark.601.a
+		set_country_flag = A3A_wyverns_found
+	}
+}
+# 900 events - final boss
+country_event = { #portend, starts disaster ticking
+	id = wyvernmark.900
+	title = wyvernmark.900.t
+	desc = wyvernmark.900.d
+	picture = PROTESTANT_GREAT_REFORMER_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.900.a
+		add_stability = -1
+		set_country_flag = beastbane_reborn_start
+	}
+}
+country_event = { #start of disaster - castanor spawns
+	id = wyvernmark.901
+	title = wyvernmark.901.t
+	desc = wyvernmark.901.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.901.a
+		trialmount_area = {
+			cede_province = B32
+			add_core = B32
+			change_culture = castanorian
+			add_random_development = 50
+		}
+		B32 = {
+			add_country_modifier = {
+				name = A3A_castanor_buffs
+				duration = -1
+			}
+			add_historical_rival = ROOT
+			define_ruler = {
+				name = "Beastbane II 'Castan'"
+				mil = 6
+			}
+			add_ruler_personality = legendary_conqueror_personality
+			add_ruler_personality = malevolent_personality
+			add_ruler_personality = cruel_personality
+		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.902
+				days = 458
+			}
+		}
+	}
+}
+country_event = { #castonath
+	id = wyvernmark.902
+	title = wyvernmark.902.t
+	desc = wyvernmark.902.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.902.a
+		castonath_area = {
+			cede_province = B32
+			add_core = B32
+		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.903
+				days = 458
+			}
+		}
+	}
+}
+country_event = { #white walls
+	id = wyvernmark.903
+	title = wyvernmark.903.t
+	desc = wyvernmark.903.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.903.a
+		white_walls = {
+			add_core = B32
+			owner = {
+				country_event = {
+					id = wyvernmark.910
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.904
+				days = 458
+			}
+		}
+	}
+}
+country_event = { #inner_castanor
+	id = wyvernmark.904
+	title = wyvernmark.904.t
+	desc = wyvernmark.904.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.904.a
+		inner_castanor_region = {
+			add_core = B32
+			owner = {
+				country_event = {
+					id = wyvernmark.910
+				}
+			}
+		}
+		hidden_effect ={
+			country_event = {
+				id = wyvernmark.905
+				days = 458
+			}
+		}
+	}
+}
+country_event = { #south_castanor
+	id = wyvernmark.905
+	title = wyvernmark.905.t
+	desc = wyvernmark.905.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.905.a
+		south_castanor_region = {
+			add_core = B32
+			owner = {
+				country_event = {
+					id = wyvernmark.910
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.906
+				days = 458
+			}
+		}
+	}
+}
+country_event = { #west_castanor
+	id = wyvernmark.906
+	title = wyvernmark.906.t
+	desc = wyvernmark.906.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.906.a
+		west_castanor_region = {
+			add_core = B32
+			owner = {
+				country_event = {
+					id = wyvernmark.910
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = wyvernmark.907
+				days = 1825
+			}
+		}
+	}
+}
+country_event = { #war
+	id = wyvernmark.907
+	title = wyvernmark.907.t
+	desc = wyvernmark.907.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.907.a
+		set_country_flag = A3A_castanor_war
+		B32= {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_civ_vs_monster
+			}
+		}
+	}
+}
+country_event = { #gib clay
+	id = wyvernmark.910
+	title = wyvernmark.910.t
+	desc = wyvernmark.910.d
+	picture = BYZANTINE_EMPEROR_eventPicture
+	is_triggered_only = yes
+	
+	option = { #yes
+		name = wyvernmark.910.a
+		every_owned_province = {
+			limit = { superregion = escann_superregion }
+			cede_province = B32
+			add_core = B32
+		}
+	}
+	option = { #no
+		name = wyvernmark.910.b
+		every_owned_province = {
+			limit = { 
+				AND = {
+					superregion = escann_superregion 
+					NOT = { owned_by = B32 }
+				}
+			}
+			spawn_rebels = {
+				size = 1
+				type = nationalist_rebels
+				separatists_target = B32
+				friend = B32
+			}
+		}
+	}
+}
+country_event = { #win war
+	id = wyvernmark.920
+	title = wyvernmark.920.t
+	desc = wyvernmark.920.d
+	picture = FAILED_REVOLUTION_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = A3A_castanor_war
+		war_score = 100
+		840 = {
+			controller = {
+				NOT = { tag = B32 }
+			}
+		}
+	}
+	option = {
+		name = wyvernmark.920.a
+		B32 = {
+			white_peace = ROOT
+			remove_historical_rival = ROOT
+			add_historical_friend = ROOT
+			remove_country_modifier = A3A_castanor_buffs
+			change_primary_culture = stonewing_harpy
+		}
+		trialmount_area = {
+			change_culture = stonewing_harpy
+		}
+		create_union = B32
+		set_country_flag = slain_the_beast
+		end_disaster = beastbane_reborn
+	}
+}
+country_event = { #rebels in wyvernmark
+	id = wyvernmark.960
+	title = wyvernmark.960.t
+	desc = wyvernmark.960.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = wyvernmark.960.a
+		random_owned_province = {
+			spawn_rebels = {
+				size = 3
+				type = nationalist_rebels
+				separatists_target = B32
+				friend = B32
+			}
+		}
+	}
+}
+country_event = { #rebels in escann
+	id = wyvernmark.961
+	title = wyvernmark.961.t
+	desc = wyvernmark.961.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = wyvernmark.961.a
+		random_province = {
+			limit = { 
+				superregion = escann_superregion
+				NOT = { owned_by = B32 }
+			}
+			spawn_rebels = {
+				size = 3
+				type = nationalist_rebels
+				separatists_target = B32
+				friend = B32
+			}
+		}
+	}
+}
+# 1000 - capstone
+country_event = { 
+	id = wyvernmark.1000
+	title = wyvernmark.1000.t
+	desc = wyvernmark.1000.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = wyvernmark.1000.a
+		treasury = 1
 	}
 }
 # 00 events - hidden mechanics
@@ -633,6 +1428,45 @@ country_event = {
 					modifier = crypto_harpy_monst_opinion
 				}
 			}
+		}
+	}
+}
+#country_event = { #no demonsterization for you
+#	id = wyvernmark.3
+#	title = wyvernmark.3.t
+#	desc = wyvernmark.3.d
+#	picture = NUN_SPY_eventPicture
+#	
+#	trigger = {
+#		has_country_modifier = monstrous_nation
+#		has_country_flag = removing_monstrous
+#		has_reform = crypto_harpy_reform
+#	}
+#	option = {
+#		wyvernmark.3.a
+#		clr_country_flag = removing_monstrous
+#		add_stability = 1
+#		custom_tooltip = wyvernmark.3.tt
+#	}
+#}
+country_event = { #make verne not painful
+	id = wyvernmark.4
+	title = wyvernmark.4.t
+	desc = wyvernmark.4.d
+	picture = COURT_INTRIGUE_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		A33 = {
+			heir_culture = stonewing_harpy
+			ruler_culture = vernman
+			heir_age = 15
+			ai = yes
+		}
+	}
+	option = {
+		A33 = {
+			kill_ruler = yes
 		}
 	}
 }

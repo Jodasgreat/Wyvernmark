@@ -3,4 +3,16 @@ spriteTypes = {
 		name = "GFX_A3A"
 		texturefile = "gfx/flags/A3A.tga"
 	}
+	spriteType = {
+		name = "GFX_disaster_pigeons_and_doves"
+		texturefile = "gfx//interface//disasters//pigeons_and_doves.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_beastbane_reborn"
+		texturefile = "gfx//interface//disasters//beastbane_reborn.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }

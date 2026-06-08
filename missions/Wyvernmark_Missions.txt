@@ -195,9 +195,9 @@ A3A_second_slot_p2 = {
 			A3A_deal_with_adv
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 1
-				has_province_modifier = adventurers_wanted
+			estate_influence = {
+				estate = estate_human_adventurers
+				influence = 60
 			}
 		}
 		effect = {
@@ -531,6 +531,7 @@ A3A_fourth_slot_p2 = {
 			country_event = {
 				id = wyvernmark.104
 			}
+			custom_tooltip = A3A_giving_tribute_tt
 		}
 	}
 	A3A_in_the_family = {

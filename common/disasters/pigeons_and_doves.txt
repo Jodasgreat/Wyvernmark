@@ -3,14 +3,14 @@ pigeons_and_doves = {
 	ended_by_country_breaking_to_rebels = no
 	potential = {
 		tag = A3A
-		NOT = { has_country_flag = pigeons_and_doves_resolved }
-		has_country_flag = pigeons_and_doves_start
+		NOT = { has_country_flag = pigeons_doves_resolved }
+		has_country_flag = pigeons_doves_start
 	}
 
 	
 	
 	can_start = {
-		has_any_disaster = no
+		always = yes
 	}
 	
 	
@@ -25,66 +25,20 @@ pigeons_and_doves = {
 			factor = 1
 			always = yes
 		}
+		modifier = {
+			factor = 3
+			has_country_flag = pigeons
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = doves
+		}
 	}
 	
 	
 	
 	can_end = {
-		custom_trigger_tooltip = {
-			tooltip = aelnar_eliendel_must_not_lead
-			NOT = { has_ruler = Eliendel }
-		}
-		custom_trigger_tooltip = {
-			tooltip = aelnar_put_down_kayd
-			OR = {
-				NOT = { check_variable = { kayd_value = 0 } }
-				AND = {
-					has_country_flag = kayd_revolted
-					Z70 = { exists = no }
-				}
-			}
-		}
-		
-		custom_trigger_tooltip = {
-			tooltip = aelnar_put_down_aelthanas
-			OR = {
-				NOT = { check_variable = { aelthanas_value = 0 } }
-				AND = {
-					has_country_flag = aelthanas_revolted
-					Z71 = { exists = no }
-				}
-			}
-		}
-		
-		custom_trigger_tooltip = {
-			tooltip = aelnar_put_down_sicrheior
-			OR = {
-				NOT = { check_variable = { sicrheior_value = 0 } }
-				AND = {
-					has_country_flag = sicrheior_revolted
-					Z72 = { exists = no }
-				}
-			}
-		}
-		
-		custom_trigger_tooltip = {
-			tooltip = aelnar_put_down_dahvar
-			OR = {
-				NOT = { check_variable = { dahvar_value = 0 } }
-				AND = {
-					has_country_flag = dahvar_revolted
-					Z73 = { exists = no }
-				}
-			}
-		}
-		
-		if = {
-			limit = { has_country_flag = lithiel_revolted }
-			custom_trigger_tooltip = {
-				tooltip = aelnar_put_down_lithiel
-				Z69 = { exists = no }
-			}
-		}
+		has_country_flag = pigeons_doves_resolved
 	}
 	
 
@@ -99,23 +53,19 @@ pigeons_and_doves = {
 		land_morale = -0.15
 		interest = 3
 		global_unrest = 3
-		global_colonial_growth = -100
 		heir_chance = -2
 	}
 	
 	
-	on_start = aelnar.5
-	on_end = aelnar.18
+	on_start = wyvernmark.501
 	
 	on_monthly = {
 		events = {
 		}
 		random_events = { 
-			1020 = 0
-			150 = aelnar.16 #Peasant revolt
-			110 = aelnar.19 #Noble revolt
-			50 = aelnar.86 #Aelthanas followers
-			50 = aelnar.87 #Dahvar followers
+			1000 = 0
+			80 = wyvernmark.560 #human agitators
+			80 = wyvernmark.561 #harpy agitators
 		
 		}
 	}

@@ -45,6 +45,7 @@
  A3A_imperial_court_desc:0 "Our ambitions do not stop here at the Empire's frontier. We must establish our presence as an integral member of the Empire of Anbennar. Should we attain the backing of one of the Empire's foremost noble houses, we will find it far easier to garner the respect we deserve."
  A3A_queen_of_frontier_title:0 "Queen of the Frontier"
  A3A_queen_of_frontier_desc:0 "No longer is Wyvernmark some hilly backwater living in the shadow of Verne. No longer is our land a glorified border fort where adventurers come to play. Wyvernmark is now one of the Empire's most prominent noble domains.\n\nOur titles should reflect our newfound status."
+ A3A_queen_of_frontier_tt:0 "§CEvent Insight:§! We will supplant the position of one of the Empire's Electors."
  A3A_city_in_the_hills_title:0 "City in the Hills"
  A3A_city_in_the_hills_desc:0 "If we hope to be taken seriously as Arch-Margravines, our capital must look the part.\n\nEven now, Bronzewing Hall feels more like a ramshackle camp of adventurers rather than the proud imperial city it ought to be.\n\nWe must draw up a new plan for the city -- wide, clean boulevards lined with proud stone buildings. On one end, our palace; on the other, an imposing new institution of magic that will rival the Magesterium."
  A3A_flock_together_title:0 "Flock Together"
@@ -57,10 +58,12 @@
  # column 4
  A3A_Giving_Tribute_title:0 "Giving Tribute"
  A3A_Giving_Tribute_desc:0 "From the beginning, the Dukes of Verne have been our gracious overlords. They've protected us from incursions and supported us through disasters. It would only be natural for us to offer the hand of one of our lovely court maidens as a show of our loyalty.\n\nThe Duke already has a wife, you say? That sounds like a solveable problem."
+ A3A_giving_tribute_tt:0 "§CEvent Insight:§! We will persuade the Duke of Verne to make one of our sisters his consort."
  A3A_in_the_family_title:0 "All in the Family"
  A3A_in_the_family_desc:0 "We mourn the passing of our liege, the good Duke of Verne. How fortunate we are, then, to have one of our own as his successor.\n\nOf course, we will support the new Duchess, but while she might have a superior title from the Empire's perspective, we must make sure she knows that she is of 'The Convent' first and foremost. Every Sister owes her loyalty to the Matriarch above all else."
  A3A_handmaidens_handiwork_title:0 "Handmaidens' Handiwork"
  A3A_handmaidens_handiwork_desc:0 "Our experience in Verne has taught us valuable lessons when it comes to realizing our ambitions. Placing a harpy on a Cannorian throne is not so simple a matter as sending a marriageable young maiden to their court. If the ruler already has a human wife, our efforts will be for naught.\n\nOf course, we could fix that little problem." 
+ A3A_handmaidens_handiwork_tt:0 "§CEvent Insight:§! We will gain the ability to assassinate the consorts of certain nations."
  A3A_dove_throne_title:0 "A Dove on the Throne"
  A3A_dove_throne_desc:0 "Surely, they would not have called it the 'Dove Throne' if we were not destined to sit upon it."
  A3A_dove_matriarch_title:0 "The Dove Matriarch"
@@ -84,29 +87,29 @@
 
  # Part 3
  A3A_rebuilding_trust_title:0 "Rebuilding Trust"
- A3A_rebuilding_trust_desc:0 ""
+ A3A_rebuilding_trust_desc:0 "After all that drama, we have to make people trust us again."
  A3A_combined_wings_title:0 "Combined Wings"
- A3A_combined_wings_desc:0 ""
+ A3A_combined_wings_desc:0 "Human and harpy can work hand-in-hand in our army now."
  A3A_own_wings_title:0 "Wings of Our Own"
- A3A_own_wings_desc:0 ""
+ A3A_own_wings_desc:0 "artificers have found a way to make new wings. better wings."
  A3A_mid_flight_tinkering_title:0 "Mid-Flight Tinkering"
- A3A_mid_flight_tinkering_desc:0 ""
+ A3A_mid_flight_tinkering_desc:0 "hey, what if I tried this?"
  A3A_wings_title:0 "Wings"
- A3A_wings_desc:0 ""
+ A3A_wings_desc:0 "the disaster is over"
  A3A_extraterritorial_title:0 "Extraterritorial Privileges"
- A3A_extraterritorial_desc:0 ""
+ A3A_extraterritorial_desc:0 "yeah, let's just kill our way to the throne, who can stop us?"
  A3A_the_west_title:0 "Pacifying The West"
- A3A_the_west_desc:0 ""
+ A3A_the_west_desc:0 "lorent works for us now."
  A3A_flying_high_title:0 "Flying High"
- A3A_flying_high_desc:0 ""
+ A3A_flying_high_desc:0 "We have resolved the legacy of the past and built a new, lasting peace with all of Cannor under our wings."
  A3A_swaying_powerful_title:0 "Swaying the Powerful"
- A3A_swaying_powerful_desc:0 ""
+ A3A_swaying_powerful_desc:0 "We have to earn back the trust and loyalty of the aristocrats and burghers across cannor."
  A3A_persuading_masses_title:0 "Persuading the Masses"
- A3A_persuading_masses_desc:0 ""
+ A3A_persuading_masses_desc:0 "Many are unhappy with our rule still. Why don't we simply make them change their minds?"
  A3A_the_hills_title:0 "The Hills"
- A3A_the_hills_desc:0 ""
+ A3A_the_hills_desc:0 "We head east to approach the homeland of the harpies."
  A3A_final_queendom_title:0 "The Final Queendom"
- A3A_final_queendom_desc:0 ""
+ A3A_final_queendom_desc:0 "The harpy hills, the origin of our race, is now under our control. The old queendoms are dead. The question is, what does the word 'Queendom' mean to us?"
  
  #100 events - Part 1
  wyvernmark.100.t:0 "The Convent"
@@ -126,66 +129,227 @@
  wyvernmark.103.a:0 "You, harpy Asturia, marry."
  
  wyvernmark.104.t:0 "The Long Game"
- wyvernmark.104.d:0 ""
- wyvernmark.104.a:0 ""
+ wyvernmark.104.d:0 "We send our sister to Verne, and the Duke is grateful for that."
+ wyvernmark.104.a:0 "In time, you will do great things."
  
  wyvernmark.105.t:0 "A New Kind of Roost"
  wyvernmark.105.d:0 "'Harpies. A monstrous avian race that, thanks to their gift of flight, builds roosts high up in the mountains where land-bound races like humans would be unable to disturb them. Should you ever find yourself in an area of probable harpy activity, dear reader, stay on high alert. Once the harpy has you in her claws, you will never be able to escape the roost.' -- Excerpt from 'Beasts of Halann and All Their Terrible Forms'\n\nNaturally, the author of this book was unaware that he lived in a country ruled by those very harpies. Unlike the poorly-informed fantasy he describes, however, the harpies of The Convent find themselves just as hampered by the curse of gravity as he. Nonetheless, it would be extremely advantageous were they to have a roost of that sort. A self-sufficient city in the mountains where outsiders could not enter, and insiders could not leave without the Matriarch's approval.\n\nUnlike the grand roost at Heunthume, or even their mothers' old nests in Akasik, this would not be a home perched on the cliffside with no ladders up. This roost would be more subtle. More... terrestrial. It would look less like a bird's nest and more like a small mountain village, shielded by high walls on all sides with all access funneled through a single gate.\n\nTo the humans around, this roost would be assumed to be little more than a monastery."
  wyvernmark.105.a:0 "Or, perhaps, a Convent."
  
  wyvernmark.106.t:0 "A More Welcoming Profession."
- wyvernmark.106.d:0 ""
- wyvernmark.106.a:0 ""
+ wyvernmark.106.d:0 "They say harpy culture has no gender, yet The Convent insists we all live as women. Adventurering is the one place I can be who I want to be."
+ wyvernmark.106.a:0 "This is where I belong."
  
  wyvernmark.107.t:0 "He Who Fights Monsters"
- wyvernmark.107.d:0 ""
- wyvernmark.107.a:0 ""
+ wyvernmark.107.d:0 "Adventurers are trained in the arts of tracking and slaying monsters. Even though we have taken great lengths to distance ourselves from them whenever possible, after enough time it would be inevitable that they discover the harpies in their midst."
+ wyvernmark.107.a:0 "It's great to have such loyal warriors."
  
+ #200 events - part 2
  wyvernmark.200.t:0 "Backwater no More"
  wyvernmark.200.d:0 "For centuries, Wyvernmark has been regarded as an irrelevant stretch of mountains on the far edges of the Empire. You would be hard-pressed to find anyone in Anbencost who could even identify it on a map.\n\nNo longer.\n\nSince the Convent took power, Wyvernmark has grown to eclipse its historic overlords in Verne. Now, when [Root.Monarch.GetName] enters the hall of the Imperial Palace, everyone turns to look. They do not know that a monster walks among them, but they will learn to fear [Root.Monarch.GetHerHim] all the same.\n\nToday, [Root.Monarch.GetSheHe] has but one demand for the diet -- A title. A title worthy of Wyvernmark's new status.\n\nNo more shall it be regarded as a common Margravate."
  wyvernmark.200.a:0 "From today onwards, it is an Arch-Margravate."
+ 
+ wyvernmark.201.t:0 "Return of the Stonewings"
+ wyvernmark.201.d:0 "We've taken back Akasik from the gnolls. Our fellow Stonewings are happy to be freed, but they also don't trust us."
+ wyvernmark.201.a:0 "The roosts will return to -- no, surpass their former glory!"
+ 
+ wyvernmark.202.t:0 "Lessons from Sarhal"
+ wyvernmark.202.d:0 "Now that we've restored the old roosts in Akasik, I'd like to take a nice walk around Sarhal to see how the ancient empires there have held themselves together."
+ wyvernmark.202.a:0 "We must emulate their successes and avoid their failings."
+ 
+ wyvernmark.203.t:0 "A Complaint from the Headmaster"
+ wyvernmark.203.d:0 "One of the students we sent to the academy has been causing some trouble lately. Her actions threaten the secrecy of our Convent, but at the same time her talent for magic is genuine. What do we do?"
+ wyvernmark.203.a:0 "She stands out too much, make her drop out!"
+ wyvernmark.203.b:0 "Give her a warning, but let her continue her studies."
+ 
+ wyvernmark.204.t:0 "Expanding the Convent's Reach"
+ wyvernmark.204.d:0 "Now that our sisters hold power over multiple thrones beyond just Wyvernmark, we must ensure they are running their domains in accordance with our principles. We must sideline the old noble families and bring each of our subjects under the administration of trusted sisters of the Convent."
+ wyvernmark.204.a:0 "We know what's best for them."
+ 
+ wyvernmark.205.t:0 "Becoming the Throne"
+ wyvernmark.205.d:0 "When we first set out to take the Dove Throne, many in the Convent thought nothing of what it meant to administrate an empire such as Anbennar. The objective was one of power and domination, little more.\n\nNow, however, the Empire has become as much a part of them as they have of it."
+ wyvernmark.204.a:0 "Pass me my pen, I need to adjust some grain quotas."
 
- #200 events - part 2
+ wyvernmark.210.t:0 "The [From.Monarch.getTitle] Doubts Our Succession"
+ wyvernmark.210.d:0 "A missive arrived yesterday from [From.Monarch.getTitle] [From.Monarch.getName].\n\nIn it, [From.Monarch.getSheHe] expressed doubts about our line of succession.\n\n'As an Elector of our proud Empire,' the letter opens, 'to allow someone without Imperial ties claim the title of Elector would bring great shame upon your domain and reflect poorly on the Empire's reputation.'\n\nThe [From.Monarch.getTitle] demands we install [From.Monarch.getHerHis] chosen candidate as our successor. Said candidate is a young woman from a distant branch of our family who is known for her conservative style of dress and secretive personal life -- traits she shares with the [From.Monarch.getTitle]. It is not hard to imagine why she was chosen."
+ wyvernmark.210.a:0 "Yes, Your Imperial Highness. She will rule."
+ wyvernmark.210.b:0 "Some letter can't uproot our laws and customs!"
+ 
+ wyvernmark.211.t:0 "The Eagle Enraged"
+ wyvernmark.211.d:0 "One might expect, given the centuries of rivalry Gawed has shared with Lorent, that they would be pleased to see Lencenor coming under our influence. They would be wrong. The men of Gaweton have made it clear: only they will be allowed to subjugate Lorent."
+ wyvernmark.211.a:0 "I'm sure it's nothing to worry about."
+ 
+ wyvernmark.212.t:0 "Ending the Legacy of Beastbane"
+ wyvernmark.212.d:0 "This was home. It is home once again.\n\nFinally, after millenia of hardship and resentment, the roosts of the Godshield are once again home to harpies."
+ wyvernmark.212.a:0 "Our long national nightmare is at an end"
+ 
  #300 events - part 3
+ wyvernmark.301.t:0 "Substitute Wings"
+ wyvernmark.301.d:0 "The secret may be out, but that will not regrow the wings of the countless harpies who have lived under the Convent's rule. Artificery, however, offers us an answer.\n\nOur artificers have devised a device any harpy -- or non-harpy, for that matter -- could wear on their back."
+ wyvernmark.301.a:0 "Whoosh!"
+ 
+ wyvernmark.302.t:0 "The Final Queendom"
+ wyvernmark.302.d:0 "Walking the halls of the Queen's Throne in Heunthume, one can feel thousands of years of harpy history with every step. The self-proclaimed 'Queendom' of Ayarallen is no more, and now [Root.getName] is the undisputed pre-eminent harpy power on Halann."
+ wyvernmark.302.a:0 "The final queendom is dead."
+ wyvernmark.302.b:0 "We *are* the final queendom!"
+ 
  #400 events - unique mechanics
  wyvernmark.400.t:0 "An Empty Bed"
  wyvernmark.400.d:0 "The Honorable Baron Blimpleston is a good man. Every day he rides out of the castle to meet with his peasants, and every night he comes back to embrace his loving wife. His life is truly the ideal of how a Cannorian noble should live.\n\nOh no! What's this!? Poor Baron Blimpleston returns home after a long day of caring for his subjects only to find his beautiful wife has succumbed to a sudden and tragic illness! However shall he recover?\n\nFortunately, a spritely young maid from Wyvernmark had recently come to his castle and is more than willing to provide him comfort in these trying times.\n\nFunny how they always seem to be in just the right place whenever tragedy strikes."
  wyvernmark.400.a:0 "I'm sorry for your loss"
  wyvernmark.400.tt:0 "Enables a decision allowing you to §RKill the consort§! of a country you have a §Yroyal marriage§! and §Y50 spy network§! in."
  wyvernmark.401.t:0 "[Root.Consort.GetName] Assassinated!"
- wyvernmark.401.d:0 ""
+ wyvernmark.401.d:0 "The queen is dead! we know who did it"
  wyvernmark.401.a:0 "argh"
  wyvernmark.402.t:0 "Assassins in [From.GetName] Exposed!"
- wyvernmark.402.d:0 ""
+ wyvernmark.402.d:0 "we got the queen, but they got our agent"
  wyvernmark.402.a:0 "damn"
  wyvernmark.410.t:0 "Feather Pillows"
- wyvernmark.410.d:0 ""
+ wyvernmark.410.d:0 "I think the prince would like a little more... attention"
  wyvernmark.410.a:0 "goodnight"
  wyvernmark.410.tt:0 "Enables a decision allowing you to §RKill the heir§! of a country with a §Yharpy consort§! and §Y80 spy network§!."
  wyvernmark.411.t:0 "[Root.Heir.GetName] Assassinated!"
- wyvernmark.411.d:0 ""
+ wyvernmark.411.d:0 "They killed our boy!"
  wyvernmark.411.a:0 "argh"
  wyvernmark.412.t:0 "Assassins in [From.GetName] Exposed!"
- wyvernmark.412.d:0 ""
+ wyvernmark.412.d:0 "they caught our assassin"
  wyvernmark.412.a:0 "damn"
  wyvernmark.420.t:0 "Brazen Acts"
- wyvernmark.420.d:0 ""
+ wyvernmark.420.d:0 "Why not just kill the king? who can stop us?"
  wyvernmark.420.a:0 "byebye"
  wyvernmark.420.tt:0 "Enables a decision allowing you to §RKill the ruler§! of a country with a §Yharpy heir§! and §Y100 spy network§!."
  wyvernmark.421.t:0 "[Root.Monarch.GetName] Assassinated!"
- wyvernmark.421.d:0 ""
+ wyvernmark.421.d:0 "they got our guy!"
  wyvernmark.421.a:0 "argh"
  wyvernmark.422.t:0 "Assassins in [From.GetName] Exposed!"
- wyvernmark.422.d:0 ""
+ wyvernmark.422.d:0 "Our clever plan was foiled."
  wyvernmark.422.a:0 "damn"
+ 
  #500 events - Disaster
+ wyvernmark.500.t:0 "The Banquet of Pigeons and Doves"
+ wyvernmark.500.d:0 "At a major social event, a sister dramatically tore off the Empress' dress, exposing the legs of a harpy.\n\nEven though she was apprehended, the secret is out. The whole Empire knows that they are ruled by harpies now.\n\nDo we side with the 'pigeons' who advocate for peace, reconciliation, and integration?\n\nOr do we side with the 'doves' who see this as an opportunity to rule the Empire with an iron talon?"
+ wyvernmark.500.a:0 "The Pigeons"
+ wyvernmark.500.b:0 "The Doves"
+ wyvernmark.500.tt:0 "Initiates the §YPigeons and Doves§! disaster!"
+ 
+ wyvernmark.501.t:0 "The Collapse of the Convent"
+ wyvernmark.501.d:0 "For years, the Convent has held an iron grip on all harpies in Wyvernmark. The threat of being exposed and thrown to the adventurers for extermination could bring even the proudest harpy to heel. Now, however, the playing field was suddenly level. Agitators, both from the Pigeon and Dove factions, have stormed Convent institutions and ransacked monasteries and hatcheries.\n\nBefore long, news spread of one Sister Wingshearer brutally killed at her place of work -- her arms and legs torn from her body with the same shears she had used to sever so many young wings before.\n\nFor all intents and purposes, the Convent and its influence on our society is gone."
+ wyvernmark.501.a:0 "Good Riddance."
+ 
+ wyvernmark.510.t:0 "Doves Refuse to Cooperate"
+ wyvernmark.510.d:0 "As the Pigeons faction takes the lead in the power struggle, their rhetoric about reconciliation and integration has been received poorly by many of our harpy subjects."
+ wyvernmark.510.a:0 "They will understand the error of their ways."
+ wyvernmark.510.tt:0 "§RNegates§! the benefits of all §Yharpy roosts§! in our empire."
+ 
+ wyvernmark.511.t:0 "Pigeons Cement Their Control"
+ wyvernmark.511.d:0 "Pigeons rule."
+ wyvernmark.511.a:0 "coo"
+ 
+ wyvernmark.512.t:0 "Harpies revolt"
+ wyvernmark.512.d:0 "Influenced by radical Dove ideology and displeased by our policies of integration, our harpy subjects have taken up arms against us!"
+ wyvernmark.512.a:0 "Teach them to be civilized."
+ 
+ wyvernmark.520.t:0 "Discontent among Human Subjects"
+ wyvernmark.520.d:0 "men angy"
+ wyvernmark.520.a:0 "Show them who's boss"
+ wyvernmark.520.tt:0 "Adds unrest to all non-harpy provinces
+ 
+ wyvernmark.521.t:0 "Doves Remake the Administration"
+ wyvernmark.521.d:0 "No longer will we pretend to be some silly human monarchy. We will be a proper harpy matriarchy with a harpy army."
+ wyvernmark.521.a:0 "We take to the skies!"
+ 
+ wyvernmark.522.t:0 "Crusade Against the Monsters!"
+ wyvernmark.522.d:0 "Our human neighbors are not pleased to see us embracing our nature."
+ wyvernmark.522.a:0 "Crush them under our talons!"
+ 
+ wyvernmark.560.t:0 "Harpy Agitators"
+ wyvernmark.560.d:0 "A flock of harpies in [Root.getName] believe we stand between them and the glory of harpy-kind."
+ wyvernmark.560.a:0 "Show our errant sisters their place."
+ 
+ wyvernmark.561.t:0 "Human Agitators"
+ wyvernmark.561.d:0 "Our human subjects are none too pleased with recent revelations. Unable to stomach being ruled by a monstrous race, they have taken up arms against our country!"
+ wyvernmark.561.a:0 "Make it clear who rules around here."
+ 
+ wyvernmark.599.t:0 "The Summit at Bronzewing Hall"
+ wyvernmark.599.d:0 "The fires of war have settled down, and representatives from both the Pigeon and Dove factions have been gathered before the Matriarch at her palace."
+ wyvernmark.599.a:0 "This is who we are. Now and forever more."
+ 
+ #600 events - Flavor
+ wyvernmark.600.t:0 "To Train a Wyvern"
+ wyvernmark.600.d:0 "In days long past, the Kings of Verne earned glory on the merits of the legendary Wyvern Riders. Our homeland, Wyvernmark, has been stewards of the surviving wyverns ever since.\n\nA harpy kingdom ought to have a flying army. If we don't have our wings, surely we can find a way to borrow their gift of flight."
+ wyvernmark.600.a:0 "Order the adventurers to investigate."
+ wyvernmark.601.t:0 "Flying once more"
+ wyvernmark.601.d:0 "After long years of work, our adventurers have found a way to reliably get wyverns to tolerate a rider on their back. Their numbers are still low, but with enough effort, we could find a way to use these wyverns to impress our allies -- and our enemies."
+ wyvernmark.601.a:0 "We're flying!"
+ 
  #900 events - Final Boss
+ wyvernmark.900.t:0 "A New Age of Monsters?"
+ wyvernmark.900.d:0 "With the rise of [Root.getName]'s harpy-dominated Empire, word has been going around that Cannor has descended into a new Age of Monsters. In Escann, where the scars of the Greentide could still be seen around every corner, fear abounded that what had once been a home to humanity would soon be lost forever."
+ wyvernmark.900.a:0 "Surely it's nothing to worry about."
+ 
+ wyvernmark.901.t:0 "Beastbane Reborn!"
+ wyvernmark.901.d:0 "A man descended from the peak of the Trialmount yesterday, claiming to have cleared the ancient Trials of Castan. His claim is obviously dubious, but he has amassed a tremendous following nonetheless. Styling himself the spiritual successor to Castan II 'Beastbane,' he tells the crowd assembled at the North Citadel that he will lead a Third Great Purge to eradicate the monsters that threaten Cannor once and for all."
+ wyvernmark.901.a:0 "This man is out of his mind, his 'Castanor' won't last."
+
+ wyvernmark.902.t:0 "The Beast Enters Castonath!"
+ wyvernmark.902.d:0 "Today, the man who proclaims himself the 'Second Beastbane' led an army of disorganized but zealous followers down from the North Citadel onto the streets of Castonath."
+ wyvernmark.902.a:0 "Lies! The Patricians would never stand for this!" 
+ 
+ wyvernmark.903.t:0 "The Usurper Demands the White Walls!"
+ wyvernmark.903.d:0 "The man who calls himself Castan has sent an ultimatum to the surrounding lords: relinquish their lands to him, the self-proclaimed ruler of a resurgent Castanor, or face the consequences."
+ wyvernmark.903.a:0 "There must be an end to this madness!"
+ 
+ wyvernmark.904.t:0 "The Tyrant Seizes Inner Castanor!"
+ wyvernmark.904.d:0 "Once again, the self-prolcaimed 'Second Beastbane' has sent an ultimatum to the lords of Inner Castanor."
+ wyvernmark.904.a:0 "How could anyone take him seriously?"
+ 
+ wyvernmark.905.t:0 "The Emperor Arrives in South Castanor!"
+ wyvernmark.905.d:0 "Following his successes in Inner Castanor, Beastbane II has turned his attention to the south. Lords and warbands alike from Marrhold to the Godshield have received ultimatums to submit to the resurgent Castanor."
+ wyvernmark.905.a:0 "We must shore up our defenses before he gets any more ideas."
+ 
+ wyvernmark.906.t:0 "Castan Unites West Castanor!"
+ wyvernmark.906.d:0 "Enthusiasm spreads once more among the humans of Escann. The legions of Castanor swell by the day, and now the men of Western Escann are lining up to join their ranks."
+ wyvernmark.906.a:0 "They will come for our Empire next. We must prepare."
+
+ wyvernmark.907.t:0 "The Third Great Purge Begins!"
+ wyvernmark.907.d:0 "With Castanor reforged, the new legions have been anxious to make good on the promises their Castan made during his rise to power. Purging orcs in Escann can only sate the appetite for so long. If this self-proclaimed 'Second Beastbane' wants to prove himself, he has to come after the empire of monsters whose specter contributed to his rise."
+ wyvernmark.907.a:0 "We will show him his is but an empire of sand!"
+ 
+ wyvernmark.910.t:0 "An Ultimatum from Castan"
+ wyvernmark.910.d:0 "Castanor is back, and we must relinquish our lands."
+ wyvernmark.910.a:0 "Of course Mr. Candor"
+ wyvernmark.910.b:0 "No way."
+ 
+ wyvernmark.920.t:0 "The Beast is Slain!"
+ wyvernmark.920.d:0 "The North Citadel has fallen. The dream of a resurgent Castanor is dead. If we are monsters, then perhaps the monsters have won."
+ wyvernmark.920.a:0 "Castanor will remain as a reminder of our victory."
+ 
+ wyvernmark.960.t:0 "Castan's Followers Take up Arms"
+ wyvernmark.960.d:0 "Spurred on by the rise of the 'Second Beastbane's legions in Escann, humans in our Empire have gathered a force to take his agenda into their own hands."
+ wyvernmark.960.a:0 "Put them down!"
+ 
+ wyvernmark.961.t:0 "Escann Rallies to Castan's Cause!"
+ wyvernmark.961.d:0 "Rebels have risen up in another part of Escann, seeking to join with the legions of the resurgent Castanor."
+ wyvernmark.961.a:0 "Another Band of Fools."
+ 
  #1000 - capstone
+ wyvernmark.1000.t:0 "Wings Spread Wide"
+ wyvernmark.1000.d:0 "We win. Hooray!"
+ wyvernmark.1000.a:0 "Yippee!\n\n§YThanks for playing!§! §G-Jodasgreat§!"
  
  #00 events - Flavor events
  wyvernmark.2.t:0 "Necessary Sacrifices"
  wyvernmark.2.d:0 "There is a fireplace in the hatchery. When the first cracks appear in the shell, a veiled sister dutifully takes a pair of shears and sterilizes them above the flame.\n\nThe mother is confined to her room when her child is ready to hatch. She wails and pounds against the locked door, but no one pays her any mind. This is normal.\n\nWithout a word, the sister lifts the hatchling out of her egg. Before the hatchling can even take her first breath, her nascent wings are severed from her back and placed on a tray. One by one, the sister removes each claw and talon then plucks each remaining body feather.\n\nBloodied and crying, the child is handed to a waiting assistant who wraps her in bandages and takes her away. After a week of recovery, the child will be returned to her mother and only then could the mother return to her husband.\n\nNot even the gnolls would have considered such cruelties -- For all their malice and ferocity, the gnolls are perhaps too hateful to conceive of such a thing. One does not cause harm on such an industrial scale unless they believe it is right.\n\nBut it is right. Every sister is confident in that belief.\n\nEvery member of The Convent must travel here to deliver. No exceptions will be permitted. No outsiders will be admitted. All know that a single misstep will mean the eradication of their race at the hands of the foolish and vindictive humans -- the people of Castan.\n\nTo have their revenge, the harpies must destroy who they are."
  wyvernmark.2.a:0 "One can only hope they forget the pain."
+ 
+ wyvernmark.3.t:0 "A Warning from the Convent"
+ wyvernmark.3.d:0 "'Those humans, they would see us torn limb-from-limb. They would have us eradicated. If you think you can convince any of them that harpies are anything but monstrous, you are a fool.'"
+ wyvernmark.3.a:0 "My apologies, I misspoke."
+ wyvernmark.3.tt:0 "§YSo long as the Convent is in power, we cannot demonsterize!§!"
+ 
+ wyvernmark.4.t:0 "A momentuous occasion"
+ wyvernmark.4.d:0 "Today is [A33.Heir.getName]'s fifteenth birthday. As she comes of age, all eyes in Verne are focused on the future Duchess' debut ceremony.\n\nLittle do they know, by the time the party is over, she will already be Duchess."
+ wyvernmark.4.a:0 "Our dearest respect for the late Duke."
  
  #ideas
  A3A_legacy_of_the_wyvern_riders:0 "Legacy of the Wyvern Riders"
@@ -249,6 +413,32 @@
  A3A_arch_margravine:0 "Arch-Margravines of Wyvernmark"
  A3A_entranced_adv:0 "Entranced Adventurers"
  a3a_enchanted_adventurers:0 "Enchanted Sellswords"
+ A3A_new_empresses:0 "New Empresses"
+ A3A_earned_trust:0 "Earned Trust"
+ A3A_combined_arms_cav:0 "Combined Arms Warfare"
+ A3A_new_wings:0 "New Wings"
+ A3A_stonewing_akasik_mp:0 "Stonewing Hatcheries"
+ A3A_sarhaly_rule:0 "Sarhaly Rule"
+ A3A_integrated_academies:0 "Integrated Academies"
+ A3A_convent_administration:0 "Convent Administration"
+ A3A_competent_administrators:0 "Competent Administrators"
+ A3A_gawed_angy:0 "Gawed Enraged"
+ A3A_overcome_queendom:0 "Overcome the Queendom"
+ A3A_pigeons_debuff:0 "Discontent With the Pigeons"
+ A3A_rebellious_roost:0 "Rebellious Roost"
+ A3A_rebellious_fledg_roost:0 "Rebellious Fledgling Roost"
+ A3A_pigeons_bonus:0 "Rule of the Pigeons"
+ A3A_castanor_buffs:0 "Castanorian Zeal"
+ A3A_doves_debuff:0 "Discontent With the Doves"
+ 
+ #flags
+ pigeons_doves_resolved:0 "Determined the Course of Our Nation"
+ pigeons:0 "Supported the Pigeons"
+ doves:0 "Supported the Doves"
+ slain_the_beast:0 "Slain the Beast"
+ A3A_wyverns_found:0 "Tamed the Wyverns"
+ pigeons_and_doves:0 "Pigeons and Doves"
+ beastbane_reborn:0 "Beastbane Reborn"
  
  #mercs
  merc_vernman_auxiliaries:0 "Vernman Auxiliaries"
@@ -257,6 +447,7 @@
  merc_entranced_adventurers:0 "Entranced Adventurers"
  merc_wyvern_rider_company:0 "Wyvern Rider Company"
  merc_daughters_of_stone:0 "Daughters of Stone"
+
 
  #MT description
  DLC_missions_A3A_TOOLTIP_INSTANT:0 "§YCustom Mission Tree§!" 

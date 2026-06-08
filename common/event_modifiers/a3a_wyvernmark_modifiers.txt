@@ -33,3 +33,38 @@ a3a_enchanted_adventurers = {
 A3A_killed_ruler_cooldown = {}
 A3A_killed_heir_cooldown = {}
 A3A_killed_consort_cooldown = {}
+bring_into_fold_cooldown = {}
+A3A_new_empresses = {
+}
+A3A_earned_trust = {
+}
+A3A_combined_arms_cav = {
+}
+A3A_new_wings = {
+}
+A3A_stonewing_akasik_mp = {
+}
+A3A_sarhaly_rule = {
+}
+A3A_integrated_academies = {
+}
+A3A_convent_administration = {
+}
+A3A_competent_administrators = {
+}
+A3A_gawed_angy = {
+}
+A3A_overcome_queendom = {
+}
+A3A_pigeons_debuff = {
+}
+A3A_rebellious_roost = {
+}
+A3A_rebellious_fledg_roost = {
+}
+A3A_doves_debuff = {
+}
+A3A_pigeons_bonus = {
+}
+A3A_castanor_buffs = {
+}
