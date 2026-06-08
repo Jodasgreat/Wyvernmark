@@ -915,7 +915,17 @@ country_event = { #doves revolt
 		name = wyvernmark.522.a
 		set_country_flag = A3A_pigeons_war_start
 		every_neighbor_country = {
-			limit = { NOT = { culture_group = harpy } }
+			limit = { 
+				OR = { 
+					culture_group = anbennarian
+					culture_group = alenic
+					culture_group = businori
+					culture_group = escanni
+					culture_group = lencori
+					culture_group = gerudian
+				} 
+				NOT = { has_country_modifier = monstrous_nation }
+			}
 			declare_war_with_cb = {
 				who = ROOT
 				casus_belli = cb_civ_vs_monster
