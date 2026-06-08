@@ -1470,3 +1470,22 @@ country_event = { #make verne not painful
 		}
 	}
 }
+country_event = { # convert subjects to harpy
+	id = wyvernmark.5
+	title = wyvernmark.5.t
+	desc = wyvernmark.5.d
+	picture = NUN_SPY_eventPicture
+
+	trigger = {
+		NOT = { culture_group = harpy }
+		is_subject_of = A3A
+		ruler_culture = stonewing_harpy
+		NOT = { liberty_desire = 50 }
+		A3A = { has_country_flag = harpy_masquerade }
+	}
+	option = {
+		name = wyvernmark.5.a
+		change_primary_culture = stonewing_harpy
+		add_government_reform = crypto_harpy_reform
+	}
+}
