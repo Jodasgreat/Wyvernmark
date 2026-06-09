@@ -629,9 +629,11 @@ A3A_fourth_slot_p2 = {
 			}
 		}
 		effect = {
-			every_elector = {
-				country_event = {
-					id = wyvernmark.210
+			hidden_effect = {
+				every_elector = {
+					country_event = {
+						id = wyvernmark.210
+					}
 				}
 			}
 			custom_tooltip = A3A_dove_matriarch_tt

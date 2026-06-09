@@ -68,6 +68,7 @@
  A3A_dove_throne_desc:0 "Surely, they would not have called it the 'Dove Throne' if we were not destined to sit upon it."
  A3A_dove_matriarch_title:0 "The Dove Matriarch"
  A3A_dove_matriarch_desc:0 "It is all well and good that one of us has sat upon the Dove Throne, but it would be a shame to watch that honor slip away from us. We must find our way into the courts of each elector and, if possible, their beds."
+ A3A_dove_matriarch_tt:0 "We will send an ultimatum to §Yall electors:§! Name one of our sisters as your heir or suffer the consequences!"
  A3A_heart_of_power_title:0 "Heart of Power"
  A3A_heart_of_power_desc:0 "Ruling the Empire alone is not enough. We must consolidate our control over these lands and establish ourselves as the preeminent rulers of Cannor.\n\nTo the West lies the grand Kingdom of Lorent. For centuries, they have been the de-facto center of power in Cannor, and their interventions have swayed the fate of the Empire countless times before. We must ensure the rose is tended only by a gardener of our choosing."
 
@@ -350,6 +351,10 @@
  wyvernmark.4.t:0 "A momentuous occasion"
  wyvernmark.4.d:0 "Today is [A33.Heir.getName]'s fifteenth birthday. As she comes of age, all eyes in Verne are focused on the future Duchess' debut ceremony.\n\nLittle do they know, by the time the party is over, she will already be Duchess."
  wyvernmark.4.a:0 "Our dearest respect for the late Duke."
+ 
+ wyvernmark.5.t:0 "The Convent Moves In"
+ wyvernmark.5.d:0 "Now that our country is firmly under the control of Wyvernmarker harpies, the administration is slowly being co-opted by representatives of those harpies. We are now part of that conspiracy, and are no longer a human nation."
+ wyvernmark.5.a:0 "Unbeknownst to our subjects, things have changed."
  
  #ideas
  A3A_legacy_of_the_wyvern_riders:0 "Legacy of the Wyvern Riders"

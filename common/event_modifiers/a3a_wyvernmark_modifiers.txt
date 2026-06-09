@@ -35,36 +35,81 @@ A3A_killed_heir_cooldown = {}
 A3A_killed_consort_cooldown = {}
 bring_into_fold_cooldown = {}
 A3A_new_empresses = {
+	imperial_authority_value = -0.1
 }
 A3A_earned_trust = {
+	diplomatic_reputation = 2
+	reduced_liberty_desire = 10
+	improve_relation_modifier = 0.2
 }
 A3A_combined_arms_cav = {
+	military_tactics = 0.1
+	cavalry_flanking = 0.1
 }
 A3A_new_wings = {
+	years_to_integrate_personal_union = -5
+	annexation_relations_impact = -0.25
+	imperial_authority_value = 0.3
+	reasons_to_elect = 30
+	spy_offence = 0.1
 }
 A3A_stonewing_akasik_mp = {
+	local_manpower_modifier = 0.3
+	local_governing_cost = -0.25
 }
 A3A_sarhaly_rule = {
+	liberty_desire_from_subject_development = -0.15
 }
 A3A_integrated_academies = {
+	mages_loyalty_modifier = 0.1
 }
 A3A_convent_administration = {
+	reduced_liberty_desire = 10
+	years_to_integrate_personal_union = -5
+	annexation_relations_impact = -0.25
 }
 A3A_competent_administrators = {
+	imperial_authority_value = 0.3
 }
 A3A_gawed_angy = {
+	land_forcelimit_modifier = 0.3
+	land_maintenance_modifier = -0.3
+	global_manpower_modifier = 0.2
 }
 A3A_overcome_queendom = {
+	prestige = 1
+	imperial_authority = 0.1
+	legitimacy = 1
+	max_absolutism = 10
 }
 A3A_pigeons_debuff = {
+	global_unrest = 1
+	siege_ability = -0.1
 }
 A3A_rebellious_roost = {
+	local_development_cost = 0.1
+	province_trade_power_value = -1
+	local_governing_cost_increase = 3
 }
 A3A_rebellious_fledg_roost = {
+	local_development_cost = 0.1
+	province_trade_power_value = -3
+	local_governing_cost_increase = 20
 }
 A3A_doves_debuff = {
+	global_unrest = 1
+	diplomatic_reputation = -1
+	imperial_authority = -0.1
 }
 A3A_pigeons_bonus = {
+	diplomatic_reputation = 1
+	global_manpower_modifier = 0.1
 }
 A3A_castanor_buffs = {
+	land_forcelimit_modifier = 0.5
+	land_maintenance_modifier = -0.5
+	global_manpower_modifier = 0.3
+	land_morale = 0.15
+	discipline = 0.1
+	global_unrest = -2
 }

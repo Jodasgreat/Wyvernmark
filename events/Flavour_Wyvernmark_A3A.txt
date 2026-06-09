@@ -1491,7 +1491,7 @@ country_event = { # convert subjects to harpy
 		is_subject_of = A3A
 		ruler_culture = stonewing_harpy
 		NOT = { liberty_desire = 50 }
-		A3A = { has_country_flag = harpy_masquerade }
+		A3A = { has_country_modifier = A3A_convent_administration }
 	}
 	option = {
 		name = wyvernmark.5.a
