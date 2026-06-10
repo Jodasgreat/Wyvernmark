@@ -298,143 +298,143 @@ estate_human_adventurers = {
 	color = { 236 60 123 }
 
 	privileges = {
-		estate_adventurers_ennoblement_of_adventurers
-		estate_adventurers_generous_quest_rewards
-		estate_adventurers_free_company_rosters
-		estate_adventurers_heroes_in_the_army
-		estate_adventurers_pioneer_initiatives
-		estate_adventurers_cavern_exploration_initiative
-		estate_adventurers_advisors
-		estate_adventurers_monopoly_of_slaves
-		estate_adventurers_in_her_acolytes_service
-		estate_adventurers_spirit_hunters
-		estate_adventurers_temple_quest_licenses
+		estate_human_adventurers_ennoblement_of_adventurers
+		estate_human_adventurers_generous_quest_rewards
+		estate_human_adventurers_free_company_rosters
+		estate_human_adventurers_heroes_in_the_army
+		estate_human_adventurers_pioneer_initiatives
+		estate_human_adventurers_cavern_exploration_initiative
+		estate_human_adventurers_advisors
+		estate_human_adventurers_monopoly_of_slaves
+		estate_human_adventurers_in_her_acolytes_service
+		estate_human_adventurers_spirit_hunters
+		estate_human_adventurers_temple_quest_licenses
 
 		#Deepwoods Rangers
-		estate_adventurers_rangers_ranger_primacy
-		estate_adventurers_rangers_call_the_hunt
-		estate_adventurers_rangers_scotha_strategy
-		estate_adventurers_rangers_ayeth_strategy
-		estate_adventurers_rangers_use_ranger_pathfinders
+		estate_human_adventurers_rangers_ranger_primacy
+		estate_human_adventurers_rangers_call_the_hunt
+		estate_human_adventurers_rangers_scotha_strategy
+		estate_human_adventurers_rangers_ayeth_strategy
+		estate_human_adventurers_rangers_use_ranger_pathfinders
 
 		#Lupulan Rangers
-		estate_adventurers_lupulan_rangers_grant_rangers_class_rights
-		estate_adventurers_lupulan_rangers_elevate_ranger_champions
+		estate_human_adventurers_lupulan_rangers_grant_rangers_class_rights
+		estate_human_adventurers_lupulan_rangers_elevate_ranger_champions
 		
-		estate_adventurers_yeti_trophy
-		estate_adventurers_manticore_trophy
-		estate_adventurers_cockatrice_trophy
-		estate_adventurers_baku_trophy
-		estate_adventurers_kirin_trophy
-		estate_adventurers_hydra_trophy
-		estate_adventurers_hunter_of_the_deep_trophy
-		estate_adventurers_hook_horror_trophy
- 		estate_adventurers_lord_of_beasts_trophy
- 		estate_adventurers_chimaera_trophy
- 		estate_adventurers_oversized_drakon_trophy
- 		estate_adventurers_gv_hydra_trophy
- 		estate_adventurers_tlalusk_trophy
- 		estate_adventurers_mammoth_trophy
- 		estate_adventurers_bashmu_trophy
- 		estate_adventurers_silvermere_serpent_trophy
- 		estate_adventurers_roc_trophy
- 		estate_adventurers_blackthorn_colossus_trophy
- 		estate_adventurers_leopard_trophy
-		estate_adventurers_contain_dangerous_artefacts
-		estate_adventurers_rudmen_guards
-		estate_adventurers_vf_permanent_polerenik
+		estate_human_adventurers_yeti_trophy
+		estate_human_adventurers_manticore_trophy
+		estate_human_adventurers_cockatrice_trophy
+		estate_human_adventurers_baku_trophy
+		estate_human_adventurers_kirin_trophy
+		estate_human_adventurers_hydra_trophy
+		estate_human_adventurers_hunter_of_the_deep_trophy
+		estate_human_adventurers_hook_horror_trophy
+ 		estate_human_adventurers_lord_of_beasts_trophy
+ 		estate_human_adventurers_chimaera_trophy
+ 		estate_human_adventurers_oversized_drakon_trophy
+ 		estate_human_adventurers_gv_hydra_trophy
+ 		estate_human_adventurers_tlalusk_trophy
+ 		estate_human_adventurers_mammoth_trophy
+ 		estate_human_adventurers_bashmu_trophy
+ 		estate_human_adventurers_silvermere_serpent_trophy
+ 		estate_human_adventurers_roc_trophy
+ 		estate_human_adventurers_blackthorn_colossus_trophy
+ 		estate_human_adventurers_leopard_trophy
+		estate_human_adventurers_contain_dangerous_artefacts
+		estate_human_adventurers_rudmen_guards
+		estate_human_adventurers_vf_permanent_polerenik
 		estate_adventurer_designated_guild_hall
 		
-		estate_adventurers_organization_chronicler_grants
-		estate_adventurers_organization_licensed_adventurers
-		estate_adventurers_organization_land_of_adventure
-		estate_adventurers_organization_covenant
-		estate_adventurers_organization_slayers
-		estate_adventurers_organization_monster_hunters
-		estate_adventurers_organization_scp_bureau
-		estate_adventurers_organization_exploration_society
-		estate_adventurers_organization_clodhoppers
-		estate_adventurers_suhuskar_palace
-		estate_adventurers_rangers
-		estate_adventurers_organization_stone_army
-		estate_adventurers_organization_heroes_guild
+		estate_human_adventurers_organization_chronicler_grants
+		estate_human_adventurers_organization_licensed_adventurers
+		estate_human_adventurers_organization_land_of_adventure
+		estate_human_adventurers_organization_covenant
+		estate_human_adventurers_organization_slayers
+		estate_human_adventurers_organization_monster_hunters
+		estate_human_adventurers_organization_scp_bureau
+		estate_human_adventurers_organization_exploration_society
+		estate_human_adventurers_organization_clodhoppers
+		estate_human_adventurers_suhuskar_palace
+		estate_human_adventurers_rangers
+		estate_human_adventurers_organization_stone_army
+		estate_human_adventurers_organization_heroes_guild
 
-		estate_adventurers_allclan_bestiary_bnunin
-		estate_adventurers_allclan_bestiary_rothe
-		estate_adventurers_allclan_bestiary_logrhundr
-		estate_adventurers_allclan_bestiary_common_ooze
-		estate_adventurers_allclan_bestiary_cave_troll
-		estate_adventurers_allclan_bestiary_cube
-		estate_adventurers_allclan_bestiary_shellback
-		estate_adventurers_allclan_bestiary_fungrum
-		estate_adventurers_allclan_bestiary_sternphant
-		estate_adventurers_allclan_bestiary_healing_slime
-		estate_adventurers_allclan_bestiary_purple_worm
-		estate_adventurers_allclan_bestiary_hook_horror
-		estate_adventurers_allclan_bestiary_crawler
-		estate_adventurers_allclan_bestiary_yidab
+		estate_human_adventurers_allclan_bestiary_bnunin
+		estate_human_adventurers_allclan_bestiary_rothe
+		estate_human_adventurers_allclan_bestiary_logrhundr
+		estate_human_adventurers_allclan_bestiary_common_ooze
+		estate_human_adventurers_allclan_bestiary_cave_troll
+		estate_human_adventurers_allclan_bestiary_cube
+		estate_human_adventurers_allclan_bestiary_shellback
+		estate_human_adventurers_allclan_bestiary_fungrum
+		estate_human_adventurers_allclan_bestiary_sternphant
+		estate_human_adventurers_allclan_bestiary_healing_slime
+		estate_human_adventurers_allclan_bestiary_purple_worm
+		estate_human_adventurers_allclan_bestiary_hook_horror
+		estate_human_adventurers_allclan_bestiary_crawler
+		estate_human_adventurers_allclan_bestiary_yidab
 
-		estate_adventurers_heroic_realm
-		estate_adventurers_escort_missions
-		estate_adventurers_mining_quests
+		estate_human_adventurers_heroic_realm
+		estate_human_adventurers_escort_missions
+		estate_human_adventurers_mining_quests
 
-		estate_adventurers_state_assassins
+		estate_human_adventurers_state_assassins
 
-		estate_adventurers_track_vampire_nobility
-		estate_adventurers_stalbor_vampire_hunters
+		estate_human_adventurers_track_vampire_nobility
+		estate_human_adventurers_stalbor_vampire_hunters
 
-	#	estate_adventurers_sponsor_monster_hunters
-	#	estate_adventurers_sponsor_beast_slayers
-	#	estate_adventurers_sponsor_do_gooders
-	#	estate_adventurers_sponsor_holy_paladins
-	#	estate_adventurers_sponsor_rogues
-	#	estate_adventurers_sponsor_sellswords
+	#	estate_human_adventurers_sponsor_monster_hunters
+	#	estate_human_adventurers_sponsor_beast_slayers
+	#	estate_human_adventurers_sponsor_do_gooders
+	#	estate_human_adventurers_sponsor_holy_paladins
+	#	estate_human_adventurers_sponsor_rogues
+	#	estate_human_adventurers_sponsor_sellswords
 
 		#binwarji
-		estate_adventurers_cowardly_ruler
+		estate_human_adventurers_cowardly_ruler
 
-		estate_adventurers_the_wider_loop
+		estate_human_adventurers_the_wider_loop
 
 		# Salla Myna
-		estate_adventurers_salla_myna_ennoblement_of_hawk_riders
+		estate_human_adventurers_salla_myna_ennoblement_of_hawk_riders
 
-		estate_adventurers_bellacaire_sappers
-		estate_adventurers_napesbay_squadron 
-		estate_adventurers_menibor_vanguard 
-		estate_adventurers_bluehart_finest 
+		estate_human_adventurers_bellacaire_sappers
+		estate_human_adventurers_napesbay_squadron 
+		estate_human_adventurers_menibor_vanguard 
+		estate_human_adventurers_bluehart_finest 
 
 		#Verne
-		estate_adventurers_ride_of_the_worthy
-		estate_adventurers_seas_of_valour
-		estate_adventurers_alvari_accord
+		estate_human_adventurers_ride_of_the_worthy
+		estate_human_adventurers_seas_of_valour
+		estate_human_adventurers_alvari_accord
 
 		z22_whitespear_whaling_privilege
-		estate_adventurers_U39_order_of_exemplars #Orenvalyam
+		estate_human_adventurers_U39_order_of_exemplars #Orenvalyam
 
-		estate_adventurers_help_expedition_1 #Aelantir-Cannor Interaction
-		estate_adventurers_help_expedition_2 #Aelantir-Cannor Interaction
+		estate_human_adventurers_help_expedition_1 #Aelantir-Cannor Interaction
+		estate_human_adventurers_help_expedition_2 #Aelantir-Cannor Interaction
 
-		estate_adventurers_RSP_swashbuckling_expertise #Ruined Sea Pirates
+		estate_human_adventurers_RSP_swashbuckling_expertise #Ruined Sea Pirates
 	}
 
 	agendas = {
-		estate_adventurers_war_monstrous
-		estate_adventurers_conquer_monstrous_province_x
-		estate_adventurers_support_independence_monstrous
-		estate_adventurers_support_independence_witch_king
-		estate_adventurers_hire_mercenaries
-		estate_adventurers_colonise_X
-		estate_adventurers_increase_autonomy
-		estate_adventurers_join_coalition
-		estate_adventurers_build_a_fleet
-		estate_adventurers_build_an_army
-		estate_adventurers_condottieri_monstrous
-		estate_adventurers_condottieri_witch_king
-		estate_adventurers_condottieri_coalition
-		estate_adventurers_develop_x
-		estate_adventurers_protect_people
-		estate_adventurers_luna_sponsor_foreign_adventurers	#Luna River Minors MT
-		estate_adventurers_emperor_help_colony				#EoA Emperor
+		estate_human_adventurers_war_monstrous
+		estate_human_adventurers_conquer_monstrous_province_x
+		estate_human_adventurers_support_independence_monstrous
+		estate_human_adventurers_support_independence_witch_king
+		estate_human_adventurers_hire_mercenaries
+		estate_human_adventurers_colonise_X
+		estate_human_adventurers_increase_autonomy
+		estate_human_adventurers_join_coalition
+		estate_human_adventurers_build_a_fleet
+		estate_human_adventurers_build_an_army
+		estate_human_adventurers_condottieri_monstrous
+		estate_human_adventurers_condottieri_witch_king
+		estate_human_adventurers_condottieri_coalition
+		estate_human_adventurers_develop_x
+		estate_human_adventurers_protect_people
+		estate_human_adventurers_luna_sponsor_foreign_adventurers	#Luna River Minors MT
+		estate_human_adventurers_emperor_help_colony				#EoA Emperor
 	}
 	influence_from_dev_modifier = 0.5
 }

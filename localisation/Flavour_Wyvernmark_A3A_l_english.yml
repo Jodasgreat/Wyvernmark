@@ -376,6 +376,21 @@
  crypto_harpy_reform:0 "Cryptoharpy Matriarchy"
  crypto_harpy_reform_desc:0 "Our country is ruled by a flock of harpies, but the rest of the world doesn't have to know that. By paying careful attention to what she wears and how she acts, our Matriarch can walk the halls of any royal court in Cannor like any other noble lady. \n\nA shame, however, that our wings would give us away."
  estate_human_adventurers:0 "Human Adventurers"
+ estate_nobles_noble_wyvernriders:0 "Noble Wyvernriders"
+ estate_human_adventurers_ride_of_the_worthy:0 "Adventurer Wyvernriders"
+ estate_human_adventurers_monopoly_of_slaves:0 "Monopoly on Slaves"
+ estate_human_adventurers_advisors:0 "Human Advisors"
+ estate_human_adventurers_generous_quest_rewards:0 "Generous Quest Rewards"
+ estate_human_adventurers_cavern_exploration_initiative:0 "Cavern Exploration Initiative"
+ estate_human_adventurers_pioneer_initiatives:0 "Pioneer Initiatives"
+ estate_human_adventurers_heroes_in_the_army:0 "Heroes in the Army"
+ estate_human_adventurers_ennoblement_of_adventurers:0 "Ennoblement of Adventurers"
+ estate_human_adventurers_free_company_rosters:0 "Free Company Rosters"
+ estate_human_adventurers_organization_land_of_adventure:0 "Organization: Land of Adventure"
+ estate_human_adventurers_organization_licensed_adventurers:0 "Organization: Licensed Adventurers"
+ estate_human_adventurers_organization_chronicler_grants:0 "Organization: Chronicler Grants"
+ 
+ #decisions
  bring_into_fold_title:0 "Bring Our Sisters into the Fold"
  bring_into_fold_desc:0 "It is fine and well that one of our sisters sits upon another nation's throne, but if left alone too long, she may start to believe she actually has any power of her own. We must remind our sisters that the Matriarch's will is absolute, and that all that's yours is the Matriarch's."
  A3A_bring_into_fold_tt:0 "Form a §Ypersonal union§! with a random country that meets the requirements."
@@ -452,6 +467,8 @@
  merc_entranced_adventurers:0 "Entranced Adventurers"
  merc_wyvern_rider_company:0 "Wyvern Rider Company"
  merc_daughters_of_stone:0 "Daughters of Stone"
+ 
+ 
 
 
  #MT description
