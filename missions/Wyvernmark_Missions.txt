@@ -144,6 +144,7 @@ A3A_first_slot_p2 = {
 					junior_union_with = ROOT
 				}
 			}
+			is_estate_enchantment_level_2_minimum = yes
 		}
 		effect = {
 			add_country_modifier = {
@@ -215,11 +216,10 @@ A3A_second_slot_p2 = {
 			A3A_persuade_adventurers
 		}
 		provinces_to_highlight = {
-			isle_of_tef_area = {
-				NOT = {
-					owned_by = ROOT 
-					owned_by_subject_of = ROOT	
-				}
+			area = isle_of_tef_area = {
+			NOT = {
+				owned_by = ROOT 
+				owned_by_subject_of = ROOT	
 			}
 		}
 		trigger = {
@@ -250,11 +250,10 @@ A3A_second_slot_p2 = {
 			A3A_anti_monster
 		}
 		provinces_to_highlight = {
-			akasik_region = {
-				NOT = { 
-					owned_by = ROOT 
-					owned_by_subject_of = ROOT
-				}
+			region = akasik_region
+			NOT = { 
+				owned_by = ROOT 
+				owned_by_subject_of = ROOT
 			}
 		}
 		trigger = {
@@ -279,10 +278,12 @@ A3A_second_slot_p2 = {
 			A3A_stone_wings
 		}
 		provinces_to_highlight = {
-			province_id = 475
-			akasik_region = {
-				type = all
-				unrest = 1
+			OR = {
+				province_id = 475
+				AND = {
+					region = akasik_region
+					unrest = 1
+				}
 			}
 		}
 		trigger = {
@@ -389,7 +390,8 @@ A3A_third_slot_p2 = {
 			A3A_wyvern_nest
 		}
 		provinces_to_highlight = {
-			any_known_country = {
+			is_capital = yes
+			owner = {
 				is_elector = yes
 				NOT = { preferred_emperor = ROOT }
 			}
@@ -418,10 +420,11 @@ A3A_third_slot_p2 = {
 			A3A_handmaidens_handiwork
 		}
 		provinces_to_highlight = {
-			A33 = {
-				NOT = {
+			is_capital = yes
+			owner = {
+					tag = A33
 					is_subject_of = ROOT
-					NOT = { liberty_desire = 50}
+					NOT = { liberty_desire = 50 }
 				}
 			}
 			businor_region = {
@@ -464,11 +467,10 @@ A3A_third_slot_p2 = {
 			A3A_queen_of_frontier
 		}
 		provinces_to_highlight = {
-			838 = {
-				NOT = {
-					has_building = mage_tower
-					development = 20
-				}
+			province_id = 838
+			NOT = {
+				has_building = mage_tower
+				development = 20
 			}
 		}
 		trigger = {
@@ -511,15 +513,18 @@ A3A_third_slot_p2 = {
 			A3A_flock_together
 		}
 		provinces_to_highlight = {
-			all_subject_country = {
-				liberty_desire = 50
-			}
-			all_known_country = {
-				NOT = {
-					NOT = { is_part_of_hre = yes }
-					has_opinion = {
-						who = ROOT
-						value = 0
+			OR = {
+				owner = {
+					is_subject_of = ROOT
+					liberty_desire = 50
+				}
+				owner = {
+					NOT = {
+						NOT = { is_part_of_hre = yes }
+						has_opinion = {
+							who = ROOT
+							value = 0
+						}
 					}
 				}
 			}
@@ -559,10 +564,8 @@ A3A_third_slot_p2 = {
 			A3A_heart_of_power
 		}
 		provinces_to_highlight = {
-			all_known_country = {
-				continent = europe
-				total_development = ROOT
-			}
+			continent = europe
+			owner = { total_development = ROOT }
 		}
 		trigger = {
 			all_known_country = {
@@ -609,11 +612,15 @@ A3A_fourth_slot_p2 = {
 			A3A_Beautiful_Girl
 		}
 		provinces_to_highlight = {
-			A33 = {
-				marriage_with = ROOT
-				has_spy_network_from = {
-					who = ROOT
-					value = 50
+			is_capital = yes
+			owner = {
+				tag = A33
+				NOT = {
+					marriage_with = ROOT
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
 				}
 			}
 		}
@@ -698,6 +705,35 @@ A3A_fourth_slot_p2 = {
 		required_missions = {
 			A3A_dove_throne
 		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				is_elector = yes
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				NOT = {
+					tag = ROOT
+					marriage_with = ROOT
+					ruler_culture = stonewing_harpy
+					NOT = { government = monarchy }
+					NOT = { 
+						OR = {
+							culture_group = anbennarian
+							culture_group = alenic
+							culture_group = lencori
+						}
+					}
+				}
+			}
+		}
 		trigger = {
 			all_elector = {
 				OR = {
@@ -744,6 +780,29 @@ A3A_fourth_slot_p2 = {
 		required_missions = {
 			A3A_dove_matriarch
 		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				tag = A01
+				NOT = {
+					exists = no
+					is_subject = yes
+					AND = {
+						marriage_with = ROOT
+						OR = {
+							has_spy_network_from = {
+								who = ROOT
+								value = 50
+							}
+							trust = {
+								who = ROOT
+								value = 50
+							}
+						}
+					}
+				}
+			}
+		}
 		trigger = {
 			hre_reform_passed = anbennar_reinforce_imperial_frontiers
 			A01 = {
@@ -767,7 +826,6 @@ A3A_fourth_slot_p2 = {
 			}
 		}
 		effect = {
-			
 			if = {
 				limit = {
 					A01 = { exists = no }
@@ -806,6 +864,12 @@ A3A_fifth_slot = {
 		position = 1
 		provinces_to_highlight = { 
 			province_id = 291 
+			NOT = {
+				num_of_units_in_province = {
+					who = A3A
+					amount = 6
+				}
+			}
 		}
 		trigger = {
 			291 = {
@@ -849,6 +913,16 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_challenging_gnolls
 		}
+		provinces_to_highlight = { 
+			OR = {
+				area = khenak_area
+				province_id = 364
+			}
+			NOT = {
+				owned_by = A3A
+				owned_by = A33
+			}
+		}
 		trigger = {
 			A49 = { exists = no }
 			khenak_area = {
@@ -856,8 +930,8 @@ A3A_fifth_slot_p2 = {
 				OR = {
 					owned_by = A3A
 					owned_by = A33
-					}
 				}
+			}
 			364 = {
 				OR = {
 					owned_by = A3A
@@ -915,6 +989,14 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_dove_throne
 		}
+		provinces_to_highlight = {
+			region = the_borders_region
+			NOT = {
+				is_part_of_hre = yes
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
+		}
 		trigger = {
 			the_borders_region = {
 				type = all
@@ -937,6 +1019,13 @@ A3A_fifth_slot_p2 = {
 		required_missions = {
 			A3A_securing_empire
 		}
+		provinces_to_highlight = {
+			region = dostanor_region
+			NOT = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
+		}
 		trigger = {
 			dostanor_region = {
 				type = all
@@ -958,6 +1047,16 @@ A3A_fifth_slot_p2 = {
 		position = 9
 		required_missions = {
 			A3A_ancient_home
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = daravans_folly_region
+				region = ourdia_region
+			}
+			NOT = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_subjects_with = {
@@ -1011,7 +1110,6 @@ A3A_first_slot_p3 = {
 			high_tolerance_half_elven_race_trigger = yes
 			num_of_special_units = {
 				value = 40
-				type = cavalry
 			}
 		}
 		effect = {
@@ -1101,6 +1199,15 @@ A3A_third_slot_p3 = {
 			}
 		}
 	}
+	provinces_to_highlight = {
+		is_capital = yes
+		owner = {
+			capital_scope = {
+				continent = europe
+			}
+				army_size = ROOT
+		}
+	}
 	A3A_extraterritorial = {
 		icon = mission_assassination
 		position = 11
@@ -1134,6 +1241,13 @@ A3A_third_slot_p3 = {
 		required_missions = {
 			A3A_extraterritorial
 		}
+		provinces_to_highlight = {
+			region = lencenor_region
+			NOT = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
+		}
 		trigger = {
 			OR = {
 				A01 = {
@@ -1142,8 +1256,12 @@ A3A_third_slot_p3 = {
 				}
 				A01 = { exists = no }
 			}
-			owns_all_provinces = {
-				region = lencenor_region
+			lencenor_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
 			}
 		}
 		effect = {
@@ -1163,7 +1281,34 @@ A3A_third_slot_p3 = {
 			A3A_the_west
 		}
 		provinces_to_highlight = {
-			
+			OR = {
+				OR = {
+					superregion = western_cannor_superregion
+					superregion = escann_superregion
+				}
+				NOT = {
+					region = dragon_coast_region
+					region = alenic_frontier_region
+				}
+				owner = {
+					NOT = {
+						is_part_of_hre = yes
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+				if = {
+					limit = {
+						840 = {
+							num_of_units_in_province = {
+								who = ROOT
+								NOT = { amount = 50 }
+							}
+						}
+					}
+					province_id = 840
+				}
+			}
 		}
 		trigger = {
 			has_country_flag = slain_the_beast
@@ -1187,11 +1332,6 @@ A3A_third_slot_p3 = {
 			}
 			escann_superregion = {
 				type = all
-				NOT = {
-					region = west_deepwoods_region
-					region = east_deepwoods_region
-					region = deepwoods_portal_region
-				}
 				owner = {
 					OR = {
 						is_part_of_hre = yes
@@ -1253,7 +1393,7 @@ A3A_fourth_slot_p3 = {
 			A3A_swaying_powerful
 		}
 		trigger = {
-			is_estate_enchantment_level_2_minimum = yes
+			is_estate_enchantment_level_3_minimum = yes
 		}
 		effect = { #spell to decrease libdes
 		}
@@ -1268,6 +1408,13 @@ A3A_fifth_slot_p3 = {
 		tag = A3A
 		has_country_flag = pigeons_doves_resolved
 	} 
+	provinces_to_highlight = {
+		region = bahar_region
+		NOT = {
+			owned_by = ROOT	
+			owned_by_subject_of = ROOT
+		}
+	}
 	A3A_the_hills = {
 		icon = mission_potosi_silver
 		position = 11
@@ -1311,11 +1458,20 @@ A3A_fifth_slot_p3 = {
 		required_missions = {
 			A3A_the_hills
 		}
+		provinces_to_highlight = {
+			region = harpy_hills_region
+			NOT = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
+			}
+		}
 		trigger = { #660 - heunthume
 			harpy_hills_region = {
 				type = all
-				owned_by = ROOT
-				owned_by_subject_of = ROOT
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
 			}
 		}
 		effect = {
