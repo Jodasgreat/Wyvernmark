@@ -216,7 +216,7 @@ A3A_second_slot_p2 = {
 			A3A_persuade_adventurers
 		}
 		provinces_to_highlight = {
-			area = isle_of_tef_area = {
+			area = isle_of_tef_area
 			NOT = {
 				owned_by = ROOT 
 				owned_by_subject_of = ROOT	
@@ -420,28 +420,22 @@ A3A_third_slot_p2 = {
 			A3A_handmaidens_handiwork
 		}
 		provinces_to_highlight = {
-			is_capital = yes
-			owner = {
+			OR = {
+				is_capital = yes
+				owner = {
 					tag = A33
 					is_subject_of = ROOT
 					NOT = { liberty_desire = 50 }
 				}
-			}
-			businor_region = {
-				limit = {
+				AND = {
+					region = businor_region
 					NOT = {
-						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with 	= {
-							region = businor_region
-							value = 10
-						}
+						owned_by = ROOT
+						owned_by_subject_of = ROOT
 					}
 				}
-				type = all
-				NOT = {
-					owned_by = ROOT
-					owned_by_subject_of = ROOT
-				}
 			}
+			
 		}
 		trigger = {
 			A33 = {
@@ -1167,7 +1161,7 @@ A3A_second_slot_p3 = {
 				estate = estate_artificers
 				influence = 50
 			}
-			has_country_modifier = A3A_substitute_wings
+		#	has_country_modifier = A3A_substitute_wings
 		}
 		effect = { #artificery capacity +10, research speed -6m
 		}
@@ -1199,20 +1193,21 @@ A3A_third_slot_p3 = {
 			}
 		}
 	}
-	provinces_to_highlight = {
-		is_capital = yes
-		owner = {
-			capital_scope = {
-				continent = europe
-			}
-				army_size = ROOT
-		}
-	}
+	
 	A3A_extraterritorial = {
 		icon = mission_assassination
 		position = 11
 		required_missions = {
 			A3A_wings
+		}
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				capital_scope = {
+					continent = europe
+				}
+				army_size = ROOT
+			}
 		}
 		trigger = {
 			OR = {
@@ -1225,7 +1220,7 @@ A3A_third_slot_p3 = {
 					capital_scope = {
 						continent = europe
 					}
-					army_size = ROOT
+				army_size = ROOT
 				}
 			}
 		}
@@ -1261,11 +1256,15 @@ A3A_third_slot_p3 = {
 				OR = {
 					owned_by = ROOT
 					owned_by_subject_of = ROOT
+					is_part_of_hre = yes
 				}
 			}
 		}
 		effect = {
 			inherit = A01
+			small_country_region = {
+				add_permanent_claim = ROOT
+			}
 			hidden_effect = {
 				country_event = {
 					id = wyvernmark.900 #The rise of Beastbane Reborn
@@ -1281,7 +1280,7 @@ A3A_third_slot_p3 = {
 			A3A_the_west
 		}
 		provinces_to_highlight = {
-			OR = {
+			AND = {
 				OR = {
 					superregion = western_cannor_superregion
 					superregion = escann_superregion
@@ -1289,21 +1288,21 @@ A3A_third_slot_p3 = {
 				NOT = {
 					region = dragon_coast_region
 					region = alenic_frontier_region
-				}
-				owner = {
-					NOT = {
-						is_part_of_hre = yes
-						tag = ROOT
-						is_subject_of = ROOT
+					owner = {
+						OR = {
+							is_part_of_hre = yes
+							tag = ROOT
+							is_subject_of = ROOT
+						}
 					}
 				}
-				if = {
-					limit = {
-						840 = {
-							num_of_units_in_province = {
-								who = ROOT
-								NOT = { amount = 50 }
-							}
+			}
+			if = {
+				limit = {
+					840 = {
+						num_of_units_in_province = {
+							who = ROOT
+							amount = 50
 						}
 					}
 					province_id = 840
@@ -1318,15 +1317,15 @@ A3A_third_slot_p3 = {
 			}
 			western_cannor_superregion = {
 				type = all
-				NOT = {
+				OR = {
 					region = dragon_coast_region
 					region = alenic_frontier_region
-				}
-				owner = {
-					OR = {
-						is_part_of_hre = yes
-						tag = ROOT
-						is_subject_of = ROOT
+					owner = {
+						OR = {
+							is_part_of_hre = yes
+							tag = ROOT
+							is_subject_of = ROOT
+						}
 					}
 				}
 			}
@@ -1379,11 +1378,11 @@ A3A_fourth_slot_p3 = {
 				influence = 50
 			}
 			estate_influence = {
-				estate = estate_clergy
+				estate = estate_church
 				influence = 50
 			}
 		}
-		effect = { #enchantment exp modifier, mana recovery
+		effect = { #exp modifier, mana recovery
 		}
 	}
 	A3A_persuading_masses = {
@@ -1393,7 +1392,7 @@ A3A_fourth_slot_p3 = {
 			A3A_swaying_powerful
 		}
 		trigger = {
-			is_estate_enchantment_level_3_minimum = yes
+			is_estate_enchantment_level_3 = yes
 		}
 		effect = { #spell to decrease libdes
 		}
@@ -1408,13 +1407,6 @@ A3A_fifth_slot_p3 = {
 		tag = A3A
 		has_country_flag = pigeons_doves_resolved
 	} 
-	provinces_to_highlight = {
-		region = bahar_region
-		NOT = {
-			owned_by = ROOT	
-			owned_by_subject_of = ROOT
-		}
-	}
 	A3A_the_hills = {
 		icon = mission_potosi_silver
 		position = 11
@@ -1422,13 +1414,22 @@ A3A_fifth_slot_p3 = {
 			A3A_wings
 			A3A_path_east
 		}
+		provinces_to_highlight = {
+			region = bahar_region
+			NOT = {
+				owned_by = ROOT	
+				owned_by_subject_of = ROOT
+			}
+		}
 		trigger = {
 			calc_true_if = {
 				amount = 15
 				bahar_region = {
 					type = all
-					owned_by = ROOT
-					owned_by_subject_of = ROOT
+					OR = {
+						owned_by = ROOT
+						owned_by_subject_of = ROOT
+					}
 				}
 			}
 		}

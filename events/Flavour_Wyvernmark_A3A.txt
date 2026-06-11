@@ -708,7 +708,9 @@ country_event = { #disaster proper kicks off
 		remove_country_modifier = A3A_convent_administration
 		remove_country_modifier = A3A_competent_administrators
 		clr_country_flag = cannot_demonsterise
+		clr_country_flag = harpy_masquerade
 		start_demonsterization_effect = yes
+		set_country_flag = A3A_convent_destroyed
 		hidden_effect = {
 			if = {
 				limit = { has_country_flag = pigeons }
@@ -761,7 +763,8 @@ country_event = { #pigeons debuffs
 			}
 			every_owned_province = {
 				limit = { has_province_modifier = harpy_roost_mod_roost_fledgling }
-				add_province_modifier = {
+				add_disaster_modifier = {
+					disaster = pigeons_and_doves
 					name = A3A_rebellious_fledg_roost
 					duration = -1 
 				}
@@ -868,7 +871,8 @@ country_event = { #doves debuffs
 		hidden_effect = {
 			every_owned_province = {
 				limit = { NOT = { culture_group = harpy } }
-				add_province_modifier = {
+				add_disaster_modifier = {
+					disaster = pigeons_and_doves
 					name = A3A_rebellious_subjects
 					duration = -1
 				}
@@ -975,6 +979,7 @@ country_event = { #disaster end, unlock part 3
 		is_at_war = no
 	}
 	option = {
+		name = wyvernmark.599.a
 		end_disaster = pigeons_and_doves
 		set_country_flag = pigeons_doves_resolved
 		swap_non_generic_missions = yes
@@ -1327,12 +1332,13 @@ country_event = {
 	id = wyvernmark.1000
 	title = wyvernmark.1000.t
 	desc = wyvernmark.1000.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
 		name = wyvernmark.1000.a
-		treasury = 1
+		add_treasury = 1
 	}
 }
 # 00 events - hidden mechanics
@@ -1419,23 +1425,27 @@ country_event = {
 	option = {
 		name = wyvernmark.2.a
 		set_country_flag = harpy_masquerade
-		every_country = {
-			if = { 
-				limit = {
-					NOT = { has_country_modifier = monstrous_nation }
+		custom_tooltip = wyvernmark.2.tt
+		hidden_effect = {
+			every_country = {
+				if = { 
+					limit = {
+						NOT = { has_country_modifier = monstrous_nation }
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = crypto_harpy_opinion
+					}
 				}
-				add_opinion = {
-					who = ROOT
-					modifier = crypto_harpy_opinion
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_modifier = monstrous_nation
-				}
-				add_opinion = {
-					who = ROOT
-					modifier = crypto_harpy_monst_opinion
+				else_if = {
+					limit = {
+						has_country_modifier = monstrous_nation
+						NOT = { tag = ROOT }
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = crypto_harpy_monst_opinion
+					}
 				}
 			}
 		}
@@ -1497,5 +1507,100 @@ country_event = { # convert subjects to harpy
 		name = wyvernmark.5.a
 		change_primary_culture = stonewing_harpy
 		add_government_reform = crypto_harpy_reform
+	}
+}
+country_event = { # manage harpy masquerade
+	id = wyvernmark.6
+	title = wyvernmark.6.t
+	desc = wyvernmark.6.d
+	picture = NUN_SPY_eventPicture
+	hidden = yes
+
+	trigger = {
+		has_country_flag = harpy_masquerade
+		any_known_country = {
+			OR = {
+				AND = {
+					has_country_modifier = monstrous_nation
+					NOT = {
+						culture = stonewing_harpy
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = crypto_harpy_monst_opinion
+						}
+					}
+				}
+				AND = {
+					NOT = { 
+						has_country_modifier = monstrous_nation 
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = crypto_harpy_opinion
+						}
+					}
+				}
+			}
+		}
+					
+	}
+	option = {
+		name = wyvernmark.6.a
+		every_known_country = {
+			if = {
+				limit = { 
+					OR = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = crypto_harpy_opinion
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = crypto_harpy_monst_opinion
+						}
+					}
+				}
+				#do nothing
+			}
+			else_if = {
+				limit = { has_country_modifier = monstrous_nation }
+				add_opinion = {
+					who = ROOT
+					modifier = crypto_harpy_monst_opinion
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_country_modifier = monstrous_nation } }
+				add_opinion = {
+					who = ROOT
+					modifier = crypto_harpy_opinion
+				}
+			}
+		}
+	}
+}
+country_event = { # break the masquerade
+	id = wyvernmark.7
+	title = wyvernmark.7.t
+	desc = wyvernmark.7.d
+	picture = NUN_SPY_eventPicture
+	#hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = A3A_convent_destroyed
+	}
+	option = {
+		name = wyvernmark.7.a
+		every_known_country = {
+			remove_opinion = {
+				who = ROOT
+				modifier = crypto_harpy_opinion
+			}
+			remove_opinion = {
+				who = ROOT
+				modifier = crypto_harpy_monst_opinion
+			}
+		}
+			
 	}
 }

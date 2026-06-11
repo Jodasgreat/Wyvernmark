@@ -113,3 +113,6 @@ A3A_castanor_buffs = {
 	discipline = 0.1
 	global_unrest = -2
 }
+A3A_rebellious_subjects = {
+	local_unrest = 10
+}
