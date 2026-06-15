@@ -25,7 +25,7 @@ A3A_anbennarians_in_name = {
 }
 A3A_arch_margravine = {
 	prestige = 1
-	diplomatic_reputation = 1
+	diplomatic_reputation = 2
 }
 a3a_enchanted_adventurers = {
 	mercenary_cost = -0.25
@@ -49,6 +49,7 @@ A3A_combined_arms_cav = {
 A3A_new_wings = {
 	years_to_integrate_personal_union = -5
 	annexation_relations_impact = -0.25
+	diplomatic_annexation_cost = -0.2
 	imperial_authority_value = 0.3
 	reasons_to_elect = 30
 	spy_offence = 0.1
@@ -67,6 +68,7 @@ A3A_convent_administration = {
 	reduced_liberty_desire = 10
 	years_to_integrate_personal_union = -5
 	annexation_relations_impact = -0.25
+	diplomatic_annexation_cost = -0.2
 }
 A3A_competent_administrators = {
 	imperial_authority_value = 0.3
@@ -115,4 +117,22 @@ A3A_castanor_buffs = {
 }
 A3A_rebellious_subjects = {
 	local_unrest = 10
+}
+A3A_substitute_wings = {
+	movement_speed = 0.2
+	envoy_travel_time = -0.2
+	siege_ability = 0.1
+}
+A3A_research_speed = {
+	artificers_research_time = -0.2
+}
+A3A_hypnotized_subjects = {
+	liberty_desire_from_subject_development = -0.15
+	annexation_relations_impact = -0.25
+	global_unrest = -1
+}
+A3A_magic_buffs = {
+	enchantment_experience_mod = 0.1
+	illusion_experience_mod = 0.1
+	mages_mana_regen = 0.1
 }

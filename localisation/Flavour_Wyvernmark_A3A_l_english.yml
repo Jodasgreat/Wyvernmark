@@ -49,7 +49,7 @@
  A3A_city_in_the_hills_title:0 "City in the Hills"
  A3A_city_in_the_hills_desc:0 "If we hope to be taken seriously as Arch-Margravines, our capital must look the part.\n\nEven now, Bronzewing Hall feels more like a ramshackle camp of adventurers rather than the proud imperial city it ought to be.\n\nWe must draw up a new plan for the city -- wide, clean boulevards lined with proud stone buildings. On one end, our palace; on the other, an imposing new institution of magic that will rival the Magesterium."
  A3A_flock_together_title:0 "Flock Together"
- A3A_flock_together_desc:0 ""
+ A3A_flock_together_desc:0 "Our sisters now sit on thrones across the Empire. We must ensure our interests are aligned under the direction of The Convent."
  A3A_heart_of_empire_title:0 "Heart of the Empire"
  A3A_heart_of_empire_desc:0 "Far from our humble roots, we now command the respect and admiration of all around us. The Empire of Anbennar once seemed intimidating, once posed a threat to our kind. Now, however, we have nothing to fear.\n\nFor, through our networks of marriage and diplomacy, it is they who must defer to us."
  A3A_pigeons_and_doves_title:0 "Pigeons and Doves"
@@ -79,6 +79,7 @@
  A3A_Khenak_Roost_desc:0 "Though harpies of The Convent may lack wings, they nevertheless still yearn for the mountains. Thankfully, no one worth caring about lives in those mountains, so it should be easy work to clear space for some lovely new roosts."
  A3A_feather_pillows_title:0 "Feather Pillows"
  A3A_feather_pillows_desc:0 "The great houses of Cannor are families of such prestige and dignity that it would be a shame for their children to go to sleep on a hard surface, wouldn't it?\n\n'In fact, milord, I believe your son deserves only the highest-quality pillows Cannor can provide. Fortunately, it just so happens that Wyvernmark has an unexpected oversupply of the most exotic and soft feathers you've ever laid eyes on.\n\nIf you don't mind, perhaps I could deliver these pillows to the Prince myself?'"
+ A3A_feather_pillows_tt:0 "§CEvent Insight:§! We will gain the ability to assassinate the heirs of certain nations."
  A3A_securing_empire_title:0 "Securing the Borders"
  A3A_securing_empire_desc:0 "The growth of Wyvernmark has rendered the Empire's southern frontier all but impregnable. The same, however, cannot be said about the eastern border. The Wexonards have been reticent in their duty to secure these lands. We must take into our own hands to keep the Empire's borders secure.\n\n'Do not mind the army marching through your lands, my dear Wexonard friend. You wouldn't want a repeat of the first Xhazobine, would you? Another monstrous horde overrunning your homeland?'"
  A3A_ancient_home_title:0 "Our Ancient Home"
@@ -130,16 +131,16 @@
  wyvernmark.103.a:0 "You, harpy Asturia, marry."
  
  wyvernmark.104.t:0 "The Long Game"
- wyvernmark.104.d:0 "We send our sister to Verne, and the Duke is grateful for that."
- wyvernmark.104.a:0 "In time, you will do great things."
+ wyvernmark.104.d:0 "'[Root.Monarch.getName], I'm scared.'\n\n'Have pride in yourself, sister.' I pulled the laces of her gown tight. She winced as the fabric tugged against her wing-scars, but she did not voice her displeasure. 'We have already damaged the old Duchess' reputation beyond repair. You bear his child. He will have no choice but to accept you.'\n\n'I- Yes, I know that. You've said that enough times. But you want me to stay in Verne? To show myself before the court every day? To live with that man!?' Despite the thorough training I and the rest of the Convent have put her through, she seemed awfully unwilling to perform the duty she had been trained for. It was too late now to change the plan. The Duke knew her face -- the Duke loved her face. If he hadn't, she would not have been able to seduce him at that banquet last year.\n\nA junior sister presented a shawl and veil, and I threw them upon the bride-to-be. 'This is your duty,' I told her, 'Surely you understand what is at stake.'\n\n'I know! I know!' She practically whimpered. 'But still...' She lifted the hem of her dress, exposing her feet that had yet to receive the strict cloth bindings and tall boots that awaited her on a table nearby. While the sharp talons that would have graced her toes were removed before she could ever remember them, the avian scaly texture of her feet would betray her heritage to any who could see them. 'What if he finds out? I was so scared the first time... How am I supposed to keep the secret for years?'\n\nWeakness. I grabbed both of her shoulders from behind and pressed my thumbs hard into her wing-scars. 'You *will* keep the secret.' I chastised as she screamed involuntarily. 'If you are such a fool to let your secret slip just because you spent too much time with a man, then my faith in you was misfounded. Know that countless harpies before you have burned at the hands of these men. He is not your lover, even if you are his. If he ever manages to find out...'"
+ wyvernmark.104.a:0 "'My sister, you already know what you must do.'"
  
  wyvernmark.105.t:0 "A New Kind of Roost"
  wyvernmark.105.d:0 "'Harpies. A monstrous avian race that, thanks to their gift of flight, builds roosts high up in the mountains where land-bound races like humans would be unable to disturb them. Should you ever find yourself in an area of probable harpy activity, dear reader, stay on high alert. Once the harpy has you in her claws, you will never be able to escape the roost.' -- Excerpt from 'Beasts of Halann and All Their Terrible Forms'\n\nNaturally, the author of this book was unaware that he lived in a country ruled by those very harpies. Unlike the poorly-informed fantasy he describes, however, the harpies of The Convent find themselves just as hampered by the curse of gravity as he. Nonetheless, it would be extremely advantageous were they to have a roost of that sort. A self-sufficient city in the mountains where outsiders could not enter, and insiders could not leave without the Matriarch's approval.\n\nUnlike the grand roost at Heunthume, or even their mothers' old nests in Akasik, this would not be a home perched on the cliffside with no ladders up. This roost would be more subtle. More... terrestrial. It would look less like a bird's nest and more like a small mountain village, shielded by high walls on all sides with all access funneled through a single gate.\n\nTo the humans around, this roost would be assumed to be little more than a monastery."
  wyvernmark.105.a:0 "Or, perhaps, a Convent."
  
  wyvernmark.106.t:0 "A More Welcoming Profession."
- wyvernmark.106.d:0 "They say harpy culture has no gender, yet The Convent insists we all live as women. Adventurering is the one place I can be who I want to be."
- wyvernmark.106.a:0 "This is where I belong."
+ wyvernmark.106.d:0 "'They say harpy culture has no gender, yet The Convent insists we all live as women.\n\nFrom my birth, I was taught that men were uncivilized brutes who would kill us on sight if we disobeyed any of The Convent's teachings. That I was to behave as the ideal woman at all times, for to break from that mold would mean certain death.\n\nI hated it. That alone did not make me unique. Every sister bemoaned the loss of their talons and cursed the names of the sister wing-shearers who robbed them of their birthright. All of them spoke of a fanciful future where harpies like them would be free to soar the skies unmolested. A future where the humans knew their place -- disarmed, only able to stare up at the majesty of our superiority.\n\nThat vision, however, did not make my heart sing as it did my sisters'. They told me stories of adventurers and their deeds as a cautionary tale, yet I only grew more curious. Who were these men? What drove them to devote themselves to live a life of such danger? More importantly, if a harpy can perform the role of a noble lady, could we not become a gallant man just as easily?\n\nRather than go off to marry some creepy old noble, I donned a full-face helmet and signed up for a party of amateur adventurers. So afraid was I of being discovered that I didn't speak once for the whole first mission.'Alvar the Mute,' they called me. It wasn't my name, and yet my heart raced more than it ever did when I was called the name The Convent gave me.\n\nContrary to the stories I'd been told, these men were not foaming at the mouth, nor thirsty for blood. They approached the quest-giver, a frail old widow tending to a modest farm, with the utmost grace and courteousy. In spite of their bravado, these men almost fainted when a wild boar stood between them and the herbs we needed to collect. And, when the job was finished, the captain patted me on the shoulder. 'Alvar, you're a good man,' he said, and I knew at once that this was where I belonged.'\n\n-From the journals of Alvar the Mute, proud Vernman adventurer."
+ wyvernmark.106.a:0 "These fools can't be stopped. Might as well use them."
  
  wyvernmark.107.t:0 "He Who Fights Monsters"
  wyvernmark.107.d:0 "Adventurers are trained in the arts of tracking and slaying monsters. Even though we have taken great lengths to distance ourselves from them whenever possible, after enough time it would be inevitable that they discover the harpies in their midst."
@@ -451,6 +452,10 @@
  A3A_pigeons_bonus:0 "Rule of the Pigeons"
  A3A_castanor_buffs:0 "Castanorian Zeal"
  A3A_doves_debuff:0 "Discontent With the Doves"
+ A3A_substitute_wings:0 "Substitute Wings"
+ A3A_research_speed:0 "Head Start on Research"
+ A3A_hypnotized_subjects:0 "Hypnotized Subjects"
+ A3A_magic_buffs:0 "Magical Domination"
  
  #flags
  pigeons_doves_resolved:0 "Determined the Course of Our Nation"
@@ -469,7 +474,9 @@
  merc_wyvern_rider_company:0 "Wyvern Rider Company"
  merc_daughters_of_stone:0 "Daughters of Stone"
  
- 
+ #startup screen
+ string_start_title_wyvernmark:0 "Wyvernmark, at the Edge of the Empire"
+ string_start_wyvernmark:0 "Funny little country in the mountains, and now there's some funny little bird people here too."
 
 
  #MT description

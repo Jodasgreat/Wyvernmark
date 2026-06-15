@@ -111,6 +111,9 @@ country_event = {
 		add_government_reform = crypto_harpy_reform
 		set_country_flag = cannot_demonsterise
 		set_country_flag = disable_racial_mil_swap_flag
+		hidden_effect = {
+			initialise_custom_spell_list = { group = harpy }
+		}
 	}
 }
 country_event = {
@@ -473,7 +476,10 @@ country_event = {
 
 	option = {
 		name = wyvernmark.301.a
-		set_country_flag = A3A_substitute_wings_research
+		add_country_modifier = {
+			name = A3A_substitute_wings
+			duration = -1
+		}
 	}
 }
 country_event = {
@@ -520,6 +526,25 @@ country_event = {
 	
 	option = {
 		name = wyvernmark.400.a
+		random_known_country = {
+			limit = { 
+				marriage_with = ROOT
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+			remove_consort = yes
+			define_consort = {
+				culture = stonewing_harpy
+				female = yes
+				country_of_origin = ROOT
+			}
+			add_spy_network_from = {
+				who = ROOT
+				value = -50
+			}
+		}
 		custom_tooltip = wyvernmark.400.tt
 		set_country_flag = can_kill_consort
 	}
@@ -573,6 +598,24 @@ country_event = {
 	
 	option = {
 		name = wyvernmark.410.a
+		random_known_country = {
+			limit = { 
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+			remove_heir = yes
+			define_heir = {
+				culture = stonewing_harpy
+				female = yes
+				country_of_origin = ROOT
+			}
+			add_spy_network_from = {
+				who = ROOT
+				value = -50
+			}
+		}
 		custom_tooltip = wyvernmark.410.tt
 		set_country_flag = can_kill_heir
 	}
@@ -626,6 +669,19 @@ country_event = {
 	
 	option = {
 		name = wyvernmark.420.a
+		random_known_country = {
+			limit = { 
+				has_spy_network_from = {
+					who = ROOT
+					value = 70
+				}
+			}
+			kill_ruler = yes
+			add_spy_network_from = {
+				who = ROOT
+				value = -70
+			}
+		}
 		custom_tooltip = wyvernmark.420.tt
 		set_country_flag = can_kill_ruler
 	}

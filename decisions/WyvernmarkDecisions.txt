@@ -148,7 +148,7 @@ country_decisions = {
 				consort_culture = stonewing_harpy
 				has_spy_network_from = {
 					who = ROOT
-					value = 80
+					value = 60
 				}
 			}
 		}
@@ -160,10 +160,10 @@ country_decisions = {
 				consort_culture = stonewing_harpy
 				has_spy_network_from = {
 					who = ROOT
-					value = 80
+					value = 60
 				}
 			}
-			dip_power = 200
+			dip_power = 150
 		}
 		effect = {
 			custom_tooltip = A3A_kill_heir_tt
@@ -175,7 +175,7 @@ country_decisions = {
 					consort_culture = stonewing_harpy
 					has_spy_network_from = {
 						who = ROOT
-						value = 80
+						value = 60
 					}
 				}
 				random_list = {
@@ -193,10 +193,10 @@ country_decisions = {
 				}
 				add_spy_network_from = {
 					who = ROOT
-					value = -80
+					value = -60
 				}
 			}
-			add_dip_power = -200
+			add_dip_power = -150
 		}
 	}
 	A3A_harpy_highlighter_heir = {
@@ -232,7 +232,7 @@ country_decisions = {
 				is_subject = no
 				has_spy_network_from = {
 					who = ROOT
-					value = 100
+					value = 70
 				}
 			}
 		}
@@ -243,10 +243,10 @@ country_decisions = {
 				is_subject = no
 				has_spy_network_from = {
 					who = ROOT
-					value = 100
+					value = 70
 				}
 			}
-			dip_power = 300
+			dip_power = 200
 		}
 		effect = {
 			custom_tooltip = A3A_kill_ruler_tt
@@ -257,7 +257,7 @@ country_decisions = {
 					is_subject = no
 					has_spy_network_from = {
 						who = ROOT
-						value = 100
+						value = 70
 					}
 				}
 				random_list = {
@@ -272,10 +272,10 @@ country_decisions = {
 				}
 				add_spy_network_from = {
 					who = ROOT
-					value = -100
+					value = -70
 				}
 			}
-			add_dip_power = -300
+			add_dip_power = -200
 		}
 	}
 }

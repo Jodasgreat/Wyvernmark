@@ -1,11 +1,11 @@
 #special merc companies for wyvernmark
 merc_vernman_auxiliaries = {
-    regiments_per_development = 0.01
+	regiments_per_development = 0.01
 	cavalry_weight = 0.4
 	cavalry_cap = 6
-	home_province = 292
+	home_province = 286
 	sprites = { westerngfx_sprite_pack }
-    trigger = {
+	trigger = {
 		is_or_was_tag = { tag = A3A }
 		has_country_flag = A3A_vernman_mercs
 	}
@@ -16,82 +16,87 @@ merc_vernman_auxiliaries = {
 	}
 }
 merc_mountain_company = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0.4
-	cavalry_cap = 6
-	home_province = 292
+	regiments_per_development = 0.01
+	cavalry_weight = 0.2
+	home_province = 364
 	sprites = { westerngfx_sprite_pack }
-    trigger = {
+	trigger = {
 		is_or_was_tag = { tag = A3A }
 		has_country_flag = A3A_mountain_mercs
 	}
-	cost_modifier = 0.9
+	cost_modifier = 0.8
 	modifier = {
 		shock_damage_received = -0.1
-		land_morale = 0.1
+		land_attrition = -0.10
+		reinforce_speed = -0.2
 	}
 }
 merc_anbennarian_host = {
-    regiments_per_development = 0.01
+	regiments_per_development = 0.02
 	cavalry_weight = 0.4
-	cavalry_cap = 6
-	home_province = 292
+	home_province = 8
 	sprites = { westerngfx_sprite_pack }
-    trigger = {
+	trigger = {
 		is_or_was_tag = { tag = A3A }
 		has_country_flag = A3A_monst_adv
 	}
-	cost_modifier = 0.9
+	cost_modifier = 1.1
 	modifier = {
-		shock_damage_received = -0.1
-		land_morale = 0.1
+		shock_damage = 0.2
+		fire_damage = 0.2
+		shock_damage_received = 0.1
+		fire_damage_received = -0.1
 	}
 }
 merc_entranced_adventurers = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0.4
-	cavalry_cap = 6
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
 	home_province = 292
 	sprites = { westerngfx_sprite_pack }
-    trigger = {
+	trigger = {
 		is_or_was_tag = { tag = A3A }
 		has_country_flag = A3A_entranced_adv
 	}
-	cost_modifier = 0.9
+	cost_modifier = 0.5
 	modifier = {
-		shock_damage_received = -0.1
-		land_morale = 0.1
+		land_morale = 0.3
+		morale_damage_received = -0.3
+		recover_army_morale_speed = 0.3
+		infantry_power = -0.2
+		cavalry_power = -0.2
 	}
 }
 merc_wyvern_rider_company = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0.4
-	cavalry_cap = 6
-	home_province = 292
+	regiments_per_development = 0.03
+	cavalry_weight = 1
+	home_province = 838
 	sprites = { westerngfx_sprite_pack }
-    trigger = {
+	trigger = {
 		is_or_was_tag = { tag = A3A }
 		has_country_flag = A3A_wyvern_mercs
 	}
-	cost_modifier = 0.9
+	cost_modifier = 1.5
 	modifier = {
-		shock_damage_received = -0.1
-		land_morale = 0.1
+		cav_to_inf_ratio = 1
+		cavalry_shock = 0.2
+		cavalry_power = 0.2
 	}
 }
 merc_daughters_of_stone = {
-    regiments_per_development = 0.01
-	cavalry_weight = 0.4
-	cavalry_cap = 6
-	home_province = 292
-	sprites = { westerngfx_sprite_pack }
-    trigger = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	home_province = 395
+	sprites = { harpy_sprite_pack }
+	trigger = {
 		is_or_was_tag = { tag = A3A }
 		has_country_flag = A3A_harpy_mercs
 	}
-	cost_modifier = 0.9
+	cost_modifier = 0.95
 	modifier = {
+		morale_damage_received = -0.05
 		shock_damage_received = -0.1
-		land_morale = 0.1
+		reinforce_speed = -0.2
+		may_recruit_female_generals = yes
+		female_advisor_chance = 1
 	}
 }

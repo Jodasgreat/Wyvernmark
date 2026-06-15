@@ -50,7 +50,7 @@ A3A_first_slot_p2 = {
 		effect = {
 			add_country_modifier = {
 				name = a3a_fortified_mountains
-				duration = 3650
+				duration = 10950
 			}
 			custom_tooltip = A3A_defend_the_mountains_tt
 			set_country_flag = A3A_mountain_mercs
@@ -66,8 +66,11 @@ A3A_first_slot_p2 = {
 		}
 		trigger = {
 			crown_land_share = 20
+			treasury = 100
+			has_cast_enchanting_embassy = yes
 		}
 		effect = {
+			add_treasury = -100
 			custom_tooltip = A3A_deal_with_adv_tt
 			set_country_flag = A3A_monst_adv
 		}
@@ -80,8 +83,14 @@ A3A_first_slot_p2 = {
 		}
 		trigger = {
 			is_estate_enchantment_level_1_minimum = yes
+			has_mana = {
+				amount = 25
+			}
 		}
 		effect = {
+			change_mana = {
+				amount = -25
+			}
 			add_estate_loyalty_modifier = {
 				estate = estate_human_adventurers
 				desc = A3A_entranced_adv
@@ -200,6 +209,7 @@ A3A_second_slot_p2 = {
 				estate = estate_human_adventurers
 				influence = 60
 			}
+			num_of_mercenaries = 10
 		}
 		effect = {
 			country_event = {
@@ -224,6 +234,7 @@ A3A_second_slot_p2 = {
 		}
 		trigger = {
 			isle_of_tef_area = {
+				type = all
 				OR = {
 					owned_by = ROOT 
 					owned_by_subject_of = ROOT	
@@ -258,6 +269,7 @@ A3A_second_slot_p2 = {
 		}
 		trigger = {
 			akasik_region = {
+				type = all
 				OR = {
 					owned_by = ROOT 
 					owned_by_subject_of = ROOT	
@@ -665,6 +677,13 @@ A3A_fourth_slot_p2 = {
 		}
 		trigger = {
 			has_idea_group = spy_ideas
+			any_known_country = {
+				marriage_with = ROOT
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
 		}
 		effect = {
 			country_event = {
@@ -1147,6 +1166,7 @@ A3A_second_slot_p3 = {
 			unlock_artificery = yes
 			country_event = {
 				id = wyvernmark.301 #substitute wings invention
+				days = 1825
 			}
 		}
 	}
@@ -1164,6 +1184,11 @@ A3A_second_slot_p3 = {
 		#	has_country_modifier = A3A_substitute_wings
 		}
 		effect = { #artificery capacity +10, research speed -6m
+			mission_reward_artifice_points_10 = yes
+			add_country_modifier = {
+				name = A3A_research_speed
+				duration = 7300
+			}
 		}
 	}
 }
@@ -1214,7 +1239,13 @@ A3A_third_slot_p3 = {
 				hre_reform_passed = anbennar_internal_divisions
 				hre_reform_passed = anbennar_enable_magisterium_governance
 			}
-			diplomatic_reputation = 10
+			diplomatic_reputation = 8
+			any_known_country = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 70
+				}
+			}
 			NOT = {
 				any_country = {
 					capital_scope = {
@@ -1383,6 +1414,10 @@ A3A_fourth_slot_p3 = {
 			}
 		}
 		effect = { #exp modifier, mana recovery
+			add_country_modifier = {
+				name = A3A_magic_buffs
+				duration = -1
+			}
 		}
 	}
 	A3A_persuading_masses = {
@@ -1395,6 +1430,10 @@ A3A_fourth_slot_p3 = {
 			is_estate_enchantment_level_3 = yes
 		}
 		effect = { #spell to decrease libdes
+			add_country_modifier = {
+				name = A3A_hypnotized_subjects
+				duration = -1
+			}
 		}
 	}
 }
