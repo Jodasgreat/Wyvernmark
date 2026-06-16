@@ -1,0 +1,11 @@
+A3A_doved_effect = {
+	set_country_flag = A3A_doved_@ROOT
+	trigger_switch = {
+		on_trigger = tag
+		A3A = { override_country_name = doved_A3A }
+		A33 = { override_country_name = doved_A33 }
+		A01 = { override_country_name = doved_A01 }
+		B32 = { override_country_name = doved_B32 }
+		Z01 = { override_country_name = doved_Z01 }
+	}
+}

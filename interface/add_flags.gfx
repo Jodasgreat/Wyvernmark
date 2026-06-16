@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/flags/A3A.tga"
 	}
 	spriteType = {
+		name = "GFX_A4A"
+		texturefile = "gfx/flags/A4A.tga"
+	}
+	spriteType = {
 		name = "GFX_disaster_pigeons_and_doves"
 		texturefile = "gfx//interface//disasters//pigeons_and_doves.dds"
 		noOfFrames = 3

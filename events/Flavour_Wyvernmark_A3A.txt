@@ -950,9 +950,16 @@ country_event = { #doves buffs
 	
 	option = {
 		name = wyvernmark.521.a
+		change_tag = A4A
 		clear_racial_military = yes
 		add_mil_power = 200
 		set_global_flag = A3A_harpization
+		custom_tooltip = wyvernmark.521.tt
+		hidden_effect = {
+			every_subject_country = {
+				A3A_doved_effect = yes
+			}
+		}
 		add_government_reform = harpy_matriarchy_reform
 		racial_mil_change_military_effect = { RACE = harpy }
 		hidden_effect = {
@@ -1554,7 +1561,9 @@ country_event = { # convert subjects to harpy
 
 	trigger = {
 		NOT = { culture_group = harpy }
-		is_subject_of = A3A
+		overlord = {
+				is_or_was_tag = { tag = A3A }
+		}
 		ruler_culture = stonewing_harpy
 		NOT = { liberty_desire = 50 }
 		A3A = { has_country_modifier = A3A_convent_administration }
@@ -1639,7 +1648,7 @@ country_event = { # break the masquerade
 	title = wyvernmark.7.t
 	desc = wyvernmark.7.d
 	picture = NUN_SPY_eventPicture
-	#hidden = yes
+	hidden = yes
 	fire_only_once = yes
 
 	trigger = {
@@ -1656,7 +1665,28 @@ country_event = { # break the masquerade
 				who = ROOT
 				modifier = crypto_harpy_monst_opinion
 			}
+		}	
+	}
+}
+country_event = { # harpization
+	id = wyvernmark.8
+	title = wyvernmark.8.t
+	desc = wyvernmark.8.d
+	picture = NUN_SPY_eventPicture
+	hidden = yes
+
+	trigger = {
+		has_global_flag = A3A_harpization
+		OR = {
+			is_or_was_tag = { tag = A3A }
+			overlord = {
+				is_or_was_tag = { tag = A3A }
+			}
 		}
-			
+		NOT = { has_country_flag = A3A_doved_@ROOT }
+	}
+	option = {
+		name = wyvernmark.8.a
+		A3A_doved_effect = yes	
 	}
 }

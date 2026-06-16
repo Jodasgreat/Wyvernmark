@@ -259,6 +259,7 @@
  wyvernmark.521.t:0 "Doves Remake the Administration"
  wyvernmark.521.d:0 "No longer will we pretend to be some silly human monarchy. We will be a proper harpy matriarchy with a harpy army."
  wyvernmark.521.a:0 "We take to the skies!"
+ wyvernmark.521.tt:0 "Restructures our subjects to properly reflect their §Yharpy masters.§!"
  
  wyvernmark.522.t:0 "Crusade Against the Monsters!"
  wyvernmark.522.d:0 "Our human neighbors are not pleased to see us embracing our nature."
@@ -484,3 +485,15 @@
  missions_A3A_desc:0 "This country has a custom mission tree"
  LANDING_missions_L76_TEXT:0 "To most, Wyvernmark may be a backwater. Home to an insignificant lord whose duty is to protect the endangered wyverns at the behest of the Vernmen. To The Convent, however, it is the perfect staging ground for their plan.\nA small group Stonewing Harpies escaped gnollish slavery in Akasisk, but it was humanity who drove them from their ancient home in Cannor. By disguising themselves as humans, they will ingratiate themselves will all of Cannor's noble houses.\nBy the time the humans realize what has happened, a harpy will be sitting on every throne in Cannor.\n\n§YDesigner§!, §YCoder§!, and YWriters§!: Jodasgreat"
  LANDING_missions_A3A_FLAVOR_TEXT:0 "" #THIS SHOULD BE EMPTY, EDIT THE ONE ABOVE
+ 
+ #dove names
+ doved_A3A:0 "S'iltralithén"
+ doved_A3A_ADJ:0 "S'iltralithéni"
+ doved_A33:0 "Vérn"
+ doved_A33_ADJ:0 "Vérnharpi"
+ doved_A01:0 "S'arhonlén"
+ doved_A01_ADJ:0 "S'arhonléni"
+ doved_B32:0 "Kastanlén"
+ doved_B32_ADJ:0 "Kastanléni"
+ doved_Z01:0 "P'ezkirún P'ohazúvu"
+ doved_Z01_ADJ:0 "P'ezkirúni"

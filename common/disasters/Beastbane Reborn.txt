@@ -2,7 +2,7 @@
 beastbane_reborn = {
 	ended_by_country_breaking_to_rebels = no
 	potential = {
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		NOT = { has_country_flag = slain_the_beast }
 		has_country_flag = beastbane_reborn_start
 	}

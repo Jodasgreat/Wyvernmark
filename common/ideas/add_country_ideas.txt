@@ -10,7 +10,10 @@ A3A_ideas = {
 	}
 
 	trigger = {
-		tag = A3A #Wyvernmark
+		OR = {
+			tag = A3A #Wyvernmark
+			tag = A4A #S'iltralithen
+		}
 	}
 	free = yes		#will be added at load.
 

@@ -1,0 +1,33 @@
+
+setup_vision_cannor = yes
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = vernman
+religion = regent_court
+technology_group = tech_cannorian
+capital = 838 # Bronzewing Hall
+
+historical_rival = A11 #Pearlsedge
+historical_friend = A47 #Eborthil
+
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_magisterium 
+	set_country_flag = new_imperial_candidate_gain_magisterium
+}
+1000.1.2 = { set_country_flag = avoids_colonist_settlement_growth }
+
+1422.1.1 = { set_country_flag = lilac_wars_moon_party }
+
+1443.3.3 = {
+	monarch = {
+		name = "Roger III"
+		dynasty = "síl na Bronzewing"
+		birth_date = 1410.2.3
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+	add_ruler_personality = reformist_personality
+
+}

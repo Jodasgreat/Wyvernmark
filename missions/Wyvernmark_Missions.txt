@@ -3,7 +3,9 @@ A3A_first_slot = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A3A }
+	potential = { 
+		is_or_was_tag = { tag = A3A }
+	}
 
 	A3A_fill_the_ranks = {
 		icon = mission_knight
@@ -29,7 +31,7 @@ A3A_first_slot_p2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = harpies_take_over
 	} 
 
@@ -168,7 +170,7 @@ A3A_second_slot = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A3A }	
+	potential = { is_or_was_tag = { tag = A3A } }	
 }
 A3A_second_slot_p2 = {
 	slot = 2
@@ -176,7 +178,7 @@ A3A_second_slot_p2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A 
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = harpies_take_over
 	}
 	A3A_interdict_corsairs = {
@@ -322,7 +324,7 @@ A3A_third_slot = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A3A }
+	potential = { is_or_was_tag = { tag = A3A } }
 	
 	A3A_Beautiful_Girl = {
 		icon = secure_the_succession
@@ -346,7 +348,7 @@ A3A_third_slot_p2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A 
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = harpies_take_over
 	}	
 	A3A_New_Dynasty = {
@@ -600,7 +602,7 @@ A3A_fourth_slot = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = A3A }
+	potential = { is_or_was_tag = { tag = A3A } }
 }
 A3A_fourth_slot_p2 = {
 	slot = 4
@@ -608,7 +610,7 @@ A3A_fourth_slot_p2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A 
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = harpies_take_over
 	}	
 	A3A_Giving_Tribute = {
@@ -870,7 +872,7 @@ A3A_fifth_slot = {
 	generic = no
 	ai = no
 	has_country_shield = yes
-	potential = { tag = A3A }
+	potential = { is_or_was_tag = { tag = A3A } }
 	
 	A3A_challenging_gnolls = {
 		icon = mission_unite_home_region
@@ -916,7 +918,7 @@ A3A_fifth_slot_p2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = harpies_take_over
 	}
 	
@@ -1091,7 +1093,7 @@ A3A_first_slot_p3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_rebuilding_trust = {
@@ -1139,7 +1141,7 @@ A3A_second_slot_p3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = pigeons_doves_resolved
 		has_country_flag = pigeons
 	} 
@@ -1198,7 +1200,7 @@ A3A_third_slot_p3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_wings = {
@@ -1390,7 +1392,7 @@ A3A_fourth_slot_p3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = pigeons_doves_resolved
 		has_country_flag = doves
 	} 
@@ -1443,7 +1445,7 @@ A3A_fifth_slot_p3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { 
-		tag = A3A
+		is_or_was_tag = { tag = A3A }
 		has_country_flag = pigeons_doves_resolved
 	} 
 	A3A_the_hills = {
