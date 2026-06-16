@@ -3,8 +3,37 @@ A3A_doved_effect = {
 	trigger_switch = {
 		on_trigger = tag
 		A3A = { override_country_name = doved_A3A }
-		A33 = { override_country_name = doved_A33 }
 		A01 = { override_country_name = doved_A01 }
+		A02 = { override_country_name = doved_A02 }
+		A03 = { override_country_name = doved_A03 }
+		A04 = { override_country_name = doved_A04 }
+		A05 = { override_country_name = doved_A05 }
+		A06 = { override_country_name = doved_A06 }
+		A07 = { override_country_name = doved_A07 }
+		A08 = { override_country_name = doved_A08 }
+		A09 = { override_country_name = doved_A09 }
+		A10 = { override_country_name = doved_A10 }
+		A11 = { override_country_name = doved_A11 }
+		A12 = { override_country_name = doved_A12 }
+		A13 = { override_country_name = doved_A13 }
+		A14 = { override_country_name = doved_A14 }
+		A16 = { override_country_name = doved_A16 }
+		A17 = { override_country_name = doved_A17 }
+		A18 = { override_country_name = doved_A18 }
+		A19 = { override_country_name = doved_A19 }
+		A20 = { override_country_name = doved_A20 }
+		A22 = { override_country_name = doved_A22 }
+		A23 = { override_country_name = doved_A23 }
+		A24 = { override_country_name = doved_A24 }
+		A25 = { override_country_name = doved_A25 }
+		A26 = { override_country_name = doved_A26 }
+		A27 = { override_country_name = doved_A27 }
+		A28 = { override_country_name = doved_A28 }
+		A29 = { override_country_name = doved_A29 }
+		A30 = { override_country_name = doved_A30 }
+		A31 = { override_country_name = doved_A31 }
+		A32 = { override_country_name = doved_A32 }
+		A33 = { override_country_name = doved_A33 }
 		B32 = { override_country_name = doved_B32 }
 		Z01 = { override_country_name = doved_Z01 }
 	}
