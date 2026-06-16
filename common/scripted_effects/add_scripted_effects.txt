@@ -34,6 +34,35 @@ A3A_doved_effect = {
 		A31 = { override_country_name = doved_A31 }
 		A32 = { override_country_name = doved_A32 }
 		A33 = { override_country_name = doved_A33 }
+		A34 = { override_country_name = doved_A34 }
+		A35 = { override_country_name = doved_A35 }
+		A36 = { override_country_name = doved_A36 }
+		A37 = { override_country_name = doved_A37 }
+		A38 = { override_country_name = doved_A38 }
+		A39 = { override_country_name = doved_A39 }
+		A40 = { override_country_name = doved_A40 }
+		A41 = { override_country_name = doved_A41 }
+		A42 = { override_country_name = doved_A42 }
+		A43 = { override_country_name = doved_A43 }
+		A44 = { override_country_name = doved_A44 }
+		A45 = { override_country_name = doved_A45 }
+		A46 = { override_country_name = doved_A46 }
+		A47 = { override_country_name = doved_A47 }
+		A48 = { override_country_name = doved_A48 }
+		A50 = { override_country_name = doved_A50 }
+		A51 = { override_country_name = doved_A51 }
+		A52 = { override_country_name = doved_A52 }
+		A53 = { override_country_name = doved_A53 }
+		A54 = { override_country_name = doved_A54 }
+		A56 = { override_country_name = doved_A56 }
+		A57 = { override_country_name = doved_A57 }
+		A58 = { override_country_name = doved_A58 }
+		A59 = { override_country_name = doved_A59 }
+		A60 = { override_country_name = doved_A60 }
+		A61 = { override_country_name = doved_A61 }
+		A62 = { override_country_name = doved_A62 }
+		A63 = { override_country_name = doved_A63 }
+		A64 = { override_country_name = doved_A64 }
 		B32 = { override_country_name = doved_B32 }
 		Z01 = { override_country_name = doved_Z01 }
 	}
