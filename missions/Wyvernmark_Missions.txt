@@ -332,7 +332,7 @@ A3A_third_slot = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			has_heir = "Asturia"
+			has_heir = ASTURIA
 		}
 		
 		effect = {
