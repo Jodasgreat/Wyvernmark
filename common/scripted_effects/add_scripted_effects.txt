@@ -113,6 +113,29 @@ A3A_doved_effect = {
 		B58 = { override_country_name = doved_B58 }
 		B59 = { override_country_name = doved_B59 }
 		B60 = { override_country_name = doved_B60 }
+		B62 = { override_country_name = doved_B62 }
+		B67 = { override_country_name = doved_B67 }
+		B69 = { override_country_name = doved_B69 }
+		B71 = { override_country_name = doved_B71 }
+		B73 = { override_country_name = doved_B73 }
+		B74 = { override_country_name = doved_B74 }
+		B76 = { override_country_name = doved_B76 }
+		B77 = { override_country_name = doved_B77 }
+		B80 = { override_country_name = doved_B80 }
+		B83 = { override_country_name = doved_B83 }
+		B84 = { override_country_name = doved_B84 }
+		B85 = { override_country_name = doved_B85 }
+		B86 = { override_country_name = doved_B86 }
+		B87 = { override_country_name = doved_B87 }
+		B88 = { override_country_name = doved_B88 }
+		B89 = { override_country_name = doved_B89 }
+		B92 = { override_country_name = doved_B92 }
+		B94 = { override_country_name = doved_B94 }
+		B95 = { override_country_name = doved_B95 }
+		B97 = { override_country_name = doved_B97 }
+		B98 = { override_country_name = doved_B98 }
+		Z38 = { override_country_name = doved_Z38 }
+		Z88 = { override_country_name = doved_Z88 }
 		Z01 = { override_country_name = doved_Z01 }
 	}
 }
