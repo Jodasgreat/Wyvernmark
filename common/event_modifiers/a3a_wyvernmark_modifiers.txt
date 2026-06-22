@@ -19,6 +19,7 @@ A3A_flying_wives = {
 A3A_terrestrial_roost = {
 	local_hostile_attrition = 5
 	local_manpower_modifier = 0.25
+	local_governing_cost = -0.25
 }
 A3A_anbennarians_in_name = {
 	reasons_to_elect = 30
@@ -55,11 +56,12 @@ A3A_new_wings = {
 	spy_offence = 0.1
 }
 A3A_stonewing_akasik_mp = {
-	local_manpower_modifier = 0.3
-	local_governing_cost = -0.25
+	local_unrest = 10
 }
 A3A_sarhaly_rule = {
 	liberty_desire_from_subject_development = -0.15
+	manpower_in_own_culture_provinces = 0.25
+	development_cost_in_primary_culture = -0.1
 }
 A3A_integrated_academies = {
 	mages_loyalty_modifier = 0.1
@@ -135,4 +137,27 @@ A3A_magic_buffs = {
 	enchantment_experience_mod = 0.1
 	illusion_experience_mod = 0.1
 	mages_mana_regen = 0.1
+}
+A3A_pigeons_emergent = {
+	global_unrest = 1
+	num_accepted_cultures = 1
+	relation_with_accepted_culture = 5
+}
+A3A_doves_emergent = {
+	global_unrest = 1
+	province_warscore_cost = -0.05
+}
+A3A_protected_monsters = {
+	global_unrest = 1
+	mercenary_cost = 0.10
+	manpower_in_own_culture_provinces = 0.10
+	development_cost_in_primary_culture = 0.10
+}
+A3A_slain_harpies = {
+	mercenary_cost = -0.10
+	manpower_in_own_culture_provinces = -0.10
+}
+A3A_disloyal_flock = {
+	local_autonomy = 0.10
+	trade_goods_size_modifier = -0.25
 }

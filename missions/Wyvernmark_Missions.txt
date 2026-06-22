@@ -293,23 +293,60 @@ A3A_second_slot_p2 = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 475
 				AND = {
 					region = akasik_region
-					unrest = 1
+					OR = {
+						unrest = 1
+						devastation = 1
+						nationalism = 1
+					}
+				}
+				AND = {
+					region = akasik_region
+					OR = {
+						has_terrain = mountain
+						has_terrain = hills
+						has_terrain = highlands
+					}
+					NOT = {
+						OR = {
+							has_province_modifier = harpy_roost_mod_roost_fledgling
+							has_province_modifier = harpy_roost_mod_roost_flourishing_active
+						}
+					}
 				}
 			}
 		}
 		trigger = {
-			475 = {
-				num_of_units_in_province = {
-					who = ROOT
-					amount = 1
+			akasik_region = {
+				type = all
+				OR = {
+					NOT = {
+						has_terrain = mountain
+						has_terrain = hills
+						has_terrain = highlands
+					}
+					OR = {
+						has_province_modifier = harpy_roost_mod_roost_fledgling
+						has_province_modifier = harpy_roost_mod_roost_flourishing_active
+					}
+				}
+			}
+			calc_true_if = {
+				amount = 2
+				akasik_region = {
+					has_province_modifier = harpy_roost_mod_roost_flourishing_active
 				}
 			}
 			akasik_region = {
 				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}
 				NOT = { unrest = 1 }
+				NOT = { devastation = 1 }
+				NOT = { nationalism = 1 }
 			}
 		}
 		effect = {
@@ -591,7 +628,18 @@ A3A_third_slot_p2 = {
 		}
 		effect = {
 			country_event = {
-				id = wyvernmark.500 #pigeons and doves disaster
+				id = wyvernmark.310 #pigeons
+				days = 90
+			}
+			country_event = {
+				id = wyvernmark.311 #doves
+				days = 180
+			}
+			hidden_effect = {
+				country_event = {
+					id = wyvernmark.500
+					days = 365
+				}
 			}
 		}
 	}
@@ -965,12 +1013,14 @@ A3A_fifth_slot_p2 = {
 				add_core = A3A
 				change_culture = stonewing_harpy
 				change_religion = regent_court
+				remove_gnollish_minority_size_effect = yes
 			}
 			364 = {
 				cede_province = A3A
 				add_core = A3A
 				change_culture = stonewing_harpy
 				change_religion = regent_court
+				remove_gnollish_minority_size_effect = yes
 			}
 		}
 	}
