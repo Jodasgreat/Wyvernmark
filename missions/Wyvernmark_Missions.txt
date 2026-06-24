@@ -69,7 +69,7 @@ A3A_first_slot_p2 = {
 		trigger = {
 			crown_land_share = 20
 			treasury = 100
-			has_cast_enchanting_embassy = yes
+			has_cast_enchanting_envoy_embassy = yes
 		}
 		effect = {
 			add_treasury = -100
@@ -94,7 +94,7 @@ A3A_first_slot_p2 = {
 				amount = -25
 			}
 			add_estate_loyalty_modifier = {
-				estate = estate_human_adventurers
+				estate = estate_adventurers
 				desc = A3A_entranced_adv
 				loyalty = 10
 			}
@@ -208,7 +208,7 @@ A3A_second_slot_p2 = {
 		}
 		trigger = {
 			estate_influence = {
-				estate = estate_human_adventurers
+				estate = estate_adventurers
 				influence = 60
 			}
 			num_of_mercenaries = 10
@@ -1228,12 +1228,14 @@ A3A_second_slot_p3 = {
 		required_missions = {
 			A3A_own_wings
 		}
-		trigger = { #add req for 3 inventions
+		trigger = { 
 			estate_influence = {
 				estate = estate_artificers
 				influence = 50
 			}
-		#	has_country_modifier = A3A_substitute_wings
+			num_artifice_inventions_discovered = {
+				VAL = 4
+			}
 		}
 		effect = { #artificery capacity +10, research speed -6m
 			mission_reward_artifice_points_10 = yes

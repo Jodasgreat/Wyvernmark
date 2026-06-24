@@ -1464,7 +1464,8 @@ country_event = {
 	
 	option = {
 		name = wyvernmark.1000.a
-		add_treasury = 1
+		set_country_flag = A3A_harpies_everywhere
+		custom_tooltip = wyvernmark.1000.tt
 	}
 }
 # 00 events - hidden mechanics
@@ -1774,7 +1775,7 @@ country_event = { #harpies caught
 			duration = 3650
 		}
 		add_estate_loyalty_modifier = {
-			estate = estate_human_adventurers
+			estate = estate_adventurers
 			desc = A3A_slain_monsters
 			loyalty = 20
 			duration = 3650
@@ -1784,7 +1785,7 @@ country_event = { #harpies caught
 		name = wyvernmark.9.b
 		small_decrease_of_human_tolerance_effect = yes
 		add_estate_loyalty_modifier = {
-			estate = estate_human_adventurers
+			estate = estate_adventurers
 			desc = A3A_acting_suspicious
 			loyalty = -10
 			duration = 3650
@@ -1798,7 +1799,7 @@ country_event = { #harpies caught
 			duration = 3650
 		}
 		add_estate_loyalty_modifier = {
-			estate = estate_human_adventurers
+			estate = estate_adventurers
 			desc = A3A_protected_monsters
 			loyalty = -20
 			duration = 3650
@@ -1833,7 +1834,7 @@ province_event = { #disloyal flock
 		owner = {
 			add_mil_power = 100
 			add_estate_loyalty_modifier = {
-				estate = estate_human_adventurers
+				estate = estate_adventurers
 				desc = A3A_slain_monsters
 				loyalty = 10
 				duration = 3650
