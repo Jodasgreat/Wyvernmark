@@ -161,3 +161,6 @@ A3A_disloyal_flock = {
 	local_autonomy = 0.10
 	trade_goods_size_modifier = -0.25
 }
+A3A_paid_off = {
+	prestige = -0.1
+}

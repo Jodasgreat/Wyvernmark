@@ -6,3 +6,7 @@ crypto_harpy_monst_opinion = {
 	opinion = -100
 	min = -100
 }
+A3A_sus = {
+	opinion = -30
+	min = -30
+}

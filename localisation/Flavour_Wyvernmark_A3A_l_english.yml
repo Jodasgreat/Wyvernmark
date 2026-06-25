@@ -106,15 +106,15 @@
  A3A_the_west_title:0 "Pacifying The West"
  A3A_the_west_desc:0 "Before the fall of the Convent, their sights had been set on what would be the crown jewel in their collection, the Rose Kingdom of Lorent. Long a thorn in the Empire's side, securing Lencenor under our domain would remove the largest threat to our rule in Cannor, while also providing a gateway to the riches of Aelantir."
  A3A_flying_high_title:0 "Flying High"
- A3A_flying_high_desc:0 "We have resolved the legacy of the past and built a new, lasting peace with all of Cannor under our wings."
+ A3A_flying_high_desc:0 "With the bulk of Cannor under our wings, the time is nigh for us to make good on our ambitions.\n\nWe have soared to heights that Istárt'a and her sisters could only dream of when they landed on the shores of Wyvernmark back in 1430. We have established dominance over Western Cannor, and rebuilt our ancestors' roosts in the Godshield.\n\nAll that remains now is to end the legacy of the beast once and for all. The people of Castan, and his land of Castanor, must know that, while it has taken millennia, the beast's plan has backfired. We are here to rule, and we are here to stay."
  A3A_swaying_powerful_title:0 "Swaying the Powerful"
  A3A_swaying_powerful_desc:0 "The radical policies of the Doves may have won the argument, but the realities of administering an empire such as ours make pure harpy supremacism an exercise in futility.\n\nTo rule Cannor, we must win the support of those powerful individuals who hold the keys to power. In particular, the Empire is home to a wealth of talented mages and clergy, each with the ability to compell crowds to do their bidding. A couple crowns in the right hands, and we can have that influence all to ourselves."
  A3A_persuading_masses_title:0 "Persuading the Masses"
- A3A_persuading_masses_desc:0 "Many are unhappy with our rule still. Why don't we simply make them change their minds?"
+ A3A_persuading_masses_desc:0 "Even though we might have a solid grip on the levers of power, our subjects have been awfully unruly as of late. Those races who thought themselves as 'civilized' chafe under our rule, and there are no doubt thousands of rebellious groups out there seeking to return these lands to the rule of humans and elves.\n\nWhile it certainly does not displease us to see the people of Castan feeling disgruntled and marginalized, this belligerency is a headache we could most certainly do without.\n\nIt would make things much easier if we could enlist the help of our mages and convince these subjects of ours that their place is in the shadow of our wings."
  A3A_the_hills_title:0 "The Hills"
- A3A_the_hills_desc:0 "We head east to approach the homeland of the harpies."
+ A3A_the_hills_desc:0 "Overnight, our realm went from one of many cannorian human empires to the world's largest harpy queendom. This news has not been received well in Bulwar, where uptight birds in shabby roosts claim to be the true heirs of 'Harpylen,' and the rightful matriarchs to which all harpies must pledge their loyalty.\n\nAt this rate, someone ought to head over to these 'Harpy Hills' and put a stop to that intolerable screeching."
  A3A_final_queendom_title:0 "The Final Queendom"
- A3A_final_queendom_desc:0 "The harpy hills, the origin of our race, is now under our control. The old queendoms are dead. The question is, what does the word 'Queendom' mean to us?"
+ A3A_final_queendom_desc:0 "It is often said that harpykind has its origin in the hills of Bulwar. While our flock has never felt a strong connection beyond our ancestors who roosted in Escann, that history still holds tremendous importance for our cousins in those hills.\n\nShould we take the palace at Heunthume, we will destroy any legitimacy the squabbling flocks of Bulwar hold to the legacy of their beloved 'Harpylen.'\n\nWe will put an end to their farce of a 'queendom,' and maybe then they will stop looking down on us."
  
  #100 events - Part 1
  wyvernmark.100.t:0 "The Convent"
@@ -383,6 +383,11 @@
  wyvernmark.10.a:0 "Keep it under wraps"
  wyvernmark.10.b:0 "Mr. Adventurer! There's a monster over here!"
  
+ wyvernmark.11.t:0 "A Sneaking Suspicion"
+ wyvernmark.11.d:0 "An administrator working at the court of [sus_country.GetName] has made an unusually astute observation: Isn't it strange that all of our country's leaders just so happen to be women? Isn't it strange that we insist on remaining covered at all times?"
+ wyvernmark.11.a:0 "What? Nooo, I haven't the slightest clue what you're talking about!"
+ wyvernmark.11.b:0 "Would some crowns convince you to look the other way?"
+ 
  #ideas
  A3A_legacy_of_the_wyvern_riders:0 "Legacy of the Wyvern Riders"
  A3A_legacy_of_the_wyvern_riders_desc:0 "As with our brothers in Verne, the legacy of Armoc Vernid, the first Wyvern King, lives on in the hills of Wyvernmark. However, while the Wyvern Riders may be a distant and glorious memory to the burghers of Verne, here that history is much more real.\n\nThe last surviving Wyverns make their roosts here in our hills, and the Margrave of Wyvernmark is chiefly tasked with ensuring these endangered populations are protected from prospective poachers. To that end, Wyvernmark seeks the aid of adventurers and mercenaries from Verne and beyond to guard the mountains from threats both external and internal."
@@ -448,8 +453,10 @@
  MARGRAVE-CONSORT:0 "Margrave-Consort"
  ARCHMARGRAVE-CONSORT:0 "Archmargrave-Consort"
  
+ #opinion modifiers
  crypto_harpy_opinion:0 "Totally Not Harpies"
  crypto_harpy_monst_opinion:0 "Humans?"
+ A3A_sus:0 "Suspicious"
  
  #modifiers
  A3A_the_convent:0 "The Convent"
@@ -488,6 +495,8 @@
  A3A_protected_monsters:0 "Protected Monsters"
  A3A_slain_monsters:0 "Slain Monsters"
  A3A_disloyal_flock:0 "Disloyal Flock"
+ A3A_paid_off:0 "Paid Off"
+
  
  #flags
  pigeons_doves_resolved:0 "Determined the Course of Our Nation"

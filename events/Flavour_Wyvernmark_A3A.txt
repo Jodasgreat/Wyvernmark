@@ -1842,3 +1842,48 @@ province_event = { #disloyal flock
 		}
 	}
 }
+country_event = { #you lookin sus
+	id = wyvernmark.11
+	title = wyvernmark.11.t
+	desc = wyvernmark.11.d
+	picture = NUN_SPY_eventPicture
+	
+	mean_time_to_happen = {
+		months = 400
+	}
+	
+	trigger = {
+		has_reform = crypto_harpy_reform
+	}
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = { 
+					has_country_modifier = human_administration
+					NOT = { is_subject_of = ROOT } 
+					NOT = { has_country_modifier = A3A_paid_off }
+				}
+				save_event_target_as = sus_country
+			}
+		}
+	}
+	option = { #What? No waaay
+		name = wyvernmark.11.a
+		small_decrease_of_human_tolerance_effect = yes
+		event_target:sus_country = {
+			add_opinion = {
+				who = A3A
+				modifier = A3A_sus
+			}
+		}
+	}
+	option = { #Would you take this money instead?
+		name = wyvernmark.11.b
+		add_treasury = -150
+		event_target:sus_country = {
+			add_treasury = 150
+			add_country_modifier = A3A_paid_off
+			small_increase_of_harpy_tolerance_effect = yes
+		}	
+	}
+}
