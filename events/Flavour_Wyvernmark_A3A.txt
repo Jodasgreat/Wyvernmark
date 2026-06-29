@@ -571,7 +571,7 @@ country_event = {
 	id = wyvernmark.400
 	title = wyvernmark.400.t
 	desc = wyvernmark.400.d
-	picture = ASSASSINATION_eventPicture
+	picture = NUN_SPY_eventPicture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -637,13 +637,20 @@ country_event = {
 		name = wyvernmark.402.a
 		custom_tooltip = wyvernmark.402.tt
 		add_prestige = -10
+		FROM = {
+			add_opinion = {
+				who = A3A
+				modifier = A3A_assassin_caught
+				duration = 3650
+			}
+		}
 	}
 }
 country_event = {
 	id = wyvernmark.410
 	title = wyvernmark.410.t
 	desc = wyvernmark.410.d
-	picture = ASSASSINATION_eventPicture
+	picture = NUN_SPY_eventPicture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -708,6 +715,13 @@ country_event = {
 		name = wyvernmark.412.a
 		custom_tooltip = wyvernmark.412.tt
 		add_prestige = -15
+		FROM = {
+			add_opinion = {
+				who = A3A
+				modifier = A3A_assassin_caught
+				duration = 3650
+			}
+		}
 	}
 }
 country_event = {
@@ -774,6 +788,13 @@ country_event = {
 		name = wyvernmark.422.a
 		custom_tooltip = wyvernmark.422.tt
 		add_prestige = -30
+		FROM = {
+			add_opinion = {
+				who = A3A
+				modifier = A3A_assassin_caught
+				duration = 3650
+			}
+		}
 	}
 }
 #500 events - pigeons and doves disaster
@@ -1849,7 +1870,7 @@ country_event = { #you lookin sus
 	picture = NUN_SPY_eventPicture
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 240
 	}
 	
 	trigger = {

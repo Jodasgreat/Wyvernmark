@@ -10,3 +10,7 @@ A3A_sus = {
 	opinion = -30
 	min = -30
 }
+A3A_assassin_caught = {
+	opinion = -50
+	min = -200
+}
