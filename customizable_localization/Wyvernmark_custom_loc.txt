@@ -1,0 +1,34 @@
+#custom loc for wyvernmark.599
+defined_text = {
+	name = A3A_WINLOSS
+	random = no
+
+	text = {
+		localisation_key = A3A_WonWar
+		trigger = {
+			has_won_war_against = {
+				who = any_country
+				max_years_since = 1
+			}
+		}
+	}
+
+	text = { localisation_key = A3A_LostWar	}
+}
+defined_text = {
+	name = A3A_PIGEONSDOVES
+	random = no
+
+	text = {
+		localisation_key = A3A_PigeonsWin
+		trigger = {
+			has_country_flag = pigeons
+		}
+	}
+
+	text = { localisation_key = A3A_DovesWin 
+		trigger = {
+			has_country_flag = doves
+		}
+	}
+}

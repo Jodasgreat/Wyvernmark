@@ -1052,6 +1052,21 @@ country_event = { #doves revolt
 	picture = HARPY_IMMORTAL_FIGHT_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = { 
+					NOT = { has_country_modifier = monstrous_nation }
+					NOT = { 
+						any_neighbor_country = {
+							army_size = PREV
+						}
+					}
+				}
+				save_event_target_as = CoalitionLeader
+			}
+		}
+	}
 	
 	option = {
 		name = wyvernmark.522.a
