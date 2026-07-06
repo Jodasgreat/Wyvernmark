@@ -1221,7 +1221,7 @@ country_event = { #start of disaster - castanor spawns
 			}
 			add_historical_rival = ROOT
 			define_ruler = {
-				name = "Beastbane II 'Castan'"
+				name = "Beastbane II"
 				mil = 6
 			}
 			add_ruler_personality = legendary_conqueror_personality
@@ -1291,6 +1291,20 @@ country_event = { #inner_castanor
 	picture = BYZANTINE_EMPEROR_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = { 
+					capital_scope = {
+						region = inner_castanor_region
+					}
+					NOT = { tag = B32 }
+				}
+				save_event_target_as = VisitingCountry
+			}
+		}
+	}
 	
 	option = {
 		name = wyvernmark.904.a
@@ -1389,6 +1403,25 @@ country_event = { #gib clay
 	is_triggered_only = yes
 	
 	option = { #yes
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 20
+				has_country_modifier = human_administration
+			}
+			modifier = {
+				factor = 50
+				NOT = { total_development = 100 }
+			}
+			modifier = {
+				factor = 5
+				NOT = { total_development = 500 }
+			}
+			modifier = {
+				factor = 30
+				has_estate = estate_castonath_patricians
+			}
+		}
 		name = wyvernmark.910.a
 		every_owned_province = {
 			limit = { superregion = escann_superregion }
@@ -1397,6 +1430,34 @@ country_event = { #gib clay
 		}
 	}
 	option = { #no
+		ai_chance = { 
+			factor = 26 
+			modifier = {
+				factor = 1000
+				has_country_modifier = monstrous_nation
+			}
+			modifier = {
+				factor = 1000
+				has_country_modifier = harpy_administration
+			}
+			modifier = {
+				factor = 50
+				overlord = {
+					is_or_was_tag = A3A
+				}
+			}
+			modifier = {
+				factor = 50
+				OR = {
+					has_country_modifier = orcish_administration
+					has_country_modifier = goblin_administration
+				}
+			}
+			modifier = {
+				factor = 100
+				total_development = 1000 
+			}
+		}
 		name = wyvernmark.910.b
 		every_owned_province = {
 			limit = { 
@@ -1438,6 +1499,7 @@ country_event = { #win war
 			add_historical_friend = ROOT
 			remove_country_modifier = A3A_castanor_buffs
 			change_primary_culture = stonewing_harpy
+			add_government_reform = dynastic_castanor_trials_reform
 		}
 		trialmount_area = {
 			change_culture = stonewing_harpy
