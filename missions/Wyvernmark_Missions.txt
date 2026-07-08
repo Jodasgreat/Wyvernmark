@@ -119,7 +119,7 @@ A3A_first_slot_p2 = {
 			A3A_persuade_adventurers
 		}
 		trigger = {
-			has_country_flag = A3A_wyverns_found
+			has_country_modifier = A3A_wyverns_found
 			estate_loyalty = {
 				estate = estate_adventurers
 				loyalty = 50

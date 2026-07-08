@@ -6,9 +6,13 @@ defined_text = {
 	text = {
 		localisation_key = A3A_WonWar
 		trigger = {
-			has_won_war_against = {
-				who = any_country
-				max_years_since = 1
+			NOT = {
+				any_country = {
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 1
+					}
+				}
 			}
 		}
 	}

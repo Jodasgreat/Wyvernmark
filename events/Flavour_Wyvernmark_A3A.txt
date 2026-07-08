@@ -183,7 +183,7 @@ country_event = {
 		define_advisor = {
 			culture = stonewing_harpy
 			female = no
-			type = army_organizer
+			type = army_organiser
 			skill = 2
 			discount = yes
 		}
@@ -641,7 +641,6 @@ country_event = {
 			add_opinion = {
 				who = A3A
 				modifier = A3A_assassin_caught
-				duration = 3650
 			}
 		}
 	}
@@ -659,16 +658,16 @@ country_event = {
 		name = wyvernmark.410.a
 		random_known_country = {
 			limit = { 
+				consort_culture = stonewing_harpy
 				has_spy_network_from = {
 					who = ROOT
 					value = 50
 				}
 			}
-			remove_heir = yes
+			remove_heir = {}
 			define_heir = {
 				culture = stonewing_harpy
 				female = yes
-				country_of_origin = ROOT
 			}
 			add_spy_network_from = {
 				who = ROOT
@@ -719,7 +718,6 @@ country_event = {
 			add_opinion = {
 				who = A3A
 				modifier = A3A_assassin_caught
-				duration = 3650
 			}
 		}
 	}
@@ -792,7 +790,6 @@ country_event = {
 			add_opinion = {
 				who = A3A
 				modifier = A3A_assassin_caught
-				duration = 3650
 			}
 		}
 	}
@@ -1180,7 +1177,11 @@ country_event = { #tamed the wyverns
 	
 	option = {
 		name = wyvernmark.601.a
-		set_country_flag = A3A_wyverns_found
+		custom_tooltip = wyvernmark.601.tt
+		add_country_modifier = {
+			name = A3A_wyverns_found
+			duration = -1
+		}
 	}
 }
 # 900 events - final boss
@@ -1443,7 +1444,9 @@ country_event = { #gib clay
 			modifier = {
 				factor = 50
 				overlord = {
-					is_or_was_tag = A3A
+					is_or_was_tag = {
+						tag = A3A
+					}
 				}
 			}
 			modifier = {
@@ -1705,7 +1708,10 @@ country_event = { #make verne not painful
 		A33 = {
 			heir_culture = stonewing_harpy
 			ruler_culture = vernman
-			heir_age = 15
+			OR = {
+				heir_age = 15
+				ruler_age = 65
+			}
 			ai = yes
 		}
 	}
@@ -1859,7 +1865,7 @@ country_event = { #harpies caught
 	picture = WITCHBURNING_eventPicture
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 300
 	}
 	
 	trigger = {
@@ -1911,7 +1917,7 @@ province_event = { #disloyal flock
 	picture = WITCHBURNING_eventPicture
 	
 	mean_time_to_happen = {
-		months = 360
+		months = 480
 	}
 	
 	trigger = {
@@ -1947,7 +1953,7 @@ country_event = { #you lookin sus
 	picture = NUN_SPY_eventPicture
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 300
 	}
 	
 	trigger = {

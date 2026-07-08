@@ -14,7 +14,7 @@
  A3A_deal_with_adv_tt:0 "Re-enables the §YAdventurers§! estate."
  A3A_persuade_adventurers_title:0 "Persuade the Adventurers"
  A3A_persuade_adventurers_desc:0 "As the Verneman adventurers become more integrated in our administration, we must find a way to enure their loyalty… and their silence."
- A3A_persuade_adventurers_tt:0 "Enables the §YEnthralled Adventurers§! mercenary company."
+ A3A_persuade_adventurers_tt:0 "Enables the §YEnchanted Sellswords§! mercenary company."
  A3A_those_who_fly_title:0 "Those who Fly for Us"
  A3A_those_who_fly_desc:0 "Harpies are an avian race. Yet, since arriving on the shores of Cannor, our flock has abandoned the gift of flight in the name of survival. How fortunate it is, then, that the answer to our conundrum lies here in the very mountains we call home, Wyverns.\n\nIf we can locate the Wyverns' nests and tame them, perhaps we could take to the skies once more without exposing our secrets."
  A3A_those_who_fly_tt:0 "Enables the §YWyvern Rider Company§! mercenary company."
@@ -218,16 +218,20 @@
  wyvernmark.402.t:0 "Assassins in [From.GetName] Exposed!"
  wyvernmark.402.d:0 "Our dear sister executed the plan just as instructed. She attracted no suspicion upon arrival. In fact the [From.Monarch.GetTitle] welcomed her presence. Yet, at the crucial moment, just as the [From.Consort.GetTitle] of [From.GetName] was to have her 'accident,' a common servant happened to witness our sister holding the strings.\n\nWord got out, and while it was too late to save the [From.Consort.GetTitle], the [From.Monarch.GetTitle] is demanding that we hand over that sister to face justice.\n\nWe will deny that request, of course."
  wyvernmark.402.a:0 "That damned servant!"
+ 
  wyvernmark.410.t:0 "Feather Pillows"
  wyvernmark.410.d:0 "Following the late Duchess' untimely death, the Duke quickly found comfort in the arms of a tender Wyvernmarker lady. His son, however, never warmed up to this new step-mother of his.\n\nThe life of nobility can often be cold and isolating, but nevertheless his mother had always been the one comforting presence in that life. In contrast, he could never feel at ease around this new woman. Maybe it was the way she spoke, or the strange black robes she wore at all times. Or, perhaps, it was that look in her eyes that reminded him of a hungry wild beast looking at its prey.\n\nStill, the Duke has lately been encouraging his new wife to reach out to her step-son. She had just the idea -- as it turns out, her hometown is known for producing some of the softest, most exquisite feathers in Cannor. Would it not be wonderful if she were to visit her step-son's room and personally give him a pillow stuffed with these feathers as a token of her good intentions?"
  wyvernmark.410.a:0 "I am sure he will sleep very well tonight..."
  wyvernmark.410.tt:0 "Enables a decision allowing you to §RKill the heir§! of a country with a §Yharpy consort§! and §Y80 spy network§!."
+ 
  wyvernmark.411.t:0 "[Root.Heir.GetName] Assassinated!"
  wyvernmark.411.d:0 "They killed our boy!"
  wyvernmark.411.a:0 "argh"
+ 
  wyvernmark.412.t:0 "Assassins in [From.GetName] Exposed!"
  wyvernmark.412.d:0 "Our dear sister executed the plan just as instructed. She attracted no suspicion upon arrival. In fact the [From.Monarch.GetTitle] welcomed her presence. Yet, at the crucial moment, just as the [From.Heir.GetTitle] of [From.GetName] was to have [From.Heir.GetHerHis] 'accident,' a common servant happened to witness our sister holding the strings.\n\nWord got out, and while it was too late to save the [From.Heir.GetTitle], the [From.Monarch.GetTitle] is demanding that we hand over that sister to face justice.\n\nWe will deny that request, of course."
  wyvernmark.412.a:0 "Damn it!"
+ 
  wyvernmark.420.t:0 "Brazen Acts"
  wyvernmark.420.d:0 "The King thought he had done everything right.\n\nHe had lived a just life, honoring the gods and his ancestors in every fabric of his rule. His subjects were prosperous, and his Kingdom wealthy. And yet, the reward for his virtue was a life of heartache. His beloved first wife passed away in a tragic accident, and his talented and ambitious son met a similar fate a few years later.\n\nHe had nothing against his new wife and the daughter he'd had with her, in fact he loved them both dearly, but recent revelations concerning his second wife's home country of [Root.GetName] put their relationship in a new light.\n\nShe confirmed it when he asked. She -- and his daughter, his only surviving heir -- was a harpy, one with close ties to the ruling establishment of [Root.GetName]. It was a powerful country, no doubt. While he hadn't intended it, perhaps he could leverage this marriage to secure an alliance with them...\n\n...Wouldn't [Root.GetName] stand to gain even more if his country was ruled by a harpy, though? Wait, but in that case, could that have been their plan from the beginning? This whole time, his wife, his son... was all of this just a ruse to..."
  wyvernmark.420.a:0 "'A shame you won't be able to finish that thought, Your Highness.'"
@@ -303,6 +307,7 @@
  wyvernmark.601.t:0 "Flying once more"
  wyvernmark.601.d:0 "After long years of work, our adventurers have found a way to reliably get wyverns to tolerate a rider on their back.\n\nAlong the way, three poor souls perished in their attempts, and countless more were humilated as the wyverns sent one man after another hurdling across the training grounds. Nevertheless, a Vernman is known for nothing if not his perseverance. Six veiled Convent sisters were in attendance as one Sir Roger Síl Valor, heretoforth known for nothing aside from his prodigious handlebar moustache, mounted a feisty wyvern and hefted the reins. Unbelievably, the great beast obeyed his signal as its leathery bronze wings took it and its rider up to the skies. Then, after landing, he did it again with another wyvern.\n\nThe secret had at last been cracked, and our subjects rejoiced that wyvern riders were once again gracing our skies. Their numbers are still low, but with enough effort, we could find a way to use these wyverns to impress our allies -- and our enemies."
  wyvernmark.601.a:0 "The skies shall be our dominion!"
+ wyvernmark.601.tt:0 "We can now proceed with our §YMission§! to put these wyverns to use."
  
  #900 events - Final Boss
  wyvernmark.900.t:0 "A New Age of Monsters?"

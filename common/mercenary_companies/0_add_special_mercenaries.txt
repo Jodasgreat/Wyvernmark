@@ -55,7 +55,7 @@ merc_entranced_adventurers = {
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		is_or_was_tag = { tag = A3A }
-		has_country_flag = A3A_entranced_adv
+		has_country_flag = A3A_enthralled_mercs
 	}
 	cost_modifier = 0.5
 	modifier = {

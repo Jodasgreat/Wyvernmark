@@ -164,3 +164,7 @@ A3A_disloyal_flock = {
 A3A_paid_off = {
 	prestige = -0.1
 }
+A3A_wyverns_found = {
+	prestige = 0.1
+	movement_speed = 0.5
+}
