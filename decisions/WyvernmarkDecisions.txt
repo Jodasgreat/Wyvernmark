@@ -42,7 +42,58 @@ country_decisions = {
 			}
 		}
 	}
-
+	bring_into_fold_early = {
+		major = yes
+		color = { 195 160 20 }
+		potential = {
+			is_or_was_tag = { tag = A3A }
+			has_reform = crypto_harpy_reform
+			NOT = { has_country_flag = A3A_can_integrate }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = CAN_USE_ESTATE_ACTION_EVERY_7300
+				NOT = {
+					has_country_modifier = bring_into_fold_cooldown
+				}
+			}
+			any_ally = {
+				ruler_culture = stonewing_harpy
+				is_subject = no
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+		effect = {
+			clear_global_event_target = A3A_integration_target
+			custom_tooltip = A3A_bring_into_fold_early_tt
+			add_dip_power = -200
+			add_country_modifier = {
+				name = A3A_integration_rep
+				duration = 3650
+			}
+			random_ally = {
+				limit = {
+					ruler_culture = stonewing_harpy
+					is_subject = no
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+				save_global_event_target_as = A3A_integration_target
+			}
+			country_event = {
+				id = wyvernmark.404
+				days = 3650
+			}
+			hidden_effect = {
+				add_country_modifier = { name = bring_into_fold_cooldown hidden = yes duration = 7300 }
+			}
+		}
+	}
 	A3A_kill_consort = {
 		major = yes
 		color = { 195 160 20 }
@@ -166,6 +217,7 @@ country_decisions = {
 						define_consort = {
 							country_of_origin = ROOT
 							culture = ROOT
+							dynasty = ROOT
 							female = yes
 						}
 					}
@@ -252,6 +304,8 @@ country_decisions = {
 						define_heir = {
 							culture = ROOT
 							female = yes
+							dynasty = ROOT
+							claim = 30
 						}
 					}
 					50 = {

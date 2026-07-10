@@ -646,6 +646,21 @@ country_event = {
 	}
 }
 country_event = {
+	id = wyvernmark.404
+	title = wyvernmark.404.t
+	desc = wyvernmark.404.d
+	picture = NUN_SPY_eventPicture
+
+	is_triggerec_only = yes
+
+	option = {
+		name = wyvernmark.404.a
+		event_target:A3A_integration_target = {
+			ROOT = { create_union = PREV }
+		}
+	}
+}
+country_event = {
 	id = wyvernmark.410
 	title = wyvernmark.410.t
 	desc = wyvernmark.410.d
@@ -1730,11 +1745,11 @@ country_event = { # convert subjects to harpy
 	trigger = {
 		NOT = { culture_group = harpy }
 		overlord = {
-				is_or_was_tag = { tag = A3A }
+			is_or_was_tag = { tag = A3A }
+			has_country_modifier = A3A_convent_administration
 		}
 		ruler_culture = stonewing_harpy
-		NOT = { liberty_desire = 50 }
-		A3A = { has_country_modifier = A3A_convent_administration }
+		NOT = { liberty_desire = 40 }
 	}
 	option = {
 		name = wyvernmark.5.a
@@ -1989,5 +2004,26 @@ country_event = { #you lookin sus
 			add_country_modifier = A3A_paid_off
 			small_increase_of_harpy_tolerance_effect = yes
 		}	
+	}
+}
+country_event = { # convert subjects to harpy for doves
+	id = wyvernmark.12
+	title = wyvernmark.12.t
+	desc = wyvernmark.12.d
+	picture = NUN_SPY_eventPicture
+
+	trigger = {
+		NOT = { culture_group = harpy }
+		overlord = {
+			is_or_was_tag = { tag = A3A }
+			has_country_flag = doves
+		}
+		ruler_culture = stonewing_harpy
+		NOT = { liberty_desire = 50 }
+	}
+	option = {
+		name = wyvernmark.12.a
+		change_primary_culture = stonewing_harpy
+		add_government_reform = harpy_matriarchy_reform
 	}
 }

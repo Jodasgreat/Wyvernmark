@@ -219,6 +219,10 @@
  wyvernmark.402.d:0 "Our dear sister executed the plan just as instructed. She attracted no suspicion upon arrival. In fact the [From.Monarch.GetTitle] welcomed her presence. Yet, at the crucial moment, just as the [From.Consort.GetTitle] of [From.GetName] was to have her 'accident,' a common servant happened to witness our sister holding the strings.\n\nWord got out, and while it was too late to save the [From.Consort.GetTitle], the [From.Monarch.GetTitle] is demanding that we hand over that sister to face justice.\n\nWe will deny that request, of course."
  wyvernmark.402.a:0 "That damned servant!"
  
+ wyvernmark.404.t:0 "The Throne of [A3A_integration_target.GetName]"
+ wyvernmark.404.d:0 "After years of careful maneuvering and behind-the-scenes work, agents of our Convent have been deployed all throughout the [A3A_integration_target.GetAdjective] administration.\n\nWhatever protests [A3A_integration_target.Monarch.GetName] may have had about maintaining her independence as a ruler have died down as the extent of the Convent's reach has become clear. She will retain her title in name only, as all of the day-to-day administration is handled by the Convent's representatives. From now on, any decrees or legislation will be handled only with the approval of [Root.Monarch.GetName]."
+ wyvernmark.404.a:0 "Our sisters must understand who makes the rules."
+
  wyvernmark.410.t:0 "Feather Pillows"
  wyvernmark.410.d:0 "Following the late Duchess' untimely death, the Duke quickly found comfort in the arms of a tender Wyvernmarker lady. His son, however, never warmed up to this new step-mother of his.\n\nThe life of nobility can often be cold and isolating, but nevertheless his mother had always been the one comforting presence in that life. In contrast, he could never feel at ease around this new woman. Maybe it was the way she spoke, or the strange black robes she wore at all times. Or, perhaps, it was that look in her eyes that reminded him of a hungry wild beast looking at its prey.\n\nStill, the Duke has lately been encouraging his new wife to reach out to her step-son. She had just the idea -- as it turns out, her hometown is known for producing some of the softest, most exquisite feathers in Cannor. Would it not be wonderful if she were to visit her step-son's room and personally give him a pillow stuffed with these feathers as a token of her good intentions?"
  wyvernmark.410.a:0 "I am sure he will sleep very well tonight..."
@@ -399,6 +403,10 @@
  wyvernmark.11.d:0 "An administrator working at the court of [sus_country.GetName] has made an unusually astute observation: Isn't it strange that all of our country's leaders just so happen to be women? Isn't it strange that we insist on remaining covered at all times?"
  wyvernmark.11.a:0 "What? Nooo, I haven't the slightest clue what you're talking about!"
  wyvernmark.11.b:0 "Would some crowns convince you to look the other way?"
+
+ wyvernmark.12.t:0 "The Doves Move In"
+ wyvernmark.12.d:0 "Now that our country is firmly under the control of S'iltralit'éni harpies, the administration is slowly being co-opted by representatives of those harpies. We are now part of their flock, and are no longer a human nation."
+ wyvernmark.12.a:0 "Things are about to change around here."
  
  #ideas
  A3A_legacy_of_the_wyvern_riders:0 "Legacy of the Wyvern Riders"
@@ -438,6 +446,9 @@
  bring_into_fold_title:0 "Bring Our Sisters into the Fold"
  bring_into_fold_desc:0 "It is fine and well that one of our sisters sits upon another nation's throne, but if left alone too long, she may start to believe she actually has any power of her own. We must remind our sisters that the Matriarch's will is absolute, and that all that's yours is the Matriarch's."
  A3A_bring_into_fold_tt:0 "Form a §Ypersonal union§! with a random country that meets the requirements."
+ bring_into_fold_early_title:0 "Bring Our Sisters into the Fold"
+ bring_into_fold_early_desc:0 "Our realm may be small, but through guile and intrigue we have found a way to place one of our sisters on a foreign throne. That alone is impressive, but we cannot allow our sisters to stray too far from the tenents of our Convent. We must get to work and bring her crown closer to our rule."
+ A3A_bring_into_fold_early_tt:0 "Spend §Y10 years§! to form a §Ypersonal union§! with a random country that meets the requirements."
  A3A_kill_consort_title:0 "Assassinate a Consort"
  A3A_kill_consort_desc:0 "Shank that bitch."
  A3A_kill_consort_2_title:0 "Assassinate any Consort"
@@ -508,6 +519,8 @@
  A3A_slain_monsters:0 "Slain Monsters"
  A3A_disloyal_flock:0 "Disloyal Flock"
  A3A_paid_off:0 "Paid Off"
+ A3A_integration_rep:0 "Integrating Our Sister's Realm"
+ A3A_flocking_rep:0 "Matriarch of Many Flocks"
 
  
  #flags

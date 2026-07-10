@@ -546,6 +546,10 @@ A3A_third_slot_p2 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = A3A_flocking_rep
+				duration = -1
+			}
 			country_event = {
 				id = wyvernmark.204 #turning PUs into harpies
 			}
@@ -1157,7 +1161,7 @@ A3A_first_slot_p3 = {
 			NOT = { has_country_modifier = monstrous_nation }
 		}
 		effect = {
-			add_country_modifier = [	
+			add_country_modifier = {	
 				name = A3A_earned_trust #diprep, prestige, libdes
 				duration = -1
 			}

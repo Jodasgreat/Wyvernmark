@@ -168,3 +168,9 @@ A3A_wyverns_found = {
 	prestige = 0.1
 	movement_speed = 0.5
 }
+A3A_integration_rep = {
+	diplomatic_reputation = -2
+}
+A3A_flocking_rep = {
+	diplomatic_reputation = 2
+}
