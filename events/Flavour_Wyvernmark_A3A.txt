@@ -212,6 +212,32 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = wyvernmark.108
+	title = wyvernmark.108.t
+	desc = wyvernmark.108.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #yes
+		name = wyvernmark.108.a
+		ai_chance = {
+			factor = 100
+		}
+		declare_war_with_cb = {
+			who = A49
+			casus_belli = cb_civ_vs_monster
+		}
+	}
+	option = { #no
+		name = wyvernmark.108.b
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -10
+	}
+}
 #200 events - part 2
 country_event = {
 	id = wyvernmark.200 #end of part 1
@@ -651,7 +677,7 @@ country_event = {
 	desc = wyvernmark.404.d
 	picture = NUN_SPY_eventPicture
 
-	is_triggerec_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = wyvernmark.404.a
@@ -1746,7 +1772,7 @@ country_event = { # convert subjects to harpy
 		NOT = { culture_group = harpy }
 		overlord = {
 			is_or_was_tag = { tag = A3A }
-			has_country_modifier = A3A_convent_administration
+			has_country_flag = A3A_can_integrate
 		}
 		ruler_culture = stonewing_harpy
 		NOT = { liberty_desire = 40 }
@@ -1754,7 +1780,13 @@ country_event = { # convert subjects to harpy
 	option = {
 		name = wyvernmark.5.a
 		change_primary_culture = stonewing_harpy
-		add_government_reform = crypto_harpy_reform
+		if = {
+			limit = { overlord = { has_reform = crypto_harpy_reform} }
+			add_government_reform = crypto_harpy_reform
+		}
+		else = {
+			add_government_reform = harpy_matriarchy_reform
+		}
 	}
 }
 country_event = { # manage harpy masquerade

@@ -15,7 +15,7 @@ A3A_first_slot = {
 			num_of_mercenaries = 1
 		}
 		effect = {
-			create_general = { tradition = 50 }
+			create_general = { tradition = 40 }
 			add_country_modifier = {
 				name = a3a_vernman_auxiliaries
 				duration = -1
@@ -284,6 +284,7 @@ A3A_second_slot_p2 = {
 				id = wyvernmark.201
 			}
 		}
+		custom_tooltip = A3A_stone_wings_tt
 	}
 	A3A_sarhal_lessons = {
 		icon = mam_city_thousand_minarets
@@ -354,6 +355,7 @@ A3A_second_slot_p2 = {
 				id = wyvernmark.202
 			}
 		}
+		custom_tooltip = A3A_sarhal_lessons_tt
 	}
 }
 A3A_third_slot = {
@@ -377,6 +379,7 @@ A3A_third_slot = {
 				id = wyvernmark.102
 			}
 		}
+		custom_tooltip = A3A_Beautiful_Girl_tt
 	}
 }
 A3A_third_slot_p2 = {
@@ -403,6 +406,7 @@ A3A_third_slot_p2 = {
 				id = wyvernmark.103
 			}
 		}
+		custom_tooltip = A3A_New_Dynasty_tt
 	}
 	A3A_wyvern_nest = {
 		icon = unify_piedmont
@@ -529,6 +533,7 @@ A3A_third_slot_p2 = {
 			country_event = {
 				id = wyvernmark.203 #at the academy
 			}
+			custom_tooltip = A3A_city_in_the_hills_tt
 		}
 	}
 	A3A_flock_together = {
@@ -553,6 +558,7 @@ A3A_third_slot_p2 = {
 			country_event = {
 				id = wyvernmark.204 #turning PUs into harpies
 			}
+			custom_tooltip = A3A_flock_together_tt
 		}
 	}
 	A3A_heart_of_empire = {
@@ -601,7 +607,8 @@ A3A_third_slot_p2 = {
 		effect = {
 			country_event = {
 				id = wyvernmark.205 #removing IA gain debuff
-			}			
+			}	
+			custom_tooltip = A3A_heart_of_empire_tt		
 		}	
 	}
 	A3A_pigeons_and_doves = {
@@ -645,6 +652,7 @@ A3A_third_slot_p2 = {
 					days = 365
 				}
 			}
+			custom_tooltip = A3A_pigeons_and_doves_tt
 		}
 	}
 }
@@ -955,12 +963,18 @@ A3A_fifth_slot = {
 			364 = {
 				add_core = A3A
 			}
-			A49 = {
-				declare_war_with_cb = {
-					who = A3A
-					casus_belli = cb_monster_vs_civ
+			A33 = {
+				country_event = {
+					id = wyvernmark.108
 				}
 			}
+			custom_tooltip = A3A_challenging_gnolls_tt
+			#A49 = {
+			#	declare_war_with_cb = {
+			#		who = A3A
+			#		casus_belli = cb_monster_vs_civ
+			#	}
+			#}
 		}
 	}
 }
@@ -1224,6 +1238,7 @@ A3A_second_slot_p3 = {
 				id = wyvernmark.301 #substitute wings invention
 				days = 1825
 			}
+			custom_tooltip = A3A_own_wings_tt
 		}
 	}
 	A3A_mid_flight_tinkering = {
@@ -1317,6 +1332,7 @@ A3A_third_slot_p3 = {
 			country_event = {
 				id = wyvernmark.420
 			}
+			custom_tooltip = A3A_extraterritorial_tt
 		}	
 	}
 	A3A_the_west = {
@@ -1576,6 +1592,7 @@ A3A_fifth_slot_p3 = {
 			country_event = {
 				id = wyvernmark.302
 			}
+			custom_tooltip = A3A_final_queendom_tt
 		}
 	}
 }

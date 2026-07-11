@@ -6,7 +6,7 @@ A3A_ideas = {
 	}
 
 	bonus = {
-		administrative_efficiency = 0.10
+		administrative_efficiency = 0.075
 	}
 
 	trigger = {
